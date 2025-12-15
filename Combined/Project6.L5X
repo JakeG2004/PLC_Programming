@@ -1,0 +1,3946 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<RSLogix5000Content SchemaRevision="1.0" SoftwareRevision="38.00" TargetName="Uidaho_Factory" TargetType="Controller" ContainsContext="false" ExportDate="Wed Dec 03 17:42:24 2025" ExportOptions="NoRawData L5KData DecoratedData ForceProtectedEncoding AllProjDocTrans">
+<Controller Use="Target" Name="Uidaho_Factory" ProcessorType="1756-L82E" MajorRev="38" MinorRev="11" ProjectCreationDate="Tue Jul 01 07:56:26 2025" LastModifiedDate="Wed Dec 03 17:40:01 2025" SFCExecutionControl="CurrentActive" SFCRestartPosition="MostRecent" SFCLastScan="DontScan" CommPath="Ethernet\10.8.0.120"
+ ProjectSN="16#0159_a2eb" MatchProjectToController="false" CanUseRPIFromProducer="false" InhibitAutomaticFirmwareUpdate="0" PassThroughConfiguration="EnabledWithAppend" DownloadProjectDocumentationAndExtendedProperties="true" DownloadProjectCustomProperties="true" ReportMinorOverflow="false" AutoDiagsEnabled="true" WebServerEnabled="false" DataExchangeId="{9AD0E7CD-0058-42CC-96F4-40C424699980}"
+>
+<RedundancyInfo Enabled="false" KeepTestEditsOnSwitchOver="false"/>
+<Security Code="0" ChangesToDetect="16#ffff_ffff_ffff_ffff"/>
+<SafetyInfo/>
+<DataTypes/>
+<Modules>
+<Module Name="Local" CatalogNumber="1756-L82E" Vendor="1" ProductType="14" ProductCode="165" Major="38" Minor="11" ParentModule="Local" ParentModPortId="1" Inhibited="false" MajorFault="true"
+>
+<EKey State="Disabled"/>
+<Ports>
+<Port Id="1" Address="0" Type="ICP" Upstream="false">
+<Bus Size="10"/>
+</Port>
+<Port Id="2" Type="Ethernet" Upstream="false">
+<Bus/>
+</Port>
+</Ports>
+</Module>
+<Module Name="Slot_1_Input" CatalogNumber="1756-IB16IF/A" Vendor="1" ProductType="7" ProductCode="386" Major="1" Minor="11" ParentModule="Local" ParentModPortId="1" Inhibited="false" MajorFault="false"
+ AutoDiagsEnabled="true" DataExchangeId="{DEAE38B6-F863-43A1-8821-3199CCBAF02B}">
+<EKey State="Disabled"/>
+<Ports>
+<Port Id="1" Address="1" Type="ICP" Upstream="true"/>
+</Ports>
+<Communications>
+<ConfigTag ConfigSize="72" ExternalAccess="Read/Write" OpcUaAccess="None">
+<Data Format="L5K">
+<![CDATA[[76,100,1,0,0,0,0,[[6],[6],[6],[6],[6],[6],[6],[6],[6],[6],[6],[6],[6],[6],[6],[6]]]]]>
+</Data>
+<Data Format="Decorated">
+<Structure DataType="AB:1756_IB16IF:C:0">
+<DataValueMember Name="LatchTimestamps" DataType="BOOL" Value="0"/>
+<DataValueMember Name="FilterOffOn" DataType="INT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="FilterOnOff" DataType="INT" Radix="Decimal" Value="0"/>
+<ArrayMember Name="Pt" DataType="AB:1756_IB16IF_PtStruct:C:0" Dimensions="16">
+<Element Index="[0]">
+<Structure DataType="AB:1756_IB16IF_PtStruct:C:0">
+<DataValueMember Name="FilterEn" DataType="BOOL" Value="0"/>
+<DataValueMember Name="COSOffOnEn" DataType="BOOL" Value="1"/>
+<DataValueMember Name="COSOnOffEn" DataType="BOOL" Value="1"/>
+</Structure>
+</Element>
+<Element Index="[1]">
+<Structure DataType="AB:1756_IB16IF_PtStruct:C:0">
+<DataValueMember Name="FilterEn" DataType="BOOL" Value="0"/>
+<DataValueMember Name="COSOffOnEn" DataType="BOOL" Value="1"/>
+<DataValueMember Name="COSOnOffEn" DataType="BOOL" Value="1"/>
+</Structure>
+</Element>
+<Element Index="[2]">
+<Structure DataType="AB:1756_IB16IF_PtStruct:C:0">
+<DataValueMember Name="FilterEn" DataType="BOOL" Value="0"/>
+<DataValueMember Name="COSOffOnEn" DataType="BOOL" Value="1"/>
+<DataValueMember Name="COSOnOffEn" DataType="BOOL" Value="1"/>
+</Structure>
+</Element>
+<Element Index="[3]">
+<Structure DataType="AB:1756_IB16IF_PtStruct:C:0">
+<DataValueMember Name="FilterEn" DataType="BOOL" Value="0"/>
+<DataValueMember Name="COSOffOnEn" DataType="BOOL" Value="1"/>
+<DataValueMember Name="COSOnOffEn" DataType="BOOL" Value="1"/>
+</Structure>
+</Element>
+<Element Index="[4]">
+<Structure DataType="AB:1756_IB16IF_PtStruct:C:0">
+<DataValueMember Name="FilterEn" DataType="BOOL" Value="0"/>
+<DataValueMember Name="COSOffOnEn" DataType="BOOL" Value="1"/>
+<DataValueMember Name="COSOnOffEn" DataType="BOOL" Value="1"/>
+</Structure>
+</Element>
+<Element Index="[5]">
+<Structure DataType="AB:1756_IB16IF_PtStruct:C:0">
+<DataValueMember Name="FilterEn" DataType="BOOL" Value="0"/>
+<DataValueMember Name="COSOffOnEn" DataType="BOOL" Value="1"/>
+<DataValueMember Name="COSOnOffEn" DataType="BOOL" Value="1"/>
+</Structure>
+</Element>
+<Element Index="[6]">
+<Structure DataType="AB:1756_IB16IF_PtStruct:C:0">
+<DataValueMember Name="FilterEn" DataType="BOOL" Value="0"/>
+<DataValueMember Name="COSOffOnEn" DataType="BOOL" Value="1"/>
+<DataValueMember Name="COSOnOffEn" DataType="BOOL" Value="1"/>
+</Structure>
+</Element>
+<Element Index="[7]">
+<Structure DataType="AB:1756_IB16IF_PtStruct:C:0">
+<DataValueMember Name="FilterEn" DataType="BOOL" Value="0"/>
+<DataValueMember Name="COSOffOnEn" DataType="BOOL" Value="1"/>
+<DataValueMember Name="COSOnOffEn" DataType="BOOL" Value="1"/>
+</Structure>
+</Element>
+<Element Index="[8]">
+<Structure DataType="AB:1756_IB16IF_PtStruct:C:0">
+<DataValueMember Name="FilterEn" DataType="BOOL" Value="0"/>
+<DataValueMember Name="COSOffOnEn" DataType="BOOL" Value="1"/>
+<DataValueMember Name="COSOnOffEn" DataType="BOOL" Value="1"/>
+</Structure>
+</Element>
+<Element Index="[9]">
+<Structure DataType="AB:1756_IB16IF_PtStruct:C:0">
+<DataValueMember Name="FilterEn" DataType="BOOL" Value="0"/>
+<DataValueMember Name="COSOffOnEn" DataType="BOOL" Value="1"/>
+<DataValueMember Name="COSOnOffEn" DataType="BOOL" Value="1"/>
+</Structure>
+</Element>
+<Element Index="[10]">
+<Structure DataType="AB:1756_IB16IF_PtStruct:C:0">
+<DataValueMember Name="FilterEn" DataType="BOOL" Value="0"/>
+<DataValueMember Name="COSOffOnEn" DataType="BOOL" Value="1"/>
+<DataValueMember Name="COSOnOffEn" DataType="BOOL" Value="1"/>
+</Structure>
+</Element>
+<Element Index="[11]">
+<Structure DataType="AB:1756_IB16IF_PtStruct:C:0">
+<DataValueMember Name="FilterEn" DataType="BOOL" Value="0"/>
+<DataValueMember Name="COSOffOnEn" DataType="BOOL" Value="1"/>
+<DataValueMember Name="COSOnOffEn" DataType="BOOL" Value="1"/>
+</Structure>
+</Element>
+<Element Index="[12]">
+<Structure DataType="AB:1756_IB16IF_PtStruct:C:0">
+<DataValueMember Name="FilterEn" DataType="BOOL" Value="0"/>
+<DataValueMember Name="COSOffOnEn" DataType="BOOL" Value="1"/>
+<DataValueMember Name="COSOnOffEn" DataType="BOOL" Value="1"/>
+</Structure>
+</Element>
+<Element Index="[13]">
+<Structure DataType="AB:1756_IB16IF_PtStruct:C:0">
+<DataValueMember Name="FilterEn" DataType="BOOL" Value="0"/>
+<DataValueMember Name="COSOffOnEn" DataType="BOOL" Value="1"/>
+<DataValueMember Name="COSOnOffEn" DataType="BOOL" Value="1"/>
+</Structure>
+</Element>
+<Element Index="[14]">
+<Structure DataType="AB:1756_IB16IF_PtStruct:C:0">
+<DataValueMember Name="FilterEn" DataType="BOOL" Value="0"/>
+<DataValueMember Name="COSOffOnEn" DataType="BOOL" Value="1"/>
+<DataValueMember Name="COSOnOffEn" DataType="BOOL" Value="1"/>
+</Structure>
+</Element>
+<Element Index="[15]">
+<Structure DataType="AB:1756_IB16IF_PtStruct:C:0">
+<DataValueMember Name="FilterEn" DataType="BOOL" Value="0"/>
+<DataValueMember Name="COSOffOnEn" DataType="BOOL" Value="1"/>
+<DataValueMember Name="COSOnOffEn" DataType="BOOL" Value="1"/>
+</Structure>
+</Element>
+</ArrayMember>
+</Structure>
+</Data>
+</ConfigTag>
+<Connections>
+<Connection Name="InputData" RPI="20000" Type="Output" EventID="0" ProgrammaticallySendEventTrigger="false" Unicast="false">
+<InputTag ExternalAccess="Read/Write" OpcUaAccess="None">
+<Comments>
+<Comment Operand=".PT[0].DATA">
+<![CDATA[VGR - B1 = Encoder vertical axis impulse 1]]>
+</Comment>
+<Comment Operand=".PT[1].DATA">
+<![CDATA[VGR - B2 = Encoder vertical axis impulse 2]]>
+</Comment>
+<Comment Operand=".PT[2].DATA">
+<![CDATA[VGR - B3 = Encoder horizontal axis impulse 1]]>
+</Comment>
+<Comment Operand=".PT[3].DATA">
+<![CDATA[VGR - B4 = Encoder horizontal axis impulse 2]]>
+</Comment>
+<Comment Operand=".PT[4].DATA">
+<![CDATA[VGR - B5 = Encoder rotate impulse 1]]>
+</Comment>
+<Comment Operand=".PT[5].DATA">
+<![CDATA[VGR - B6 = Encoder rotate impulse 2]]>
+</Comment>
+</Comments>
+<Data Format="Decorated">
+<Structure DataType="AB:1756_IB16IF:I:0">
+<DataValueMember Name="Fault" DataType="DINT" Radix="Binary" Value="2#0000_0000_0000_0000_0000_0000_0000_0000"/>
+<ArrayMember Name="LocalClockOffset" DataType="DINT" Dimensions="2" Radix="Decimal">
+<Element Index="[0]" Value="991574521"/>
+<Element Index="[1]" Value="410884"/>
+</ArrayMember>
+<ArrayMember Name="OffsetTimestamp" DataType="DINT" Dimensions="2" Radix="Decimal">
+<Element Index="[0]" Value="1883845162"/>
+<Element Index="[1]" Value="410902"/>
+</ArrayMember>
+<ArrayMember Name="GrandMasterClockID" DataType="DINT" Dimensions="2" Radix="Decimal">
+<Element Index="[0]" Value="-6987512"/>
+<Element Index="[1]" Value="-1536236546"/>
+</ArrayMember>
+<ArrayMember Name="Pt" DataType="AB:1756_IB16IF_Struct:I:0" Dimensions="16">
+<Element Index="[0]">
+<Structure DataType="AB:1756_IB16IF_Struct:I:0">
+<DataValueMember Name="Data" DataType="BOOL" Value="1"/>
+<DataValueMember Name="Fault" DataType="BOOL" Value="0"/>
+<DataValueMember Name="NewDataOffOn" DataType="BOOL" Value="0"/>
+<DataValueMember Name="NewDataOnOff" DataType="BOOL" Value="0"/>
+<DataValueMember Name="TimestampDropped" DataType="BOOL" Value="0"/>
+<DataValueMember Name="CIPSyncValid" DataType="BOOL" Value="0"/>
+<DataValueMember Name="CIPSyncTimeout" DataType="BOOL" Value="0"/>
+<DataValueMember Name="InputOverrideStatus" DataType="BOOL" Value="0"/>
+<StructureMember Name="Timestamp" DataType="AB:1756_IB16IF_TimeStruct:I:0">
+<ArrayMember Name="OffOn" DataType="DINT" Dimensions="2" Radix="Decimal">
+<Element Index="[0]" Value="0"/>
+<Element Index="[1]" Value="0"/>
+</ArrayMember>
+<ArrayMember Name="OnOff" DataType="DINT" Dimensions="2" Radix="Decimal">
+<Element Index="[0]" Value="0"/>
+<Element Index="[1]" Value="0"/>
+</ArrayMember>
+</StructureMember>
+</Structure>
+</Element>
+<Element Index="[1]">
+<Structure DataType="AB:1756_IB16IF_Struct:I:0">
+<DataValueMember Name="Data" DataType="BOOL" Value="1"/>
+<DataValueMember Name="Fault" DataType="BOOL" Value="0"/>
+<DataValueMember Name="NewDataOffOn" DataType="BOOL" Value="0"/>
+<DataValueMember Name="NewDataOnOff" DataType="BOOL" Value="0"/>
+<DataValueMember Name="TimestampDropped" DataType="BOOL" Value="0"/>
+<DataValueMember Name="CIPSyncValid" DataType="BOOL" Value="0"/>
+<DataValueMember Name="CIPSyncTimeout" DataType="BOOL" Value="0"/>
+<DataValueMember Name="InputOverrideStatus" DataType="BOOL" Value="0"/>
+<StructureMember Name="Timestamp" DataType="AB:1756_IB16IF_TimeStruct:I:0">
+<ArrayMember Name="OffOn" DataType="DINT" Dimensions="2" Radix="Decimal">
+<Element Index="[0]" Value="0"/>
+<Element Index="[1]" Value="0"/>
+</ArrayMember>
+<ArrayMember Name="OnOff" DataType="DINT" Dimensions="2" Radix="Decimal">
+<Element Index="[0]" Value="0"/>
+<Element Index="[1]" Value="0"/>
+</ArrayMember>
+</StructureMember>
+</Structure>
+</Element>
+<Element Index="[2]">
+<Structure DataType="AB:1756_IB16IF_Struct:I:0">
+<DataValueMember Name="Data" DataType="BOOL" Value="1"/>
+<DataValueMember Name="Fault" DataType="BOOL" Value="0"/>
+<DataValueMember Name="NewDataOffOn" DataType="BOOL" Value="0"/>
+<DataValueMember Name="NewDataOnOff" DataType="BOOL" Value="0"/>
+<DataValueMember Name="TimestampDropped" DataType="BOOL" Value="0"/>
+<DataValueMember Name="CIPSyncValid" DataType="BOOL" Value="0"/>
+<DataValueMember Name="CIPSyncTimeout" DataType="BOOL" Value="0"/>
+<DataValueMember Name="InputOverrideStatus" DataType="BOOL" Value="0"/>
+<StructureMember Name="Timestamp" DataType="AB:1756_IB16IF_TimeStruct:I:0">
+<ArrayMember Name="OffOn" DataType="DINT" Dimensions="2" Radix="Decimal">
+<Element Index="[0]" Value="0"/>
+<Element Index="[1]" Value="0"/>
+</ArrayMember>
+<ArrayMember Name="OnOff" DataType="DINT" Dimensions="2" Radix="Decimal">
+<Element Index="[0]" Value="0"/>
+<Element Index="[1]" Value="0"/>
+</ArrayMember>
+</StructureMember>
+</Structure>
+</Element>
+<Element Index="[3]">
+<Structure DataType="AB:1756_IB16IF_Struct:I:0">
+<DataValueMember Name="Data" DataType="BOOL" Value="1"/>
+<DataValueMember Name="Fault" DataType="BOOL" Value="0"/>
+<DataValueMember Name="NewDataOffOn" DataType="BOOL" Value="0"/>
+<DataValueMember Name="NewDataOnOff" DataType="BOOL" Value="0"/>
+<DataValueMember Name="TimestampDropped" DataType="BOOL" Value="0"/>
+<DataValueMember Name="CIPSyncValid" DataType="BOOL" Value="0"/>
+<DataValueMember Name="CIPSyncTimeout" DataType="BOOL" Value="0"/>
+<DataValueMember Name="InputOverrideStatus" DataType="BOOL" Value="0"/>
+<StructureMember Name="Timestamp" DataType="AB:1756_IB16IF_TimeStruct:I:0">
+<ArrayMember Name="OffOn" DataType="DINT" Dimensions="2" Radix="Decimal">
+<Element Index="[0]" Value="0"/>
+<Element Index="[1]" Value="0"/>
+</ArrayMember>
+<ArrayMember Name="OnOff" DataType="DINT" Dimensions="2" Radix="Decimal">
+<Element Index="[0]" Value="0"/>
+<Element Index="[1]" Value="0"/>
+</ArrayMember>
+</StructureMember>
+</Structure>
+</Element>
+<Element Index="[4]">
+<Structure DataType="AB:1756_IB16IF_Struct:I:0">
+<DataValueMember Name="Data" DataType="BOOL" Value="1"/>
+<DataValueMember Name="Fault" DataType="BOOL" Value="0"/>
+<DataValueMember Name="NewDataOffOn" DataType="BOOL" Value="0"/>
+<DataValueMember Name="NewDataOnOff" DataType="BOOL" Value="0"/>
+<DataValueMember Name="TimestampDropped" DataType="BOOL" Value="0"/>
+<DataValueMember Name="CIPSyncValid" DataType="BOOL" Value="0"/>
+<DataValueMember Name="CIPSyncTimeout" DataType="BOOL" Value="0"/>
+<DataValueMember Name="InputOverrideStatus" DataType="BOOL" Value="0"/>
+<StructureMember Name="Timestamp" DataType="AB:1756_IB16IF_TimeStruct:I:0">
+<ArrayMember Name="OffOn" DataType="DINT" Dimensions="2" Radix="Decimal">
+<Element Index="[0]" Value="0"/>
+<Element Index="[1]" Value="0"/>
+</ArrayMember>
+<ArrayMember Name="OnOff" DataType="DINT" Dimensions="2" Radix="Decimal">
+<Element Index="[0]" Value="0"/>
+<Element Index="[1]" Value="0"/>
+</ArrayMember>
+</StructureMember>
+</Structure>
+</Element>
+<Element Index="[5]">
+<Structure DataType="AB:1756_IB16IF_Struct:I:0">
+<DataValueMember Name="Data" DataType="BOOL" Value="1"/>
+<DataValueMember Name="Fault" DataType="BOOL" Value="0"/>
+<DataValueMember Name="NewDataOffOn" DataType="BOOL" Value="0"/>
+<DataValueMember Name="NewDataOnOff" DataType="BOOL" Value="0"/>
+<DataValueMember Name="TimestampDropped" DataType="BOOL" Value="0"/>
+<DataValueMember Name="CIPSyncValid" DataType="BOOL" Value="0"/>
+<DataValueMember Name="CIPSyncTimeout" DataType="BOOL" Value="0"/>
+<DataValueMember Name="InputOverrideStatus" DataType="BOOL" Value="0"/>
+<StructureMember Name="Timestamp" DataType="AB:1756_IB16IF_TimeStruct:I:0">
+<ArrayMember Name="OffOn" DataType="DINT" Dimensions="2" Radix="Decimal">
+<Element Index="[0]" Value="0"/>
+<Element Index="[1]" Value="0"/>
+</ArrayMember>
+<ArrayMember Name="OnOff" DataType="DINT" Dimensions="2" Radix="Decimal">
+<Element Index="[0]" Value="0"/>
+<Element Index="[1]" Value="0"/>
+</ArrayMember>
+</StructureMember>
+</Structure>
+</Element>
+<Element Index="[6]">
+<Structure DataType="AB:1756_IB16IF_Struct:I:0">
+<DataValueMember Name="Data" DataType="BOOL" Value="0"/>
+<DataValueMember Name="Fault" DataType="BOOL" Value="0"/>
+<DataValueMember Name="NewDataOffOn" DataType="BOOL" Value="0"/>
+<DataValueMember Name="NewDataOnOff" DataType="BOOL" Value="0"/>
+<DataValueMember Name="TimestampDropped" DataType="BOOL" Value="0"/>
+<DataValueMember Name="CIPSyncValid" DataType="BOOL" Value="0"/>
+<DataValueMember Name="CIPSyncTimeout" DataType="BOOL" Value="0"/>
+<DataValueMember Name="InputOverrideStatus" DataType="BOOL" Value="0"/>
+<StructureMember Name="Timestamp" DataType="AB:1756_IB16IF_TimeStruct:I:0">
+<ArrayMember Name="OffOn" DataType="DINT" Dimensions="2" Radix="Decimal">
+<Element Index="[0]" Value="0"/>
+<Element Index="[1]" Value="0"/>
+</ArrayMember>
+<ArrayMember Name="OnOff" DataType="DINT" Dimensions="2" Radix="Decimal">
+<Element Index="[0]" Value="0"/>
+<Element Index="[1]" Value="0"/>
+</ArrayMember>
+</StructureMember>
+</Structure>
+</Element>
+<Element Index="[7]">
+<Structure DataType="AB:1756_IB16IF_Struct:I:0">
+<DataValueMember Name="Data" DataType="BOOL" Value="0"/>
+<DataValueMember Name="Fault" DataType="BOOL" Value="0"/>
+<DataValueMember Name="NewDataOffOn" DataType="BOOL" Value="0"/>
+<DataValueMember Name="NewDataOnOff" DataType="BOOL" Value="0"/>
+<DataValueMember Name="TimestampDropped" DataType="BOOL" Value="0"/>
+<DataValueMember Name="CIPSyncValid" DataType="BOOL" Value="0"/>
+<DataValueMember Name="CIPSyncTimeout" DataType="BOOL" Value="0"/>
+<DataValueMember Name="InputOverrideStatus" DataType="BOOL" Value="0"/>
+<StructureMember Name="Timestamp" DataType="AB:1756_IB16IF_TimeStruct:I:0">
+<ArrayMember Name="OffOn" DataType="DINT" Dimensions="2" Radix="Decimal">
+<Element Index="[0]" Value="0"/>
+<Element Index="[1]" Value="0"/>
+</ArrayMember>
+<ArrayMember Name="OnOff" DataType="DINT" Dimensions="2" Radix="Decimal">
+<Element Index="[0]" Value="0"/>
+<Element Index="[1]" Value="0"/>
+</ArrayMember>
+</StructureMember>
+</Structure>
+</Element>
+<Element Index="[8]">
+<Structure DataType="AB:1756_IB16IF_Struct:I:0">
+<DataValueMember Name="Data" DataType="BOOL" Value="0"/>
+<DataValueMember Name="Fault" DataType="BOOL" Value="0"/>
+<DataValueMember Name="NewDataOffOn" DataType="BOOL" Value="0"/>
+<DataValueMember Name="NewDataOnOff" DataType="BOOL" Value="0"/>
+<DataValueMember Name="TimestampDropped" DataType="BOOL" Value="0"/>
+<DataValueMember Name="CIPSyncValid" DataType="BOOL" Value="0"/>
+<DataValueMember Name="CIPSyncTimeout" DataType="BOOL" Value="0"/>
+<DataValueMember Name="InputOverrideStatus" DataType="BOOL" Value="0"/>
+<StructureMember Name="Timestamp" DataType="AB:1756_IB16IF_TimeStruct:I:0">
+<ArrayMember Name="OffOn" DataType="DINT" Dimensions="2" Radix="Decimal">
+<Element Index="[0]" Value="0"/>
+<Element Index="[1]" Value="0"/>
+</ArrayMember>
+<ArrayMember Name="OnOff" DataType="DINT" Dimensions="2" Radix="Decimal">
+<Element Index="[0]" Value="0"/>
+<Element Index="[1]" Value="0"/>
+</ArrayMember>
+</StructureMember>
+</Structure>
+</Element>
+<Element Index="[9]">
+<Structure DataType="AB:1756_IB16IF_Struct:I:0">
+<DataValueMember Name="Data" DataType="BOOL" Value="0"/>
+<DataValueMember Name="Fault" DataType="BOOL" Value="0"/>
+<DataValueMember Name="NewDataOffOn" DataType="BOOL" Value="0"/>
+<DataValueMember Name="NewDataOnOff" DataType="BOOL" Value="0"/>
+<DataValueMember Name="TimestampDropped" DataType="BOOL" Value="0"/>
+<DataValueMember Name="CIPSyncValid" DataType="BOOL" Value="0"/>
+<DataValueMember Name="CIPSyncTimeout" DataType="BOOL" Value="0"/>
+<DataValueMember Name="InputOverrideStatus" DataType="BOOL" Value="0"/>
+<StructureMember Name="Timestamp" DataType="AB:1756_IB16IF_TimeStruct:I:0">
+<ArrayMember Name="OffOn" DataType="DINT" Dimensions="2" Radix="Decimal">
+<Element Index="[0]" Value="0"/>
+<Element Index="[1]" Value="0"/>
+</ArrayMember>
+<ArrayMember Name="OnOff" DataType="DINT" Dimensions="2" Radix="Decimal">
+<Element Index="[0]" Value="0"/>
+<Element Index="[1]" Value="0"/>
+</ArrayMember>
+</StructureMember>
+</Structure>
+</Element>
+<Element Index="[10]">
+<Structure DataType="AB:1756_IB16IF_Struct:I:0">
+<DataValueMember Name="Data" DataType="BOOL" Value="0"/>
+<DataValueMember Name="Fault" DataType="BOOL" Value="0"/>
+<DataValueMember Name="NewDataOffOn" DataType="BOOL" Value="0"/>
+<DataValueMember Name="NewDataOnOff" DataType="BOOL" Value="0"/>
+<DataValueMember Name="TimestampDropped" DataType="BOOL" Value="0"/>
+<DataValueMember Name="CIPSyncValid" DataType="BOOL" Value="0"/>
+<DataValueMember Name="CIPSyncTimeout" DataType="BOOL" Value="0"/>
+<DataValueMember Name="InputOverrideStatus" DataType="BOOL" Value="0"/>
+<StructureMember Name="Timestamp" DataType="AB:1756_IB16IF_TimeStruct:I:0">
+<ArrayMember Name="OffOn" DataType="DINT" Dimensions="2" Radix="Decimal">
+<Element Index="[0]" Value="0"/>
+<Element Index="[1]" Value="0"/>
+</ArrayMember>
+<ArrayMember Name="OnOff" DataType="DINT" Dimensions="2" Radix="Decimal">
+<Element Index="[0]" Value="0"/>
+<Element Index="[1]" Value="0"/>
+</ArrayMember>
+</StructureMember>
+</Structure>
+</Element>
+<Element Index="[11]">
+<Structure DataType="AB:1756_IB16IF_Struct:I:0">
+<DataValueMember Name="Data" DataType="BOOL" Value="0"/>
+<DataValueMember Name="Fault" DataType="BOOL" Value="0"/>
+<DataValueMember Name="NewDataOffOn" DataType="BOOL" Value="0"/>
+<DataValueMember Name="NewDataOnOff" DataType="BOOL" Value="0"/>
+<DataValueMember Name="TimestampDropped" DataType="BOOL" Value="0"/>
+<DataValueMember Name="CIPSyncValid" DataType="BOOL" Value="0"/>
+<DataValueMember Name="CIPSyncTimeout" DataType="BOOL" Value="0"/>
+<DataValueMember Name="InputOverrideStatus" DataType="BOOL" Value="0"/>
+<StructureMember Name="Timestamp" DataType="AB:1756_IB16IF_TimeStruct:I:0">
+<ArrayMember Name="OffOn" DataType="DINT" Dimensions="2" Radix="Decimal">
+<Element Index="[0]" Value="0"/>
+<Element Index="[1]" Value="0"/>
+</ArrayMember>
+<ArrayMember Name="OnOff" DataType="DINT" Dimensions="2" Radix="Decimal">
+<Element Index="[0]" Value="0"/>
+<Element Index="[1]" Value="0"/>
+</ArrayMember>
+</StructureMember>
+</Structure>
+</Element>
+<Element Index="[12]">
+<Structure DataType="AB:1756_IB16IF_Struct:I:0">
+<DataValueMember Name="Data" DataType="BOOL" Value="0"/>
+<DataValueMember Name="Fault" DataType="BOOL" Value="0"/>
+<DataValueMember Name="NewDataOffOn" DataType="BOOL" Value="0"/>
+<DataValueMember Name="NewDataOnOff" DataType="BOOL" Value="0"/>
+<DataValueMember Name="TimestampDropped" DataType="BOOL" Value="0"/>
+<DataValueMember Name="CIPSyncValid" DataType="BOOL" Value="0"/>
+<DataValueMember Name="CIPSyncTimeout" DataType="BOOL" Value="0"/>
+<DataValueMember Name="InputOverrideStatus" DataType="BOOL" Value="0"/>
+<StructureMember Name="Timestamp" DataType="AB:1756_IB16IF_TimeStruct:I:0">
+<ArrayMember Name="OffOn" DataType="DINT" Dimensions="2" Radix="Decimal">
+<Element Index="[0]" Value="0"/>
+<Element Index="[1]" Value="0"/>
+</ArrayMember>
+<ArrayMember Name="OnOff" DataType="DINT" Dimensions="2" Radix="Decimal">
+<Element Index="[0]" Value="0"/>
+<Element Index="[1]" Value="0"/>
+</ArrayMember>
+</StructureMember>
+</Structure>
+</Element>
+<Element Index="[13]">
+<Structure DataType="AB:1756_IB16IF_Struct:I:0">
+<DataValueMember Name="Data" DataType="BOOL" Value="0"/>
+<DataValueMember Name="Fault" DataType="BOOL" Value="0"/>
+<DataValueMember Name="NewDataOffOn" DataType="BOOL" Value="0"/>
+<DataValueMember Name="NewDataOnOff" DataType="BOOL" Value="0"/>
+<DataValueMember Name="TimestampDropped" DataType="BOOL" Value="0"/>
+<DataValueMember Name="CIPSyncValid" DataType="BOOL" Value="0"/>
+<DataValueMember Name="CIPSyncTimeout" DataType="BOOL" Value="0"/>
+<DataValueMember Name="InputOverrideStatus" DataType="BOOL" Value="0"/>
+<StructureMember Name="Timestamp" DataType="AB:1756_IB16IF_TimeStruct:I:0">
+<ArrayMember Name="OffOn" DataType="DINT" Dimensions="2" Radix="Decimal">
+<Element Index="[0]" Value="0"/>
+<Element Index="[1]" Value="0"/>
+</ArrayMember>
+<ArrayMember Name="OnOff" DataType="DINT" Dimensions="2" Radix="Decimal">
+<Element Index="[0]" Value="0"/>
+<Element Index="[1]" Value="0"/>
+</ArrayMember>
+</StructureMember>
+</Structure>
+</Element>
+<Element Index="[14]">
+<Structure DataType="AB:1756_IB16IF_Struct:I:0">
+<DataValueMember Name="Data" DataType="BOOL" Value="0"/>
+<DataValueMember Name="Fault" DataType="BOOL" Value="0"/>
+<DataValueMember Name="NewDataOffOn" DataType="BOOL" Value="0"/>
+<DataValueMember Name="NewDataOnOff" DataType="BOOL" Value="0"/>
+<DataValueMember Name="TimestampDropped" DataType="BOOL" Value="0"/>
+<DataValueMember Name="CIPSyncValid" DataType="BOOL" Value="0"/>
+<DataValueMember Name="CIPSyncTimeout" DataType="BOOL" Value="0"/>
+<DataValueMember Name="InputOverrideStatus" DataType="BOOL" Value="0"/>
+<StructureMember Name="Timestamp" DataType="AB:1756_IB16IF_TimeStruct:I:0">
+<ArrayMember Name="OffOn" DataType="DINT" Dimensions="2" Radix="Decimal">
+<Element Index="[0]" Value="0"/>
+<Element Index="[1]" Value="0"/>
+</ArrayMember>
+<ArrayMember Name="OnOff" DataType="DINT" Dimensions="2" Radix="Decimal">
+<Element Index="[0]" Value="0"/>
+<Element Index="[1]" Value="0"/>
+</ArrayMember>
+</StructureMember>
+</Structure>
+</Element>
+<Element Index="[15]">
+<Structure DataType="AB:1756_IB16IF_Struct:I:0">
+<DataValueMember Name="Data" DataType="BOOL" Value="0"/>
+<DataValueMember Name="Fault" DataType="BOOL" Value="0"/>
+<DataValueMember Name="NewDataOffOn" DataType="BOOL" Value="0"/>
+<DataValueMember Name="NewDataOnOff" DataType="BOOL" Value="0"/>
+<DataValueMember Name="TimestampDropped" DataType="BOOL" Value="0"/>
+<DataValueMember Name="CIPSyncValid" DataType="BOOL" Value="0"/>
+<DataValueMember Name="CIPSyncTimeout" DataType="BOOL" Value="0"/>
+<DataValueMember Name="InputOverrideStatus" DataType="BOOL" Value="0"/>
+<StructureMember Name="Timestamp" DataType="AB:1756_IB16IF_TimeStruct:I:0">
+<ArrayMember Name="OffOn" DataType="DINT" Dimensions="2" Radix="Decimal">
+<Element Index="[0]" Value="0"/>
+<Element Index="[1]" Value="0"/>
+</ArrayMember>
+<ArrayMember Name="OnOff" DataType="DINT" Dimensions="2" Radix="Decimal">
+<Element Index="[0]" Value="0"/>
+<Element Index="[1]" Value="0"/>
+</ArrayMember>
+</StructureMember>
+</Structure>
+</Element>
+</ArrayMember>
+</Structure>
+</Data>
+</InputTag>
+<OutputTag ExternalAccess="Read/Write" OpcUaAccess="None">
+<Data Format="L5K">
+<![CDATA[[0,[[0],[0],[0],[0],[0],[0],[0],[0],[0],[0],[0],[0],[0],[0],[0],[0]]]]]>
+</Data>
+<Data Format="Decorated">
+<Structure DataType="AB:1756_IB16IF:O:0">
+<DataValueMember Name="ResetTimestamps" DataType="BOOL" Value="0"/>
+<ArrayMember Name="Pt" DataType="AB:1756_IB16IF_OPtStruct:O:0" Dimensions="16">
+<Element Index="[0]">
+<Structure DataType="AB:1756_IB16IF_OPtStruct:O:0">
+<DataValueMember Name="NewDataOffOnAck" DataType="BOOL" Value="0"/>
+<DataValueMember Name="NewDataOnOffAck" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DataOverrideEn" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DataOverrideValue" DataType="BOOL" Value="0"/>
+</Structure>
+</Element>
+<Element Index="[1]">
+<Structure DataType="AB:1756_IB16IF_OPtStruct:O:0">
+<DataValueMember Name="NewDataOffOnAck" DataType="BOOL" Value="0"/>
+<DataValueMember Name="NewDataOnOffAck" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DataOverrideEn" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DataOverrideValue" DataType="BOOL" Value="0"/>
+</Structure>
+</Element>
+<Element Index="[2]">
+<Structure DataType="AB:1756_IB16IF_OPtStruct:O:0">
+<DataValueMember Name="NewDataOffOnAck" DataType="BOOL" Value="0"/>
+<DataValueMember Name="NewDataOnOffAck" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DataOverrideEn" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DataOverrideValue" DataType="BOOL" Value="0"/>
+</Structure>
+</Element>
+<Element Index="[3]">
+<Structure DataType="AB:1756_IB16IF_OPtStruct:O:0">
+<DataValueMember Name="NewDataOffOnAck" DataType="BOOL" Value="0"/>
+<DataValueMember Name="NewDataOnOffAck" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DataOverrideEn" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DataOverrideValue" DataType="BOOL" Value="0"/>
+</Structure>
+</Element>
+<Element Index="[4]">
+<Structure DataType="AB:1756_IB16IF_OPtStruct:O:0">
+<DataValueMember Name="NewDataOffOnAck" DataType="BOOL" Value="0"/>
+<DataValueMember Name="NewDataOnOffAck" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DataOverrideEn" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DataOverrideValue" DataType="BOOL" Value="0"/>
+</Structure>
+</Element>
+<Element Index="[5]">
+<Structure DataType="AB:1756_IB16IF_OPtStruct:O:0">
+<DataValueMember Name="NewDataOffOnAck" DataType="BOOL" Value="0"/>
+<DataValueMember Name="NewDataOnOffAck" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DataOverrideEn" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DataOverrideValue" DataType="BOOL" Value="0"/>
+</Structure>
+</Element>
+<Element Index="[6]">
+<Structure DataType="AB:1756_IB16IF_OPtStruct:O:0">
+<DataValueMember Name="NewDataOffOnAck" DataType="BOOL" Value="0"/>
+<DataValueMember Name="NewDataOnOffAck" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DataOverrideEn" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DataOverrideValue" DataType="BOOL" Value="0"/>
+</Structure>
+</Element>
+<Element Index="[7]">
+<Structure DataType="AB:1756_IB16IF_OPtStruct:O:0">
+<DataValueMember Name="NewDataOffOnAck" DataType="BOOL" Value="0"/>
+<DataValueMember Name="NewDataOnOffAck" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DataOverrideEn" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DataOverrideValue" DataType="BOOL" Value="0"/>
+</Structure>
+</Element>
+<Element Index="[8]">
+<Structure DataType="AB:1756_IB16IF_OPtStruct:O:0">
+<DataValueMember Name="NewDataOffOnAck" DataType="BOOL" Value="0"/>
+<DataValueMember Name="NewDataOnOffAck" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DataOverrideEn" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DataOverrideValue" DataType="BOOL" Value="0"/>
+</Structure>
+</Element>
+<Element Index="[9]">
+<Structure DataType="AB:1756_IB16IF_OPtStruct:O:0">
+<DataValueMember Name="NewDataOffOnAck" DataType="BOOL" Value="0"/>
+<DataValueMember Name="NewDataOnOffAck" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DataOverrideEn" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DataOverrideValue" DataType="BOOL" Value="0"/>
+</Structure>
+</Element>
+<Element Index="[10]">
+<Structure DataType="AB:1756_IB16IF_OPtStruct:O:0">
+<DataValueMember Name="NewDataOffOnAck" DataType="BOOL" Value="0"/>
+<DataValueMember Name="NewDataOnOffAck" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DataOverrideEn" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DataOverrideValue" DataType="BOOL" Value="0"/>
+</Structure>
+</Element>
+<Element Index="[11]">
+<Structure DataType="AB:1756_IB16IF_OPtStruct:O:0">
+<DataValueMember Name="NewDataOffOnAck" DataType="BOOL" Value="0"/>
+<DataValueMember Name="NewDataOnOffAck" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DataOverrideEn" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DataOverrideValue" DataType="BOOL" Value="0"/>
+</Structure>
+</Element>
+<Element Index="[12]">
+<Structure DataType="AB:1756_IB16IF_OPtStruct:O:0">
+<DataValueMember Name="NewDataOffOnAck" DataType="BOOL" Value="0"/>
+<DataValueMember Name="NewDataOnOffAck" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DataOverrideEn" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DataOverrideValue" DataType="BOOL" Value="0"/>
+</Structure>
+</Element>
+<Element Index="[13]">
+<Structure DataType="AB:1756_IB16IF_OPtStruct:O:0">
+<DataValueMember Name="NewDataOffOnAck" DataType="BOOL" Value="0"/>
+<DataValueMember Name="NewDataOnOffAck" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DataOverrideEn" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DataOverrideValue" DataType="BOOL" Value="0"/>
+</Structure>
+</Element>
+<Element Index="[14]">
+<Structure DataType="AB:1756_IB16IF_OPtStruct:O:0">
+<DataValueMember Name="NewDataOffOnAck" DataType="BOOL" Value="0"/>
+<DataValueMember Name="NewDataOnOffAck" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DataOverrideEn" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DataOverrideValue" DataType="BOOL" Value="0"/>
+</Structure>
+</Element>
+<Element Index="[15]">
+<Structure DataType="AB:1756_IB16IF_OPtStruct:O:0">
+<DataValueMember Name="NewDataOffOnAck" DataType="BOOL" Value="0"/>
+<DataValueMember Name="NewDataOnOffAck" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DataOverrideEn" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DataOverrideValue" DataType="BOOL" Value="0"/>
+</Structure>
+</Element>
+</ArrayMember>
+</Structure>
+</Data>
+</OutputTag>
+</Connection>
+</Connections>
+</Communications>
+<ExtendedProperties>
+<public><Vendor>Rockwell Automation/Allen-Bradley</Vendor><CatNum>1756-IB16IF</CatNum><ConfigID>100</ConfigID><ADDAVersion>1</ADDAVersion></public>
+</ExtendedProperties>
+</Module>
+<Module Name="Slot_2_Input" CatalogNumber="1756-IB16I" Vendor="1" ProductType="7" ProductCode="6" Major="2" Minor="2" ParentModule="Local" ParentModPortId="1" Inhibited="false" MajorFault="false"
+ DataExchangeId="{BBD513A5-F65E-4221-9825-2BD636F5E37E}">
+<EKey State="Disabled"/>
+<Ports>
+<Port Id="1" Address="2" Type="ICP" Upstream="true"/>
+</Ports>
+<Communications CommMethod="536870913">
+<ConfigTag ConfigSize="24" ExternalAccess="Read/Write" OpcUaAccess="None">
+<Data Format="L5K">
+<![CDATA[[28,16,0,0,0,0,1,1,1,1,1,1,1,1,-1,-1]]]>
+</Data>
+<Data Format="Decorated">
+<Structure DataType="AB:1756_DI:C:1">
+<DataValueMember Name="FilterOffOn_0_7" DataType="SINT" Radix="Decimal" Value="1"/>
+<DataValueMember Name="FilterOnOff_0_7" DataType="SINT" Radix="Decimal" Value="1"/>
+<DataValueMember Name="FilterOffOn_8_15" DataType="SINT" Radix="Decimal" Value="1"/>
+<DataValueMember Name="FilterOnOff_8_15" DataType="SINT" Radix="Decimal" Value="1"/>
+<DataValueMember Name="FilterOffOn_16_23" DataType="SINT" Radix="Decimal" Value="1"/>
+<DataValueMember Name="FilterOnOff_16_23" DataType="SINT" Radix="Decimal" Value="1"/>
+<DataValueMember Name="FilterOffOn_24_31" DataType="SINT" Radix="Decimal" Value="1"/>
+<DataValueMember Name="FilterOnOff_24_31" DataType="SINT" Radix="Decimal" Value="1"/>
+<DataValueMember Name="COSOnOffEn" DataType="DINT" Radix="Binary" Value="2#1111_1111_1111_1111_1111_1111_1111_1111"/>
+<DataValueMember Name="COSOffOnEn" DataType="DINT" Radix="Binary" Value="2#1111_1111_1111_1111_1111_1111_1111_1111"/>
+</Structure>
+</Data>
+</ConfigTag>
+<Connections>
+<Connection Name="StandardInput" RPI="20000" Type="Input" EventID="0" ProgrammaticallySendEventTrigger="false">
+<InputTag ExternalAccess="Read/Write" OpcUaAccess="None">
+<Comments>
+<Comment Operand=".DATA.0">
+<![CDATA[HBW - I1 = Reference switch horizontal axis]]>
+</Comment>
+<Comment Operand=".DATA.1">
+<![CDATA[HBW - I2 = Light barrier inside]]>
+</Comment>
+<Comment Operand=".DATA.2">
+<![CDATA[HBW - I3 = Light barrier outside]]>
+</Comment>
+<Comment Operand=".DATA.3">
+<![CDATA[HBW - I4 = Reference switch vertical axis]]>
+</Comment>
+<Comment Operand=".DATA.4">
+<![CDATA[HBW - A1 = Trail sensor (signal 1, lower)]]>
+</Comment>
+<Comment Operand=".DATA.5">
+<![CDATA[HBW - A2 = Trail sensor (signal 2, upper)]]>
+</Comment>
+<Comment Operand=".DATA.6">
+<![CDATA[HBW - B3 = Encoder vertical axis impulse 1]]>
+</Comment>
+<Comment Operand=".DATA.7">
+<![CDATA[HBW - B4 = Encoder vertical axis impulse 2]]>
+</Comment>
+<Comment Operand=".DATA.8">
+<![CDATA[HBW - B1 = Encoder horizontal axis impulse 1]]>
+</Comment>
+<Comment Operand=".DATA.9">
+<![CDATA[HBW - B2 = Encoder horizontal axis impulse 2]]>
+</Comment>
+<Comment Operand=".DATA.10">
+<![CDATA[HBW - I5 = Reference switch cantilever front]]>
+</Comment>
+<Comment Operand=".DATA.11">
+<![CDATA[HBW - I6 = Reference switch cantilever back]]>
+</Comment>
+<Comment Operand=".DATA.12">
+<![CDATA[MPO - I1 = Reference switch turn-table (position vacuum)]]>
+</Comment>
+<Comment Operand=".DATA.13">
+<![CDATA[MPO - I2 = Reference switch turn-table (position belt)]]>
+</Comment>
+<Comment Operand=".DATA.14">
+<![CDATA[MPO - I3 = Light barrier end of conveyor belt]]>
+</Comment>
+<Comment Operand=".DATA.15">
+<![CDATA[MPO - I4 = Reference switch turn-table (position saw)]]>
+</Comment>
+</Comments>
+<Data Format="Decorated">
+<Structure DataType="AB:1756_DI:I:0">
+<DataValueMember Name="Fault" DataType="DINT" Radix="Binary" Value="2#0000_0000_0000_0000_0000_0000_0000_0000"/>
+<DataValueMember Name="Data" DataType="DINT" Radix="Binary" Value="2#0000_0000_0000_0000_0110_1000_1111_1111"/>
+</Structure>
+</Data>
+</InputTag>
+</Connection>
+</Connections>
+</Communications>
+<ExtendedProperties>
+<public><ConfigID>111</ConfigID><CatNum>1756-IB16I</CatNum></public>
+</ExtendedProperties>
+</Module>
+<Module Name="Slot_3_Input" CatalogNumber="1756-IB16I" Vendor="1" ProductType="7" ProductCode="6" Major="2" Minor="2" ParentModule="Local" ParentModPortId="1" Inhibited="false" MajorFault="false"
+ DataExchangeId="{305D163E-30AD-4288-8DFA-77F60F5E78C0}">
+<EKey State="Disabled"/>
+<Ports>
+<Port Id="1" Address="3" Type="ICP" Upstream="true"/>
+</Ports>
+<Communications CommMethod="536870913">
+<ConfigTag ConfigSize="24" ExternalAccess="Read/Write" OpcUaAccess="None">
+<Data Format="L5K">
+<![CDATA[[28,16,0,0,0,0,1,1,1,1,1,1,1,1,-1,-1]]]>
+</Data>
+<Data Format="Decorated">
+<Structure DataType="AB:1756_DI:C:1">
+<DataValueMember Name="FilterOffOn_0_7" DataType="SINT" Radix="Decimal" Value="1"/>
+<DataValueMember Name="FilterOnOff_0_7" DataType="SINT" Radix="Decimal" Value="1"/>
+<DataValueMember Name="FilterOffOn_8_15" DataType="SINT" Radix="Decimal" Value="1"/>
+<DataValueMember Name="FilterOnOff_8_15" DataType="SINT" Radix="Decimal" Value="1"/>
+<DataValueMember Name="FilterOffOn_16_23" DataType="SINT" Radix="Decimal" Value="1"/>
+<DataValueMember Name="FilterOnOff_16_23" DataType="SINT" Radix="Decimal" Value="1"/>
+<DataValueMember Name="FilterOffOn_24_31" DataType="SINT" Radix="Decimal" Value="1"/>
+<DataValueMember Name="FilterOnOff_24_31" DataType="SINT" Radix="Decimal" Value="1"/>
+<DataValueMember Name="COSOnOffEn" DataType="DINT" Radix="Binary" Value="2#1111_1111_1111_1111_1111_1111_1111_1111"/>
+<DataValueMember Name="COSOffOnEn" DataType="DINT" Radix="Binary" Value="2#1111_1111_1111_1111_1111_1111_1111_1111"/>
+</Structure>
+</Data>
+</ConfigTag>
+<Connections>
+<Connection Name="StandardInput" RPI="20000" Type="Input" EventID="0" ProgrammaticallySendEventTrigger="false">
+<InputTag ExternalAccess="Read/Write" OpcUaAccess="None">
+<Comments>
+<Comment Operand=".DATA.0">
+<![CDATA[MPO - I5 = Reference switch vacuum (position turn-table)]]>
+</Comment>
+<Comment Operand=".DATA.1">
+<![CDATA[MPO - I6 = Reference switch oven feeder inside]]>
+</Comment>
+<Comment Operand=".DATA.2">
+<![CDATA[MPO - I7 = Reference switch oven feeder outside]]>
+</Comment>
+<Comment Operand=".DATA.3">
+<![CDATA[MPO - I8 = Reference switch vacuum (position oven)]]>
+</Comment>
+<Comment Operand=".DATA.4">
+<![CDATA[MPO - I9 = Light barrier oven]]>
+</Comment>
+<Comment Operand=".DATA.5">
+<![CDATA[VGR - I1 = Reference switch vertical axis]]>
+</Comment>
+<Comment Operand=".DATA.6">
+<![CDATA[VGR - I2 = Reference switch horizontal axis]]>
+</Comment>
+<Comment Operand=".DATA.7">
+<![CDATA[VGR - I3 = Reference switch rotate]]>
+</Comment>
+<Comment Operand=".DATA.8">
+<![CDATA[SLD - I1 = Pulse counter]]>
+</Comment>
+<Comment Operand=".DATA.9">
+<![CDATA[SLD - I2 = Light barrier inlet]]>
+</Comment>
+<Comment Operand=".DATA.10">
+<![CDATA[SLD - I3 = Light barrier behind color sensor]]>
+</Comment>
+<Comment Operand=".DATA.11">
+<![CDATA[SLD - I5 = Light barrier white]]>
+</Comment>
+<Comment Operand=".DATA.12">
+<![CDATA[SLD - I6 = Light barrier red]]>
+</Comment>
+<Comment Operand=".DATA.13">
+<![CDATA[SLD - I7 = Light barrier blue]]>
+</Comment>
+<Comment Operand=".DATA.14">
+<![CDATA[SSC - I1 = Reference switch vertical axis]]>
+</Comment>
+<Comment Operand=".DATA.15">
+<![CDATA[SSC - I2 = Reference switch horizontal axis]]>
+</Comment>
+</Comments>
+<Data Format="Decorated">
+<Structure DataType="AB:1756_DI:I:0">
+<DataValueMember Name="Fault" DataType="DINT" Radix="Binary" Value="2#0000_0000_0000_0000_0000_0000_0000_0000"/>
+<DataValueMember Name="Data" DataType="DINT" Radix="Binary" Value="2#0000_0000_0000_0000_0011_1110_1111_0000"/>
+</Structure>
+</Data>
+</InputTag>
+</Connection>
+</Connections>
+</Communications>
+<ExtendedProperties>
+<public><ConfigID>111</ConfigID><CatNum>1756-IB16I</CatNum></public>
+</ExtendedProperties>
+</Module>
+<Module Name="Slot_4_Input" CatalogNumber="1756-IB16I" Vendor="1" ProductType="7" ProductCode="6" Major="2" Minor="2" ParentModule="Local" ParentModPortId="1" Inhibited="false" MajorFault="false"
+ DataExchangeId="{1DC65CA7-660D-4A2C-8CC8-DABC0248CB8D}">
+<EKey State="Disabled"/>
+<Ports>
+<Port Id="1" Address="4" Type="ICP" Upstream="true"/>
+</Ports>
+<Communications CommMethod="536870913">
+<ConfigTag ConfigSize="24" ExternalAccess="Read/Write" OpcUaAccess="None">
+<Data Format="L5K">
+<![CDATA[[28,16,0,0,0,0,1,1,1,1,1,1,1,1,-1,-1]]]>
+</Data>
+<Data Format="Decorated">
+<Structure DataType="AB:1756_DI:C:1">
+<DataValueMember Name="FilterOffOn_0_7" DataType="SINT" Radix="Decimal" Value="1"/>
+<DataValueMember Name="FilterOnOff_0_7" DataType="SINT" Radix="Decimal" Value="1"/>
+<DataValueMember Name="FilterOffOn_8_15" DataType="SINT" Radix="Decimal" Value="1"/>
+<DataValueMember Name="FilterOnOff_8_15" DataType="SINT" Radix="Decimal" Value="1"/>
+<DataValueMember Name="FilterOffOn_16_23" DataType="SINT" Radix="Decimal" Value="1"/>
+<DataValueMember Name="FilterOnOff_16_23" DataType="SINT" Radix="Decimal" Value="1"/>
+<DataValueMember Name="FilterOffOn_24_31" DataType="SINT" Radix="Decimal" Value="1"/>
+<DataValueMember Name="FilterOnOff_24_31" DataType="SINT" Radix="Decimal" Value="1"/>
+<DataValueMember Name="COSOnOffEn" DataType="DINT" Radix="Binary" Value="2#1111_1111_1111_1111_1111_1111_1111_1111"/>
+<DataValueMember Name="COSOffOnEn" DataType="DINT" Radix="Binary" Value="2#1111_1111_1111_1111_1111_1111_1111_1111"/>
+</Structure>
+</Data>
+</ConfigTag>
+<Connections>
+<Connection Name="StandardInput" RPI="20000" Type="Input" EventID="0" ProgrammaticallySendEventTrigger="false">
+<InputTag ExternalAccess="Read/Write" OpcUaAccess="None">
+<Comments>
+<Comment Operand=".DATA.0">
+<![CDATA[SSC - I3 = Light barrier inlet]]>
+</Comment>
+<Comment Operand=".DATA.1">
+<![CDATA[SSC - I4 = Light barrier behind color sensor]]>
+</Comment>
+<Comment Operand=".DATA.2">
+<![CDATA[SSC - B1 = Encoder vertical axis impulse 1]]>
+</Comment>
+<Comment Operand=".DATA.3">
+<![CDATA[SSC - B2 = Encoder vertical axis impulse 2]]>
+</Comment>
+<Comment Operand=".DATA.4">
+<![CDATA[SSC - B3 = Encoder horizontal axis impulse 1]]>
+</Comment>
+<Comment Operand=".DATA.5">
+<![CDATA[SSC - B4 = Encoder horizontal axis impulse 2]]>
+</Comment>
+</Comments>
+<Data Format="Decorated">
+<Structure DataType="AB:1756_DI:I:0">
+<DataValueMember Name="Fault" DataType="DINT" Radix="Binary" Value="2#0000_0000_0000_0000_0000_0000_0000_0000"/>
+<DataValueMember Name="Data" DataType="DINT" Radix="Binary" Value="2#0000_0000_0000_0000_0000_0000_0011_1111"/>
+</Structure>
+</Data>
+</InputTag>
+</Connection>
+</Connections>
+</Communications>
+<ExtendedProperties>
+<public><ConfigID>111</ConfigID><CatNum>1756-IB16I</CatNum></public>
+</ExtendedProperties>
+</Module>
+<Module Name="Slot_5_Input" CatalogNumber="1756-IF8/A" Vendor="1" ProductType="10" ProductCode="7" Major="1" Minor="5" ParentModule="Local" ParentModPortId="1" Inhibited="false" MajorFault="false"
+ AutoDiagsEnabled="false" DataExchangeId="{FF5B96BD-EF67-42DB-AB63-E19AA9FA4794}">
+<EKey State="Disabled"/>
+<Ports>
+<Port Id="1" Address="5" Type="ICP" Upstream="true"/>
+</Ports>
+<Communications CommMethod="536870913">
+<ConfigTag ConfigSize="196" ExternalAccess="Read/Write" OpcUaAccess="None">
+<Data Format="L5K">
+<![CDATA[[200,36,1,2,100,[0,0,0,0.00000000e+000,-1.00000000e+001,1.00000000e+001,-1.00000000e+001,1.00000000e+001
+		,-1.00000000e+001,1.00000000e+001,-1.00000000e+001,1.00000000e+001,0.00000000e+000,0.00000000e+000
+		],[0,0,0,0.00000000e+000,-1.00000000e+001,1.00000000e+001,-1.00000000e+001,1.00000000e+001,-1.00000000e+001
+		,1.00000000e+001,-1.00000000e+001,1.00000000e+001,0.00000000e+000,0.00000000e+000],[0,3,0,0.00000000e+000
+		,0.00000000e+000,2.00000000e+001,0.00000000e+000,1.00000000e+002,-1.00000000e+001,1.00000000e+001
+		,-1.00000000e+001,1.00000000e+001,0.00000000e+000,0.00000000e+000],[0,3,0,0.00000000e+000,0.00000000e+000
+		,2.00000000e+001,0.00000000e+000,1.00000000e+002,-1.00000000e+001,1.00000000e+001,-1.00000000e+001
+		,1.00000000e+001,0.00000000e+000,0.00000000e+000]]]]>
+</Data>
+<Data Format="Decorated">
+<Structure DataType="AB:1756_IF4_Float:C:0">
+<DataValueMember Name="ModuleFilter" DataType="SINT" Radix="Decimal" Value="2"/>
+<DataValueMember Name="RealTimeSample" DataType="INT" Radix="Decimal" Value="100"/>
+<StructureMember Name="Ch0Config" DataType="AB:1756_NII_Struct:C:0">
+<DataValueMember Name="AlarmDisable" DataType="BOOL" Value="0"/>
+<DataValueMember Name="ProcessAlarmLatch" DataType="BOOL" Value="0"/>
+<DataValueMember Name="RateAlarmLatch" DataType="BOOL" Value="0"/>
+<DataValueMember Name="RangeType" DataType="SINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="DigitalFilter" DataType="INT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="RateAlarmLimit" DataType="REAL" Radix="Float" Value="0.0"/>
+<DataValueMember Name="LowSignal" DataType="REAL" Radix="Float" Value="-10.0"/>
+<DataValueMember Name="HighSignal" DataType="REAL" Radix="Float" Value="10.0"/>
+<DataValueMember Name="LowEngineering" DataType="REAL" Radix="Float" Value="-10.0"/>
+<DataValueMember Name="HighEngineering" DataType="REAL" Radix="Float" Value="10.0"/>
+<DataValueMember Name="LAlarmLimit" DataType="REAL" Radix="Float" Value="-10.0"/>
+<DataValueMember Name="HAlarmLimit" DataType="REAL" Radix="Float" Value="10.0"/>
+<DataValueMember Name="LLAlarmLimit" DataType="REAL" Radix="Float" Value="-10.0"/>
+<DataValueMember Name="HHAlarmLimit" DataType="REAL" Radix="Float" Value="10.0"/>
+<DataValueMember Name="AlarmDeadband" DataType="REAL" Radix="Float" Value="0.0"/>
+<DataValueMember Name="CalBias" DataType="REAL" Radix="Float" Value="0.0"/>
+</StructureMember>
+<StructureMember Name="Ch1Config" DataType="AB:1756_NII_Struct:C:0">
+<DataValueMember Name="AlarmDisable" DataType="BOOL" Value="0"/>
+<DataValueMember Name="ProcessAlarmLatch" DataType="BOOL" Value="0"/>
+<DataValueMember Name="RateAlarmLatch" DataType="BOOL" Value="0"/>
+<DataValueMember Name="RangeType" DataType="SINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="DigitalFilter" DataType="INT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="RateAlarmLimit" DataType="REAL" Radix="Float" Value="0.0"/>
+<DataValueMember Name="LowSignal" DataType="REAL" Radix="Float" Value="-10.0"/>
+<DataValueMember Name="HighSignal" DataType="REAL" Radix="Float" Value="10.0"/>
+<DataValueMember Name="LowEngineering" DataType="REAL" Radix="Float" Value="-10.0"/>
+<DataValueMember Name="HighEngineering" DataType="REAL" Radix="Float" Value="10.0"/>
+<DataValueMember Name="LAlarmLimit" DataType="REAL" Radix="Float" Value="-10.0"/>
+<DataValueMember Name="HAlarmLimit" DataType="REAL" Radix="Float" Value="10.0"/>
+<DataValueMember Name="LLAlarmLimit" DataType="REAL" Radix="Float" Value="-10.0"/>
+<DataValueMember Name="HHAlarmLimit" DataType="REAL" Radix="Float" Value="10.0"/>
+<DataValueMember Name="AlarmDeadband" DataType="REAL" Radix="Float" Value="0.0"/>
+<DataValueMember Name="CalBias" DataType="REAL" Radix="Float" Value="0.0"/>
+</StructureMember>
+<StructureMember Name="Ch2Config" DataType="AB:1756_NII_Struct:C:0">
+<DataValueMember Name="AlarmDisable" DataType="BOOL" Value="0"/>
+<DataValueMember Name="ProcessAlarmLatch" DataType="BOOL" Value="0"/>
+<DataValueMember Name="RateAlarmLatch" DataType="BOOL" Value="0"/>
+<DataValueMember Name="RangeType" DataType="SINT" Radix="Decimal" Value="3"/>
+<DataValueMember Name="DigitalFilter" DataType="INT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="RateAlarmLimit" DataType="REAL" Radix="Float" Value="0.0"/>
+<DataValueMember Name="LowSignal" DataType="REAL" Radix="Float" Value="0.0"/>
+<DataValueMember Name="HighSignal" DataType="REAL" Radix="Float" Value="20.0"/>
+<DataValueMember Name="LowEngineering" DataType="REAL" Radix="Float" Value="0.0"/>
+<DataValueMember Name="HighEngineering" DataType="REAL" Radix="Float" Value="100.0"/>
+<DataValueMember Name="LAlarmLimit" DataType="REAL" Radix="Float" Value="-10.0"/>
+<DataValueMember Name="HAlarmLimit" DataType="REAL" Radix="Float" Value="10.0"/>
+<DataValueMember Name="LLAlarmLimit" DataType="REAL" Radix="Float" Value="-10.0"/>
+<DataValueMember Name="HHAlarmLimit" DataType="REAL" Radix="Float" Value="10.0"/>
+<DataValueMember Name="AlarmDeadband" DataType="REAL" Radix="Float" Value="0.0"/>
+<DataValueMember Name="CalBias" DataType="REAL" Radix="Float" Value="0.0"/>
+</StructureMember>
+<StructureMember Name="Ch3Config" DataType="AB:1756_NII_Struct:C:0">
+<DataValueMember Name="AlarmDisable" DataType="BOOL" Value="0"/>
+<DataValueMember Name="ProcessAlarmLatch" DataType="BOOL" Value="0"/>
+<DataValueMember Name="RateAlarmLatch" DataType="BOOL" Value="0"/>
+<DataValueMember Name="RangeType" DataType="SINT" Radix="Decimal" Value="3"/>
+<DataValueMember Name="DigitalFilter" DataType="INT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="RateAlarmLimit" DataType="REAL" Radix="Float" Value="0.0"/>
+<DataValueMember Name="LowSignal" DataType="REAL" Radix="Float" Value="0.0"/>
+<DataValueMember Name="HighSignal" DataType="REAL" Radix="Float" Value="20.0"/>
+<DataValueMember Name="LowEngineering" DataType="REAL" Radix="Float" Value="0.0"/>
+<DataValueMember Name="HighEngineering" DataType="REAL" Radix="Float" Value="100.0"/>
+<DataValueMember Name="LAlarmLimit" DataType="REAL" Radix="Float" Value="-10.0"/>
+<DataValueMember Name="HAlarmLimit" DataType="REAL" Radix="Float" Value="10.0"/>
+<DataValueMember Name="LLAlarmLimit" DataType="REAL" Radix="Float" Value="-10.0"/>
+<DataValueMember Name="HHAlarmLimit" DataType="REAL" Radix="Float" Value="10.0"/>
+<DataValueMember Name="AlarmDeadband" DataType="REAL" Radix="Float" Value="0.0"/>
+<DataValueMember Name="CalBias" DataType="REAL" Radix="Float" Value="0.0"/>
+</StructureMember>
+</Structure>
+</Data>
+</ConfigTag>
+<Connections>
+<Connection Name="Input" RPI="100000" Type="Input" EventID="0" ProgrammaticallySendEventTrigger="false" Unicast="false">
+<InputTag ExternalAccess="Read/Write" OpcUaAccess="None">
+<Comments>
+<Comment Operand=".CH0DATA">
+<![CDATA[SSC - A4 = Color sensor]]>
+</Comment>
+<Comment Operand=".CH1DATA">
+<![CDATA[SLD - A1 = Color sensor]]>
+</Comment>
+</Comments>
+<EngineeringUnits>
+<EngineeringUnit Operand=".CH0DATA">
+<![CDATA[V]]>
+</EngineeringUnit>
+<EngineeringUnit Operand=".CH1DATA">
+<![CDATA[V]]>
+</EngineeringUnit>
+</EngineeringUnits>
+<Data Format="Decorated">
+<Structure DataType="AB:1756_IF4_Float:I:0">
+<DataValueMember Name="ChannelFaults" DataType="INT" Radix="Binary" Value="2#0000_0000_0000_1100"/>
+<DataValueMember Name="Ch0Fault" DataType="BOOL" Value="0"/>
+<DataValueMember Name="Ch1Fault" DataType="BOOL" Value="0"/>
+<DataValueMember Name="Ch2Fault" DataType="BOOL" Value="1"/>
+<DataValueMember Name="Ch3Fault" DataType="BOOL" Value="1"/>
+<DataValueMember Name="ModuleFaults" DataType="INT" Radix="Binary" Value="2#1000_0000_0000_0000"/>
+<DataValueMember Name="AnalogGroupFault" DataType="BOOL" Value="1"/>
+<DataValueMember Name="Calibrating" DataType="BOOL" Value="0"/>
+<DataValueMember Name="CalFault" DataType="BOOL" Value="0"/>
+<DataValueMember Name="Ch0Status" DataType="SINT" Radix="Binary" Value="2#0000_0000"/>
+<DataValueMember Name="Ch0CalFault" DataType="BOOL" Value="0"/>
+<DataValueMember Name="Ch0Underrange" DataType="BOOL" Value="0"/>
+<DataValueMember Name="Ch0Overrange" DataType="BOOL" Value="0"/>
+<DataValueMember Name="Ch0RateAlarm" DataType="BOOL" Value="0"/>
+<DataValueMember Name="Ch0LAlarm" DataType="BOOL" Value="0"/>
+<DataValueMember Name="Ch0HAlarm" DataType="BOOL" Value="0"/>
+<DataValueMember Name="Ch0LLAlarm" DataType="BOOL" Value="0"/>
+<DataValueMember Name="Ch0HHAlarm" DataType="BOOL" Value="0"/>
+<DataValueMember Name="Ch1Status" DataType="SINT" Radix="Binary" Value="2#0000_0000"/>
+<DataValueMember Name="Ch1CalFault" DataType="BOOL" Value="0"/>
+<DataValueMember Name="Ch1Underrange" DataType="BOOL" Value="0"/>
+<DataValueMember Name="Ch1Overrange" DataType="BOOL" Value="0"/>
+<DataValueMember Name="Ch1RateAlarm" DataType="BOOL" Value="0"/>
+<DataValueMember Name="Ch1LAlarm" DataType="BOOL" Value="0"/>
+<DataValueMember Name="Ch1HAlarm" DataType="BOOL" Value="0"/>
+<DataValueMember Name="Ch1LLAlarm" DataType="BOOL" Value="0"/>
+<DataValueMember Name="Ch1HHAlarm" DataType="BOOL" Value="0"/>
+<DataValueMember Name="Ch2Status" DataType="SINT" Radix="Binary" Value="2#0010_0101"/>
+<DataValueMember Name="Ch2CalFault" DataType="BOOL" Value="0"/>
+<DataValueMember Name="Ch2Underrange" DataType="BOOL" Value="0"/>
+<DataValueMember Name="Ch2Overrange" DataType="BOOL" Value="1"/>
+<DataValueMember Name="Ch2RateAlarm" DataType="BOOL" Value="0"/>
+<DataValueMember Name="Ch2LAlarm" DataType="BOOL" Value="0"/>
+<DataValueMember Name="Ch2HAlarm" DataType="BOOL" Value="1"/>
+<DataValueMember Name="Ch2LLAlarm" DataType="BOOL" Value="0"/>
+<DataValueMember Name="Ch2HHAlarm" DataType="BOOL" Value="1"/>
+<DataValueMember Name="Ch3Status" DataType="SINT" Radix="Binary" Value="2#0010_0101"/>
+<DataValueMember Name="Ch3CalFault" DataType="BOOL" Value="0"/>
+<DataValueMember Name="Ch3Underrange" DataType="BOOL" Value="0"/>
+<DataValueMember Name="Ch3Overrange" DataType="BOOL" Value="1"/>
+<DataValueMember Name="Ch3RateAlarm" DataType="BOOL" Value="0"/>
+<DataValueMember Name="Ch3LAlarm" DataType="BOOL" Value="0"/>
+<DataValueMember Name="Ch3HAlarm" DataType="BOOL" Value="1"/>
+<DataValueMember Name="Ch3LLAlarm" DataType="BOOL" Value="0"/>
+<DataValueMember Name="Ch3HHAlarm" DataType="BOOL" Value="1"/>
+<DataValueMember Name="Ch0Data" DataType="REAL" Radix="Float" Value="5.8502607"/>
+<DataValueMember Name="Ch1Data" DataType="REAL" Radix="Float" Value="5.8036513"/>
+<DataValueMember Name="Ch2Data" DataType="REAL" Radix="Float" Value="102.911644"/>
+<DataValueMember Name="Ch3Data" DataType="REAL" Radix="Float" Value="102.911644"/>
+<DataValueMember Name="RollingTimestamp" DataType="INT" Radix="Decimal" Value="12437"/>
+</Structure>
+</Data>
+</InputTag>
+</Connection>
+</Connections>
+</Communications>
+<ExtendedProperties>
+<public><Vendor>Rockwell Automation/Allen-Bradley</Vendor><CatNum>1756-IF8</CatNum><ConfigID>225</ConfigID><ADDAVersion>1</ADDAVersion></public>
+</ExtendedProperties>
+</Module>
+<Module Name="Slot_6_Output" CatalogNumber="1756-OB32" Vendor="1" ProductType="7" ProductCode="17" Major="2" Minor="4" ParentModule="Local" ParentModPortId="1" Inhibited="false" MajorFault="false"
+ DataExchangeId="{25D42A92-E2C5-4C1B-A5D3-60D8436F9A92}">
+<EKey State="Disabled"/>
+<Ports>
+<Port Id="1" Address="6" Type="ICP" Upstream="true"/>
+</Ports>
+<Communications CommMethod="536870913">
+<ConfigTag ConfigSize="24" ExternalAccess="Read/Write" OpcUaAccess="None">
+<Data Format="L5K">
+<![CDATA[[28,18,0,0,0,0,0,0,0,0]]]>
+</Data>
+<Data Format="Decorated">
+<Structure DataType="AB:1756_DO:C:0">
+<DataValueMember Name="ProgToFaultEn" DataType="BOOL" Value="0"/>
+<DataValueMember Name="FaultMode" DataType="DINT" Radix="Binary" Value="2#0000_0000_0000_0000_0000_0000_0000_0000"/>
+<DataValueMember Name="FaultValue" DataType="DINT" Radix="Binary" Value="2#0000_0000_0000_0000_0000_0000_0000_0000"/>
+<DataValueMember Name="ProgMode" DataType="DINT" Radix="Binary" Value="2#0000_0000_0000_0000_0000_0000_0000_0000"/>
+<DataValueMember Name="ProgValue" DataType="DINT" Radix="Binary" Value="2#0000_0000_0000_0000_0000_0000_0000_0000"/>
+</Structure>
+</Data>
+</ConfigTag>
+<Connections>
+<Connection Name="Standard" RPI="20000" Type="Output" EventID="0" ProgrammaticallySendEventTrigger="false">
+<InputTag ExternalAccess="Read/Write" OpcUaAccess="None">
+<Data Format="Decorated">
+<Structure DataType="AB:1756_DO:I:0">
+<DataValueMember Name="Fault" DataType="DINT" Radix="Binary" Value="2#0000_0000_0000_0000_0000_0000_0000_0000"/>
+<DataValueMember Name="Data" DataType="DINT" Radix="Binary" Value="2#0000_0000_0000_0000_0000_0000_0000_0000"/>
+</Structure>
+</Data>
+</InputTag>
+<OutputTag ExternalAccess="Read/Write" OpcUaAccess="None">
+<Comments>
+<Comment Operand=".DATA.0">
+<![CDATA[HBW - Q5 = Motor M3 vertical axis downward]]>
+</Comment>
+<Comment Operand=".DATA.1">
+<![CDATA[HBW - Q6 = Motor M3 vertical axis upward]]>
+</Comment>
+<Comment Operand=".DATA.2">
+<![CDATA[HBW - Q7 = Motor M4 cantilever forward]]>
+</Comment>
+<Comment Operand=".DATA.3">
+<![CDATA[HBW - Q8 = Motor M4 cantilever backward]]>
+</Comment>
+<Comment Operand=".DATA.4">
+<![CDATA[SSC = PWM Motor M1 vertical axis]]>
+</Comment>
+<Comment Operand=".DATA.5">
+<![CDATA[SSC = PWM Motor M2 horizontal axis]]>
+</Comment>
+<Comment Operand=".DATA.6">
+<![CDATA[QW_MPO_PWM_TurnTable_M1]]>
+</Comment>
+<Comment Operand=".DATA.7">
+<![CDATA[MPO - Q8 = Motor M5 vacuum towards turn-table]]>
+</Comment>
+<Comment Operand=".DATA.8">
+<![CDATA[MPO - Q13 = Valve oven door]]>
+</Comment>
+<Comment Operand=".DATA.9">
+<![CDATA[MPO - Q14 = Valve feeder]]>
+</Comment>
+<Comment Operand=".DATA.10">
+<![CDATA[VGR - Q1 = Motor M1 vertical axis up]]>
+</Comment>
+<Comment Operand=".DATA.11">
+<![CDATA[VGR - Q2 = Motor M1 vertical axis down]]>
+</Comment>
+<Comment Operand=".DATA.12">
+<![CDATA[VGR - Q7 = Compressor]]>
+</Comment>
+<Comment Operand=".DATA.13">
+<![CDATA[VGR - Q8 = Valve vacuum]]>
+</Comment>
+<Comment Operand=".DATA.14">
+<![CDATA[SLD - Q1 = Motor M1conveyor belt]]>
+</Comment>
+<Comment Operand=".DATA.15">
+<![CDATA[SLD - Q2 = Compressor]]>
+</Comment>
+<Comment Operand=".DATA.16">
+<![CDATA[SSC - Q2 = Motor M1 vertical axis down]]>
+</Comment>
+<Comment Operand=".DATA.17">
+<![CDATA[SSC - Q3 = Motor M2 horizontal axis backward]]>
+</Comment>
+<Comment Operand=".DATA.18">
+<![CDATA[SSC - Q4 = Motor M2 horizontal axis forward]]>
+</Comment>
+<Comment Operand=".DATA.19">
+<![CDATA[SSC - Q5 = LED Green]]>
+</Comment>
+<Comment Operand=".DATA.20">
+<![CDATA[MPO - Q5 = Motor M4 oven feeder retract]]>
+</Comment>
+<Comment Operand=".DATA.21">
+<![CDATA[MPO - Q1 = Motor M1 turn-table clockwise]]>
+</Comment>
+<Comment Operand=".DATA.22">
+<![CDATA[MPO - Q2 = Motor M1 turn-table counterclockwise]]>
+</Comment>
+<Comment Operand=".DATA.23">
+<![CDATA[MPO - Q3 = Motor M2 conveyor belt forward]]>
+</Comment>
+<Comment Operand=".DATA.24">
+<![CDATA[MPO - Q9 = Light oven]]>
+</Comment>
+<Comment Operand=".DATA.25">
+<![CDATA[MPO - Q10 = Compressor]]>
+</Comment>
+<Comment Operand=".DATA.26">
+<![CDATA[MPO - Q11 = Valve vacuum]]>
+</Comment>
+<Comment Operand=".DATA.27">
+<![CDATA[MPO - Q12 = Valve lowering]]>
+</Comment>
+<Comment Operand=".DATA.28">
+<![CDATA[VGR - Q3 = Motor M2 horizontal axis retract]]>
+</Comment>
+<Comment Operand=".DATA.29">
+<![CDATA[VGR - Q4 = Motor M2 horizontal axis extend]]>
+</Comment>
+<Comment Operand=".DATA.30">
+<![CDATA[VGR - Q5 = Motor M3 rotate clockwise]]>
+</Comment>
+<Comment Operand=".DATA.31">
+<![CDATA[VGR - Q6 = Motor M3 rotate counterclockwise]]>
+</Comment>
+</Comments>
+<Data Format="L5K">
+<![CDATA[[0]]]>
+</Data>
+<Data Format="Decorated">
+<Structure DataType="AB:1756_DO:O:0">
+<DataValueMember Name="Data" DataType="DINT" Radix="Binary" Value="2#0000_0000_0000_0000_0000_0000_0000_0000"/>
+</Structure>
+</Data>
+</OutputTag>
+</Connection>
+</Connections>
+</Communications>
+<ExtendedProperties>
+<public><ConfigID>401</ConfigID><CatNum>1756-OB32</CatNum></public>
+</ExtendedProperties>
+</Module>
+<Module Name="Slot_7_Output" CatalogNumber="1756-OB32" Vendor="1" ProductType="7" ProductCode="17" Major="3" Minor="2" ParentModule="Local" ParentModPortId="1" Inhibited="false" MajorFault="false"
+ DataExchangeId="{C5C9D245-EC33-43DC-B580-08BE0624564D}">
+<EKey State="Disabled"/>
+<Ports>
+<Port Id="1" Address="7" Type="ICP" Upstream="true"/>
+</Ports>
+<Communications CommMethod="536870913">
+<ConfigTag ConfigSize="24" ExternalAccess="Read/Write" OpcUaAccess="None">
+<Data Format="L5K">
+<![CDATA[[28,18,0,0,0,0,0,0,0,0]]]>
+</Data>
+<Data Format="Decorated">
+<Structure DataType="AB:1756_DO:C:0">
+<DataValueMember Name="ProgToFaultEn" DataType="BOOL" Value="0"/>
+<DataValueMember Name="FaultMode" DataType="DINT" Radix="Binary" Value="2#0000_0000_0000_0000_0000_0000_0000_0000"/>
+<DataValueMember Name="FaultValue" DataType="DINT" Radix="Binary" Value="2#0000_0000_0000_0000_0000_0000_0000_0000"/>
+<DataValueMember Name="ProgMode" DataType="DINT" Radix="Binary" Value="2#0000_0000_0000_0000_0000_0000_0000_0000"/>
+<DataValueMember Name="ProgValue" DataType="DINT" Radix="Binary" Value="2#0000_0000_0000_0000_0000_0000_0000_0000"/>
+</Structure>
+</Data>
+</ConfigTag>
+<Connections>
+<Connection Name="Standard" RPI="20000" Type="Output" EventID="0" ProgrammaticallySendEventTrigger="false">
+<InputTag ExternalAccess="Read/Write" OpcUaAccess="None">
+<Data Format="Decorated">
+<Structure DataType="AB:1756_DO:I:0">
+<DataValueMember Name="Fault" DataType="DINT" Radix="Binary" Value="2#0000_0000_0000_0000_0000_0000_0000_0000"/>
+<DataValueMember Name="Data" DataType="DINT" Radix="Binary" Value="2#0100_0000_0000_0000_0000_0000_0000_0000"/>
+</Structure>
+</Data>
+</InputTag>
+<OutputTag ExternalAccess="Read/Write" OpcUaAccess="None">
+<Comments>
+<Comment Operand=".DATA.0">
+<![CDATA[SLD - Q3 = Valve first ejector (white)]]>
+</Comment>
+<Comment Operand=".DATA.1">
+<![CDATA[SLD - Q4 = Valve second ejector (red)]]>
+</Comment>
+<Comment Operand=".DATA.2">
+<![CDATA[SLD - Q5 = Valve third ejector (blue)]]>
+</Comment>
+<Comment Operand=".DATA.3">
+<![CDATA[SSC - Q1 = Motor M1 vertical axis up]]>
+</Comment>
+<Comment Operand=".DATA.4">
+<![CDATA[SSC - Q6 = LED Yellow]]>
+</Comment>
+<Comment Operand=".DATA.5">
+<![CDATA[Turn on Motor Rotation Clockwise]]>
+</Comment>
+<Comment Operand=".DATA.6">
+<![CDATA[SSC - Q8 = LED Red Online]]>
+</Comment>
+<Comment Operand=".DATA.7">
+<![CDATA[MPO - Q4 = Motor M3 saw]]>
+</Comment>
+<Comment Operand=".DATA.8">
+<![CDATA[MPO - Q6 = Motor M4 oven feeder extend]]>
+</Comment>
+<Comment Operand=".DATA.9">
+<![CDATA[MPO - Q7 = Motor M5 vacuum towards oven]]>
+</Comment>
+<Comment Operand=".DATA.10">
+<![CDATA[HBW - Q1 = Motor M1 conveyor belt forward]]>
+</Comment>
+<Comment Operand=".DATA.11">
+<![CDATA[HBW - Q2 = Motor M1 conveyor belt backward]]>
+</Comment>
+<Comment Operand=".DATA.12">
+<![CDATA[HBW - Q3 = Motor M2 horizontal towards rack]]>
+</Comment>
+<Comment Operand=".DATA.13">
+<![CDATA[HBW - Q4 = Motor M2 horizontal towards conveyor belt]]>
+</Comment>
+<Comment Operand=".DATA.14">
+<![CDATA[HBW  = PWM Motor M1 conveyor belt]]>
+</Comment>
+<Comment Operand=".DATA.15">
+<![CDATA[HBW  = PWM Motor M2 horizontal axis]]>
+</Comment>
+<Comment Operand=".DATA.16">
+<![CDATA[HBW  = PWM Motor M3 vertical axis]]>
+</Comment>
+<Comment Operand=".DATA.17">
+<![CDATA[HBW  = PWM Motor M4 cantilever]]>
+</Comment>
+<Comment Operand=".DATA.18">
+<![CDATA[VGR = PWM Motor M1 vertical axis]]>
+</Comment>
+<Comment Operand=".DATA.19">
+<![CDATA[VGR = PWM Motor M2 horizontal axis]]>
+</Comment>
+<Comment Operand=".DATA.20">
+<![CDATA[VGR = PWM Motor M3 rotate axis]]>
+</Comment>
+<Comment Operand=".DATA.21">
+<![CDATA[MPO = PWM Motor M5 vacuum]]>
+</Comment>
+</Comments>
+<Data Format="L5K">
+<![CDATA[[1073741824]]]>
+</Data>
+<Data Format="Decorated">
+<Structure DataType="AB:1756_DO:O:0">
+<DataValueMember Name="Data" DataType="DINT" Radix="Binary" Value="2#0100_0000_0000_0000_0000_0000_0000_0000"/>
+</Structure>
+</Data>
+</OutputTag>
+</Connection>
+</Connections>
+</Communications>
+<ExtendedProperties>
+<public><ConfigID>401</ConfigID><CatNum>1756-OB32</CatNum></public>
+</ExtendedProperties>
+</Module>
+</Modules>
+<AddOnInstructionDefinitions>
+<AddOnInstructionDefinition Name="PWM_Out" Revision="1.0" ExecutePrescan="true" ExecutePostscan="false" ExecuteEnableInFalse="false" CreatedDate="2025-10-21T21:47:35.336Z" CreatedBy="DESKTOP-QJHSHBT\Moscow-MCCL422-Admin" EditedDate="2025-10-29T20:51:19.422Z" EditedBy="DESKTOP-QJHSHBT\Moscow-MCCL422-Admin" SoftwareRevision="v38.00">
+<Parameters>
+<Parameter Name="EnableIn" TagType="Base" DataType="BOOL" Usage="Input" Radix="Decimal" Required="false" Visible="false" ExternalAccess="Read Only">
+<Description>
+<![CDATA[Enable Input - System Defined Parameter]]>
+</Description>
+</Parameter>
+<Parameter Name="EnableOut" TagType="Base" DataType="BOOL" Usage="Output" Radix="Decimal" Required="false" Visible="false" ExternalAccess="Read Only">
+<Description>
+<![CDATA[Enable Output - System Defined Parameter]]>
+</Description>
+</Parameter>
+<Parameter Name="PWM_Pin" TagType="Base" DataType="BOOL" Usage="Output" Radix="Decimal" Required="true" Visible="true" ExternalAccess="Read/Write">
+<DefaultData Format="L5K">
+<![CDATA[0]]>
+</DefaultData>
+<DefaultData Format="Decorated">
+<DataValue DataType="BOOL" Radix="Decimal" Value="0"/>
+</DefaultData>
+</Parameter>
+<Parameter Name="Duty_Cycle" TagType="Base" DataType="DINT" Usage="Input" Radix="Decimal" Required="true" Visible="true" ExternalAccess="Read/Write">
+<DefaultData Format="L5K">
+<![CDATA[0]]>
+</DefaultData>
+<DefaultData Format="Decorated">
+<DataValue DataType="DINT" Radix="Decimal" Value="0"/>
+</DefaultData>
+</Parameter>
+<Parameter Name="Frequency_Hz" TagType="Base" DataType="DINT" Usage="Input" Radix="Decimal" Required="true" Visible="true" ExternalAccess="Read/Write">
+<DefaultData Format="L5K">
+<![CDATA[0]]>
+</DefaultData>
+<DefaultData Format="Decorated">
+<DataValue DataType="DINT" Radix="Decimal" Value="0"/>
+</DefaultData>
+</Parameter>
+</Parameters>
+<LocalTags>
+<LocalTag Name="PWM_Timer_On" DataType="TIMER" ExternalAccess="None">
+<DefaultData Format="L5K">
+<![CDATA[[0,0,0]]]>
+</DefaultData>
+<DefaultData Format="Decorated">
+<Structure DataType="TIMER">
+<DataValueMember Name="PRE" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="ACC" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="EN" DataType="BOOL" Value="0"/>
+<DataValueMember Name="TT" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DN" DataType="BOOL" Value="0"/>
+</Structure>
+</DefaultData>
+</LocalTag>
+<LocalTag Name="PWM_Timer_Off" DataType="TIMER" ExternalAccess="None">
+<DefaultData Format="L5K">
+<![CDATA[[0,0,0]]]>
+</DefaultData>
+<DefaultData Format="Decorated">
+<Structure DataType="TIMER">
+<DataValueMember Name="PRE" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="ACC" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="EN" DataType="BOOL" Value="0"/>
+<DataValueMember Name="TT" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DN" DataType="BOOL" Value="0"/>
+</Structure>
+</DefaultData>
+</LocalTag>
+<LocalTag Name="Duty_Cycle_Scaler" DataType="REAL" Radix="Float" ExternalAccess="None">
+<DefaultData Format="L5K">
+<![CDATA[0.00000000e+000]]>
+</DefaultData>
+<DefaultData Format="Decorated">
+<DataValue DataType="REAL" Radix="Float" Value="0.0"/>
+</DefaultData>
+</LocalTag>
+<LocalTag Name="Frequency_Ms" DataType="REAL" Radix="Float" ExternalAccess="None">
+<DefaultData Format="L5K">
+<![CDATA[6.00000000e+001]]>
+</DefaultData>
+<DefaultData Format="Decorated">
+<DataValue DataType="REAL" Radix="Float" Value="60.0"/>
+</DefaultData>
+</LocalTag>
+<LocalTag Name="Fault_Bit" DataType="BOOL" Radix="Decimal" ExternalAccess="None">
+<DefaultData Format="L5K">
+<![CDATA[0]]>
+</DefaultData>
+<DefaultData Format="Decorated">
+<DataValue DataType="BOOL" Radix="Decimal" Value="0"/>
+</DefaultData>
+</LocalTag>
+</LocalTags>
+<Routines>
+<Routine Name="Logic" Type="RLL">
+<RLLContent>
+<Rung Number="0" Type="N">
+<Text>
+<![CDATA[XIO(PWM_Timer_Off.DN)TON(PWM_Timer_On,?,?);]]>
+</Text>
+</Rung>
+<Rung Number="1" Type="N">
+<Text>
+<![CDATA[XIC(PWM_Timer_On.DN)TON(PWM_Timer_Off,?,?);]]>
+</Text>
+</Rung>
+<Rung Number="2" Type="N">
+<Text>
+<![CDATA[XIO(PWM_Timer_On.DN)OTE(PWM_Pin);]]>
+</Text>
+</Rung>
+</RLLContent>
+</Routine>
+<Routine Name="Prescan" Type="RLL">
+<Description>
+<![CDATA[Perform Calculations for PWM Timing]]>
+</Description>
+<RLLContent>
+<Rung Number="0" Type="N">
+<Comment>
+<![CDATA[Clamp Inputs to valid range]]>
+</Comment>
+<Text>
+<![CDATA[NOP();]]>
+</Text>
+</Rung>
+<Rung Number="1" Type="N">
+<Comment>
+<![CDATA[Interval notation
+Duty_Cycle = [0,100]
+
+]]>
+</Comment>
+<Text>
+<![CDATA[[GT(Duty_Cycle,100) MOVE(100,Duty_Cycle) ,LT(Duty_Cycle,0) MOVE(0,Duty_Cycle) ];]]>
+</Text>
+</Rung>
+<Rung Number="2" Type="N">
+<Comment>
+<![CDATA[Interval notation
+Frequency_Hz = [0,1000]]]>
+</Comment>
+<Text>
+<![CDATA[[GT(Frequency_Hz,1000) MOVE(1000,Frequency_Hz) ,LT(Frequency_Hz,0) MOVE(0,Frequency_Hz) ];]]>
+</Text>
+</Rung>
+<Rung Number="3" Type="N">
+<Comment>
+<![CDATA[Start of PWM math calculations]]>
+</Comment>
+<Text>
+<![CDATA[NOP();]]>
+</Text>
+</Rung>
+<Rung Number="4" Type="N">
+<Comment>
+<![CDATA[Calculate duty cycle scaler in range of  [0,1] for adjusting timer presets ]]>
+</Comment>
+<Text>
+<![CDATA[DIV(Duty_Cycle,100,Duty_Cycle_Scaler);]]>
+</Text>
+</Rung>
+<Rung Number="5" Type="N">
+<Comment>
+<![CDATA[Convert Frequency Hz to Frequency Ms(milliseconds) for timers]]>
+</Comment>
+<Text>
+<![CDATA[CPT(Frequency_Ms,1000/(Frequency_Hz));]]>
+</Text>
+</Rung>
+<Rung Number="6" Type="N">
+<Comment>
+<![CDATA[scale Frequency_Ms by our Duty_Cycle_Scaler  to obtain the time spent On component for PWM]]>
+</Comment>
+<Text>
+<![CDATA[CPT(PWM_Timer_On.PRE,TRUNC((Frequency_Ms)*(Duty_Cycle_Scaler)));]]>
+</Text>
+</Rung>
+<Rung Number="7" Type="N">
+<Comment>
+<![CDATA[Calculate Remaining time which is Spent off ]]>
+</Comment>
+<Text>
+<![CDATA[CPT(PWM_Timer_Off.PRE,TRUNC((Frequency_Ms)-(PWM_Timer_On.PRE)));]]>
+</Text>
+</Rung>
+</RLLContent>
+</Routine>
+</Routines>
+</AddOnInstructionDefinition>
+</AddOnInstructionDefinitions>
+<Tags>
+<Tag Name="Encoder_Counters_1X" TagType="Base" DataType="COUNTER" Dimensions="10" Constant="false" ExternalAccess="Read/Write" OpcUaAccess="None">
+<Comments>
+<Comment Operand="[0]">
+<![CDATA[HBW M2 Horizontal 1X]]>
+</Comment>
+<Comment Operand="[1]">
+<![CDATA[HBW M3 Vertical 1X]]>
+</Comment>
+<Comment Operand="[2]">
+<![CDATA[VGR M1 Vertical 1X]]>
+</Comment>
+<Comment Operand="[3]">
+<![CDATA[VGR M2 Horizontal 1X]]>
+</Comment>
+<Comment Operand="[4]">
+<![CDATA[VGR M3 Rotate 1X]]>
+</Comment>
+</Comments>
+<Data Format="L5K">
+<![CDATA[[[536870912,0,0],[0,0,0],[536870912,0,0],[536870912,0,0],[0,100,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0]]]]>
+</Data>
+<Data Format="Decorated">
+<Array DataType="COUNTER" Dimensions="10">
+<Element Index="[0]">
+<Structure DataType="COUNTER">
+<DataValueMember Name="PRE" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="ACC" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="CU" DataType="BOOL" Value="0"/>
+<DataValueMember Name="CD" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DN" DataType="BOOL" Value="1"/>
+<DataValueMember Name="OV" DataType="BOOL" Value="0"/>
+<DataValueMember Name="UN" DataType="BOOL" Value="0"/>
+</Structure>
+</Element>
+<Element Index="[1]">
+<Structure DataType="COUNTER">
+<DataValueMember Name="PRE" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="ACC" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="CU" DataType="BOOL" Value="0"/>
+<DataValueMember Name="CD" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DN" DataType="BOOL" Value="0"/>
+<DataValueMember Name="OV" DataType="BOOL" Value="0"/>
+<DataValueMember Name="UN" DataType="BOOL" Value="0"/>
+</Structure>
+</Element>
+<Element Index="[2]">
+<Structure DataType="COUNTER">
+<DataValueMember Name="PRE" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="ACC" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="CU" DataType="BOOL" Value="0"/>
+<DataValueMember Name="CD" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DN" DataType="BOOL" Value="1"/>
+<DataValueMember Name="OV" DataType="BOOL" Value="0"/>
+<DataValueMember Name="UN" DataType="BOOL" Value="0"/>
+</Structure>
+</Element>
+<Element Index="[3]">
+<Structure DataType="COUNTER">
+<DataValueMember Name="PRE" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="ACC" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="CU" DataType="BOOL" Value="0"/>
+<DataValueMember Name="CD" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DN" DataType="BOOL" Value="1"/>
+<DataValueMember Name="OV" DataType="BOOL" Value="0"/>
+<DataValueMember Name="UN" DataType="BOOL" Value="0"/>
+</Structure>
+</Element>
+<Element Index="[4]">
+<Structure DataType="COUNTER">
+<DataValueMember Name="PRE" DataType="DINT" Radix="Decimal" Value="100"/>
+<DataValueMember Name="ACC" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="CU" DataType="BOOL" Value="0"/>
+<DataValueMember Name="CD" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DN" DataType="BOOL" Value="0"/>
+<DataValueMember Name="OV" DataType="BOOL" Value="0"/>
+<DataValueMember Name="UN" DataType="BOOL" Value="0"/>
+</Structure>
+</Element>
+<Element Index="[5]">
+<Structure DataType="COUNTER">
+<DataValueMember Name="PRE" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="ACC" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="CU" DataType="BOOL" Value="0"/>
+<DataValueMember Name="CD" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DN" DataType="BOOL" Value="0"/>
+<DataValueMember Name="OV" DataType="BOOL" Value="0"/>
+<DataValueMember Name="UN" DataType="BOOL" Value="0"/>
+</Structure>
+</Element>
+<Element Index="[6]">
+<Structure DataType="COUNTER">
+<DataValueMember Name="PRE" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="ACC" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="CU" DataType="BOOL" Value="0"/>
+<DataValueMember Name="CD" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DN" DataType="BOOL" Value="0"/>
+<DataValueMember Name="OV" DataType="BOOL" Value="0"/>
+<DataValueMember Name="UN" DataType="BOOL" Value="0"/>
+</Structure>
+</Element>
+<Element Index="[7]">
+<Structure DataType="COUNTER">
+<DataValueMember Name="PRE" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="ACC" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="CU" DataType="BOOL" Value="0"/>
+<DataValueMember Name="CD" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DN" DataType="BOOL" Value="0"/>
+<DataValueMember Name="OV" DataType="BOOL" Value="0"/>
+<DataValueMember Name="UN" DataType="BOOL" Value="0"/>
+</Structure>
+</Element>
+<Element Index="[8]">
+<Structure DataType="COUNTER">
+<DataValueMember Name="PRE" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="ACC" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="CU" DataType="BOOL" Value="0"/>
+<DataValueMember Name="CD" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DN" DataType="BOOL" Value="0"/>
+<DataValueMember Name="OV" DataType="BOOL" Value="0"/>
+<DataValueMember Name="UN" DataType="BOOL" Value="0"/>
+</Structure>
+</Element>
+<Element Index="[9]">
+<Structure DataType="COUNTER">
+<DataValueMember Name="PRE" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="ACC" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="CU" DataType="BOOL" Value="0"/>
+<DataValueMember Name="CD" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DN" DataType="BOOL" Value="0"/>
+<DataValueMember Name="OV" DataType="BOOL" Value="0"/>
+<DataValueMember Name="UN" DataType="BOOL" Value="0"/>
+</Structure>
+</Element>
+</Array>
+</Data>
+</Tag>
+<Tag Name="Encoder_Counters_2X" TagType="Base" DataType="COUNTER" Dimensions="10" Constant="false" ExternalAccess="Read/Write" OpcUaAccess="None">
+<Comments>
+<Comment Operand="[0]">
+<![CDATA[HBW M2 Horizontal 2X]]>
+</Comment>
+<Comment Operand="[1]">
+<![CDATA[HBW M3 Vertical 2X]]>
+</Comment>
+<Comment Operand="[2]">
+<![CDATA[VGR M1 Vertical 2X]]>
+</Comment>
+<Comment Operand="[3]">
+<![CDATA[VGR M2 Horizontal 2X]]>
+</Comment>
+<Comment Operand="[4]">
+<![CDATA[VGR M3 Rotate 2X]]>
+</Comment>
+</Comments>
+<Data Format="L5K">
+<![CDATA[[[536870912,0,0],[536870912,0,0],[536870912,0,0],[536870912,0,0],[536870912,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0]]]]>
+</Data>
+<Data Format="Decorated">
+<Array DataType="COUNTER" Dimensions="10">
+<Element Index="[0]">
+<Structure DataType="COUNTER">
+<DataValueMember Name="PRE" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="ACC" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="CU" DataType="BOOL" Value="0"/>
+<DataValueMember Name="CD" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DN" DataType="BOOL" Value="1"/>
+<DataValueMember Name="OV" DataType="BOOL" Value="0"/>
+<DataValueMember Name="UN" DataType="BOOL" Value="0"/>
+</Structure>
+</Element>
+<Element Index="[1]">
+<Structure DataType="COUNTER">
+<DataValueMember Name="PRE" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="ACC" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="CU" DataType="BOOL" Value="0"/>
+<DataValueMember Name="CD" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DN" DataType="BOOL" Value="1"/>
+<DataValueMember Name="OV" DataType="BOOL" Value="0"/>
+<DataValueMember Name="UN" DataType="BOOL" Value="0"/>
+</Structure>
+</Element>
+<Element Index="[2]">
+<Structure DataType="COUNTER">
+<DataValueMember Name="PRE" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="ACC" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="CU" DataType="BOOL" Value="0"/>
+<DataValueMember Name="CD" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DN" DataType="BOOL" Value="1"/>
+<DataValueMember Name="OV" DataType="BOOL" Value="0"/>
+<DataValueMember Name="UN" DataType="BOOL" Value="0"/>
+</Structure>
+</Element>
+<Element Index="[3]">
+<Structure DataType="COUNTER">
+<DataValueMember Name="PRE" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="ACC" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="CU" DataType="BOOL" Value="0"/>
+<DataValueMember Name="CD" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DN" DataType="BOOL" Value="1"/>
+<DataValueMember Name="OV" DataType="BOOL" Value="0"/>
+<DataValueMember Name="UN" DataType="BOOL" Value="0"/>
+</Structure>
+</Element>
+<Element Index="[4]">
+<Structure DataType="COUNTER">
+<DataValueMember Name="PRE" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="ACC" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="CU" DataType="BOOL" Value="0"/>
+<DataValueMember Name="CD" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DN" DataType="BOOL" Value="1"/>
+<DataValueMember Name="OV" DataType="BOOL" Value="0"/>
+<DataValueMember Name="UN" DataType="BOOL" Value="0"/>
+</Structure>
+</Element>
+<Element Index="[5]">
+<Structure DataType="COUNTER">
+<DataValueMember Name="PRE" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="ACC" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="CU" DataType="BOOL" Value="0"/>
+<DataValueMember Name="CD" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DN" DataType="BOOL" Value="0"/>
+<DataValueMember Name="OV" DataType="BOOL" Value="0"/>
+<DataValueMember Name="UN" DataType="BOOL" Value="0"/>
+</Structure>
+</Element>
+<Element Index="[6]">
+<Structure DataType="COUNTER">
+<DataValueMember Name="PRE" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="ACC" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="CU" DataType="BOOL" Value="0"/>
+<DataValueMember Name="CD" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DN" DataType="BOOL" Value="0"/>
+<DataValueMember Name="OV" DataType="BOOL" Value="0"/>
+<DataValueMember Name="UN" DataType="BOOL" Value="0"/>
+</Structure>
+</Element>
+<Element Index="[7]">
+<Structure DataType="COUNTER">
+<DataValueMember Name="PRE" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="ACC" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="CU" DataType="BOOL" Value="0"/>
+<DataValueMember Name="CD" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DN" DataType="BOOL" Value="0"/>
+<DataValueMember Name="OV" DataType="BOOL" Value="0"/>
+<DataValueMember Name="UN" DataType="BOOL" Value="0"/>
+</Structure>
+</Element>
+<Element Index="[8]">
+<Structure DataType="COUNTER">
+<DataValueMember Name="PRE" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="ACC" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="CU" DataType="BOOL" Value="0"/>
+<DataValueMember Name="CD" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DN" DataType="BOOL" Value="0"/>
+<DataValueMember Name="OV" DataType="BOOL" Value="0"/>
+<DataValueMember Name="UN" DataType="BOOL" Value="0"/>
+</Structure>
+</Element>
+<Element Index="[9]">
+<Structure DataType="COUNTER">
+<DataValueMember Name="PRE" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="ACC" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="CU" DataType="BOOL" Value="0"/>
+<DataValueMember Name="CD" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DN" DataType="BOOL" Value="0"/>
+<DataValueMember Name="OV" DataType="BOOL" Value="0"/>
+<DataValueMember Name="UN" DataType="BOOL" Value="0"/>
+</Structure>
+</Element>
+</Array>
+</Data>
+</Tag>
+<Tag Name="Encoder_Counters_4X" TagType="Base" DataType="COUNTER" Dimensions="10" Constant="false" ExternalAccess="Read/Write" OpcUaAccess="None">
+<Comments>
+<Comment Operand="[0]">
+<![CDATA[HBW M2 Horizontal 4X]]>
+</Comment>
+<Comment Operand="[1]">
+<![CDATA[HBW M3 Vertical 4X]]>
+</Comment>
+<Comment Operand="[2]">
+<![CDATA[VGR M1 Vertical 4X]]>
+</Comment>
+<Comment Operand="[3]">
+<![CDATA[VGR M2 Horizontal 4X]]>
+</Comment>
+<Comment Operand="[4]">
+<![CDATA[VGR M3 Rotate 4X]]>
+</Comment>
+</Comments>
+<Data Format="L5K">
+<![CDATA[[[536870912,0,0],[536870912,0,0],[536870912,0,0],[536870912,0,0],[0,100,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0]]]]>
+</Data>
+<Data Format="Decorated">
+<Array DataType="COUNTER" Dimensions="10">
+<Element Index="[0]">
+<Structure DataType="COUNTER">
+<DataValueMember Name="PRE" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="ACC" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="CU" DataType="BOOL" Value="0"/>
+<DataValueMember Name="CD" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DN" DataType="BOOL" Value="1"/>
+<DataValueMember Name="OV" DataType="BOOL" Value="0"/>
+<DataValueMember Name="UN" DataType="BOOL" Value="0"/>
+</Structure>
+</Element>
+<Element Index="[1]">
+<Structure DataType="COUNTER">
+<DataValueMember Name="PRE" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="ACC" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="CU" DataType="BOOL" Value="0"/>
+<DataValueMember Name="CD" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DN" DataType="BOOL" Value="1"/>
+<DataValueMember Name="OV" DataType="BOOL" Value="0"/>
+<DataValueMember Name="UN" DataType="BOOL" Value="0"/>
+</Structure>
+</Element>
+<Element Index="[2]">
+<Structure DataType="COUNTER">
+<DataValueMember Name="PRE" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="ACC" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="CU" DataType="BOOL" Value="0"/>
+<DataValueMember Name="CD" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DN" DataType="BOOL" Value="1"/>
+<DataValueMember Name="OV" DataType="BOOL" Value="0"/>
+<DataValueMember Name="UN" DataType="BOOL" Value="0"/>
+</Structure>
+</Element>
+<Element Index="[3]">
+<Structure DataType="COUNTER">
+<DataValueMember Name="PRE" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="ACC" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="CU" DataType="BOOL" Value="0"/>
+<DataValueMember Name="CD" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DN" DataType="BOOL" Value="1"/>
+<DataValueMember Name="OV" DataType="BOOL" Value="0"/>
+<DataValueMember Name="UN" DataType="BOOL" Value="0"/>
+</Structure>
+</Element>
+<Element Index="[4]">
+<Structure DataType="COUNTER">
+<DataValueMember Name="PRE" DataType="DINT" Radix="Decimal" Value="100"/>
+<DataValueMember Name="ACC" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="CU" DataType="BOOL" Value="0"/>
+<DataValueMember Name="CD" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DN" DataType="BOOL" Value="0"/>
+<DataValueMember Name="OV" DataType="BOOL" Value="0"/>
+<DataValueMember Name="UN" DataType="BOOL" Value="0"/>
+</Structure>
+</Element>
+<Element Index="[5]">
+<Structure DataType="COUNTER">
+<DataValueMember Name="PRE" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="ACC" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="CU" DataType="BOOL" Value="0"/>
+<DataValueMember Name="CD" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DN" DataType="BOOL" Value="0"/>
+<DataValueMember Name="OV" DataType="BOOL" Value="0"/>
+<DataValueMember Name="UN" DataType="BOOL" Value="0"/>
+</Structure>
+</Element>
+<Element Index="[6]">
+<Structure DataType="COUNTER">
+<DataValueMember Name="PRE" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="ACC" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="CU" DataType="BOOL" Value="0"/>
+<DataValueMember Name="CD" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DN" DataType="BOOL" Value="0"/>
+<DataValueMember Name="OV" DataType="BOOL" Value="0"/>
+<DataValueMember Name="UN" DataType="BOOL" Value="0"/>
+</Structure>
+</Element>
+<Element Index="[7]">
+<Structure DataType="COUNTER">
+<DataValueMember Name="PRE" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="ACC" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="CU" DataType="BOOL" Value="0"/>
+<DataValueMember Name="CD" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DN" DataType="BOOL" Value="0"/>
+<DataValueMember Name="OV" DataType="BOOL" Value="0"/>
+<DataValueMember Name="UN" DataType="BOOL" Value="0"/>
+</Structure>
+</Element>
+<Element Index="[8]">
+<Structure DataType="COUNTER">
+<DataValueMember Name="PRE" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="ACC" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="CU" DataType="BOOL" Value="0"/>
+<DataValueMember Name="CD" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DN" DataType="BOOL" Value="0"/>
+<DataValueMember Name="OV" DataType="BOOL" Value="0"/>
+<DataValueMember Name="UN" DataType="BOOL" Value="0"/>
+</Structure>
+</Element>
+<Element Index="[9]">
+<Structure DataType="COUNTER">
+<DataValueMember Name="PRE" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="ACC" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="CU" DataType="BOOL" Value="0"/>
+<DataValueMember Name="CD" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DN" DataType="BOOL" Value="0"/>
+<DataValueMember Name="OV" DataType="BOOL" Value="0"/>
+<DataValueMember Name="UN" DataType="BOOL" Value="0"/>
+</Structure>
+</Element>
+</Array>
+</Data>
+</Tag>
+<Tag Name="Encoder_Output_Bits_HBW" TagType="Base" DataType="DINT" Radix="Decimal" Constant="false" ExternalAccess="Read/Write" OpcUaAccess="None">
+<Data Format="L5K">
+<![CDATA[0]]>
+</Data>
+<Data Format="Decorated">
+<DataValue DataType="DINT" Radix="Decimal" Value="0"/>
+</Data>
+</Tag>
+<Tag Name="Encoder_Output_Bits_VGR" TagType="Base" DataType="DINT" Dimensions="2" Radix="Decimal" Constant="false" ExternalAccess="Read/Write" OpcUaAccess="None">
+<Data Format="L5K">
+<![CDATA[[0,0]]]>
+</Data>
+<Data Format="Decorated">
+<Array DataType="DINT" Dimensions="2" Radix="Decimal">
+<Element Index="[0]" Value="0"/>
+<Element Index="[1]" Value="0"/>
+</Array>
+</Data>
+</Tag>
+<Tag Name="Encoder_Storage_Bits_HBW" TagType="Base" DataType="DINT" Radix="Decimal" Constant="false" ExternalAccess="Read/Write" OpcUaAccess="None">
+<Data Format="L5K">
+<![CDATA[0]]>
+</Data>
+<Data Format="Decorated">
+<DataValue DataType="DINT" Radix="Decimal" Value="0"/>
+</Data>
+</Tag>
+<Tag Name="Encoder_Storage_Bits_VGR" TagType="Base" DataType="DINT" Dimensions="2" Radix="Decimal" Constant="false" ExternalAccess="Read/Write" OpcUaAccess="None">
+<Data Format="L5K">
+<![CDATA[[0,0]]]>
+</Data>
+<Data Format="Decorated">
+<Array DataType="DINT" Dimensions="2" Radix="Decimal">
+<Element Index="[0]" Value="0"/>
+<Element Index="[1]" Value="0"/>
+</Array>
+</Data>
+</Tag>
+<Tag Name="I_O_Counter" TagType="Base" DataType="COUNTER" Dimensions="20" Constant="false" ExternalAccess="Read/Write" OpcUaAccess="None">
+<Data Format="L5K">
+<![CDATA[[[0,2140000000,0],[0,2140000000,0],[0,2140000000,0],[0,2140000000,0],[0,2140000000,2],[0,2140000000,0],[0,2140000000
+		,42],[0,0,0],[0,0,0],[-2147483648,2140000000,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0]]]]>
+</Data>
+<Data Format="Decorated">
+<Array DataType="COUNTER" Dimensions="20">
+<Element Index="[0]">
+<Structure DataType="COUNTER">
+<DataValueMember Name="PRE" DataType="DINT" Radix="Decimal" Value="2140000000"/>
+<DataValueMember Name="ACC" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="CU" DataType="BOOL" Value="0"/>
+<DataValueMember Name="CD" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DN" DataType="BOOL" Value="0"/>
+<DataValueMember Name="OV" DataType="BOOL" Value="0"/>
+<DataValueMember Name="UN" DataType="BOOL" Value="0"/>
+</Structure>
+</Element>
+<Element Index="[1]">
+<Structure DataType="COUNTER">
+<DataValueMember Name="PRE" DataType="DINT" Radix="Decimal" Value="2140000000"/>
+<DataValueMember Name="ACC" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="CU" DataType="BOOL" Value="0"/>
+<DataValueMember Name="CD" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DN" DataType="BOOL" Value="0"/>
+<DataValueMember Name="OV" DataType="BOOL" Value="0"/>
+<DataValueMember Name="UN" DataType="BOOL" Value="0"/>
+</Structure>
+</Element>
+<Element Index="[2]">
+<Structure DataType="COUNTER">
+<DataValueMember Name="PRE" DataType="DINT" Radix="Decimal" Value="2140000000"/>
+<DataValueMember Name="ACC" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="CU" DataType="BOOL" Value="0"/>
+<DataValueMember Name="CD" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DN" DataType="BOOL" Value="0"/>
+<DataValueMember Name="OV" DataType="BOOL" Value="0"/>
+<DataValueMember Name="UN" DataType="BOOL" Value="0"/>
+</Structure>
+</Element>
+<Element Index="[3]">
+<Structure DataType="COUNTER">
+<DataValueMember Name="PRE" DataType="DINT" Radix="Decimal" Value="2140000000"/>
+<DataValueMember Name="ACC" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="CU" DataType="BOOL" Value="0"/>
+<DataValueMember Name="CD" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DN" DataType="BOOL" Value="0"/>
+<DataValueMember Name="OV" DataType="BOOL" Value="0"/>
+<DataValueMember Name="UN" DataType="BOOL" Value="0"/>
+</Structure>
+</Element>
+<Element Index="[4]">
+<Structure DataType="COUNTER">
+<DataValueMember Name="PRE" DataType="DINT" Radix="Decimal" Value="2140000000"/>
+<DataValueMember Name="ACC" DataType="DINT" Radix="Decimal" Value="2"/>
+<DataValueMember Name="CU" DataType="BOOL" Value="0"/>
+<DataValueMember Name="CD" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DN" DataType="BOOL" Value="0"/>
+<DataValueMember Name="OV" DataType="BOOL" Value="0"/>
+<DataValueMember Name="UN" DataType="BOOL" Value="0"/>
+</Structure>
+</Element>
+<Element Index="[5]">
+<Structure DataType="COUNTER">
+<DataValueMember Name="PRE" DataType="DINT" Radix="Decimal" Value="2140000000"/>
+<DataValueMember Name="ACC" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="CU" DataType="BOOL" Value="0"/>
+<DataValueMember Name="CD" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DN" DataType="BOOL" Value="0"/>
+<DataValueMember Name="OV" DataType="BOOL" Value="0"/>
+<DataValueMember Name="UN" DataType="BOOL" Value="0"/>
+</Structure>
+</Element>
+<Element Index="[6]">
+<Structure DataType="COUNTER">
+<DataValueMember Name="PRE" DataType="DINT" Radix="Decimal" Value="2140000000"/>
+<DataValueMember Name="ACC" DataType="DINT" Radix="Decimal" Value="42"/>
+<DataValueMember Name="CU" DataType="BOOL" Value="0"/>
+<DataValueMember Name="CD" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DN" DataType="BOOL" Value="0"/>
+<DataValueMember Name="OV" DataType="BOOL" Value="0"/>
+<DataValueMember Name="UN" DataType="BOOL" Value="0"/>
+</Structure>
+</Element>
+<Element Index="[7]">
+<Structure DataType="COUNTER">
+<DataValueMember Name="PRE" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="ACC" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="CU" DataType="BOOL" Value="0"/>
+<DataValueMember Name="CD" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DN" DataType="BOOL" Value="0"/>
+<DataValueMember Name="OV" DataType="BOOL" Value="0"/>
+<DataValueMember Name="UN" DataType="BOOL" Value="0"/>
+</Structure>
+</Element>
+<Element Index="[8]">
+<Structure DataType="COUNTER">
+<DataValueMember Name="PRE" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="ACC" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="CU" DataType="BOOL" Value="0"/>
+<DataValueMember Name="CD" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DN" DataType="BOOL" Value="0"/>
+<DataValueMember Name="OV" DataType="BOOL" Value="0"/>
+<DataValueMember Name="UN" DataType="BOOL" Value="0"/>
+</Structure>
+</Element>
+<Element Index="[9]">
+<Structure DataType="COUNTER">
+<DataValueMember Name="PRE" DataType="DINT" Radix="Decimal" Value="2140000000"/>
+<DataValueMember Name="ACC" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="CU" DataType="BOOL" Value="1"/>
+<DataValueMember Name="CD" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DN" DataType="BOOL" Value="0"/>
+<DataValueMember Name="OV" DataType="BOOL" Value="0"/>
+<DataValueMember Name="UN" DataType="BOOL" Value="0"/>
+</Structure>
+</Element>
+<Element Index="[10]">
+<Structure DataType="COUNTER">
+<DataValueMember Name="PRE" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="ACC" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="CU" DataType="BOOL" Value="0"/>
+<DataValueMember Name="CD" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DN" DataType="BOOL" Value="0"/>
+<DataValueMember Name="OV" DataType="BOOL" Value="0"/>
+<DataValueMember Name="UN" DataType="BOOL" Value="0"/>
+</Structure>
+</Element>
+<Element Index="[11]">
+<Structure DataType="COUNTER">
+<DataValueMember Name="PRE" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="ACC" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="CU" DataType="BOOL" Value="0"/>
+<DataValueMember Name="CD" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DN" DataType="BOOL" Value="0"/>
+<DataValueMember Name="OV" DataType="BOOL" Value="0"/>
+<DataValueMember Name="UN" DataType="BOOL" Value="0"/>
+</Structure>
+</Element>
+<Element Index="[12]">
+<Structure DataType="COUNTER">
+<DataValueMember Name="PRE" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="ACC" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="CU" DataType="BOOL" Value="0"/>
+<DataValueMember Name="CD" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DN" DataType="BOOL" Value="0"/>
+<DataValueMember Name="OV" DataType="BOOL" Value="0"/>
+<DataValueMember Name="UN" DataType="BOOL" Value="0"/>
+</Structure>
+</Element>
+<Element Index="[13]">
+<Structure DataType="COUNTER">
+<DataValueMember Name="PRE" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="ACC" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="CU" DataType="BOOL" Value="0"/>
+<DataValueMember Name="CD" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DN" DataType="BOOL" Value="0"/>
+<DataValueMember Name="OV" DataType="BOOL" Value="0"/>
+<DataValueMember Name="UN" DataType="BOOL" Value="0"/>
+</Structure>
+</Element>
+<Element Index="[14]">
+<Structure DataType="COUNTER">
+<DataValueMember Name="PRE" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="ACC" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="CU" DataType="BOOL" Value="0"/>
+<DataValueMember Name="CD" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DN" DataType="BOOL" Value="0"/>
+<DataValueMember Name="OV" DataType="BOOL" Value="0"/>
+<DataValueMember Name="UN" DataType="BOOL" Value="0"/>
+</Structure>
+</Element>
+<Element Index="[15]">
+<Structure DataType="COUNTER">
+<DataValueMember Name="PRE" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="ACC" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="CU" DataType="BOOL" Value="0"/>
+<DataValueMember Name="CD" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DN" DataType="BOOL" Value="0"/>
+<DataValueMember Name="OV" DataType="BOOL" Value="0"/>
+<DataValueMember Name="UN" DataType="BOOL" Value="0"/>
+</Structure>
+</Element>
+<Element Index="[16]">
+<Structure DataType="COUNTER">
+<DataValueMember Name="PRE" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="ACC" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="CU" DataType="BOOL" Value="0"/>
+<DataValueMember Name="CD" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DN" DataType="BOOL" Value="0"/>
+<DataValueMember Name="OV" DataType="BOOL" Value="0"/>
+<DataValueMember Name="UN" DataType="BOOL" Value="0"/>
+</Structure>
+</Element>
+<Element Index="[17]">
+<Structure DataType="COUNTER">
+<DataValueMember Name="PRE" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="ACC" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="CU" DataType="BOOL" Value="0"/>
+<DataValueMember Name="CD" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DN" DataType="BOOL" Value="0"/>
+<DataValueMember Name="OV" DataType="BOOL" Value="0"/>
+<DataValueMember Name="UN" DataType="BOOL" Value="0"/>
+</Structure>
+</Element>
+<Element Index="[18]">
+<Structure DataType="COUNTER">
+<DataValueMember Name="PRE" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="ACC" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="CU" DataType="BOOL" Value="0"/>
+<DataValueMember Name="CD" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DN" DataType="BOOL" Value="0"/>
+<DataValueMember Name="OV" DataType="BOOL" Value="0"/>
+<DataValueMember Name="UN" DataType="BOOL" Value="0"/>
+</Structure>
+</Element>
+<Element Index="[19]">
+<Structure DataType="COUNTER">
+<DataValueMember Name="PRE" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="ACC" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="CU" DataType="BOOL" Value="0"/>
+<DataValueMember Name="CD" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DN" DataType="BOOL" Value="0"/>
+<DataValueMember Name="OV" DataType="BOOL" Value="0"/>
+<DataValueMember Name="UN" DataType="BOOL" Value="0"/>
+</Structure>
+</Element>
+</Array>
+</Data>
+</Tag>
+<Tag Name="PWM_Outputs" TagType="Base" DataType="PWM_Out" Dimensions="20" Constant="false" ExternalAccess="Read/Write" OpcUaAccess="None">
+<Data Format="L5K">
+<![CDATA[[[0,100,500,[230280,2,0],[230279,0,0],1.00000000e+000,2.00000000e+000],[0,100,500,[230280,2,0],[230279,0,0],1.00000000e+000
+		,2.00000000e+000],[0,100,500,[0,2,0],[0,0,0],1.00000000e+000,2.00000000e+000],[0,100,500,[0,2,0],[0,0,0],1.00000000e+000
+		,2.00000000e+000],[0,100,500,[4034494,2,0],[4034494,0,0],1.00000000e+000,2.00000000e+000],[0,100,500,[4138914
+		,2,0],[4138913,0,0],1.00000000e+000,2.00000000e+000],[0,100,500,[4169694,2,0],[4169693,0,0],1.00000000e+000
+		,2.00000000e+000],[0,100,500,[0,2,0],[0,0,0],1.00000000e+000,2.00000000e+000],[0,100,500,[1670513,2,0],[1670513
+		,0,0],1.00000000e+000,2.00000000e+000],[0,100,500,[1675093,2,0],[1675093,0,0],1.00000000e+000,2.00000000e+000
+		],[0,100,500,[1677585,2,0],[1677585,0,0],1.00000000e+000,2.00000000e+000],[1,0,0,[0,0,0],[0,0,0],0.00000000e+000,6.00000000e+001
+		],[1,0,0,[0,0,0],[0,0,0],0.00000000e+000,6.00000000e+001],[1,0,0,[0,0,0],[0,0,0],0.00000000e+000,6.00000000e+001],[1,0,0
+		,[0,0,0],[0,0,0],0.00000000e+000,6.00000000e+001],[1,0,0,[0,0,0],[0,0,0],0.00000000e+000,6.00000000e+001],[1,0,0,[0,0,0
+		],[0,0,0],0.00000000e+000,6.00000000e+001],[1,0,0,[0,0,0],[0,0,0],0.00000000e+000,6.00000000e+001],[1,0,0,[0,0,0],[0,0,0
+		],0.00000000e+000,6.00000000e+001],[1,0,0,[0,0,0],[0,0,0],0.00000000e+000,6.00000000e+001]]]]>
+</Data>
+<Data Format="Decorated">
+<Array DataType="PWM_Out" Dimensions="20">
+<Element Index="[0]">
+<Structure DataType="PWM_Out">
+<DataValueMember Name="EnableIn" DataType="BOOL" Value="0"/>
+<DataValueMember Name="EnableOut" DataType="BOOL" Value="0"/>
+<DataValueMember Name="PWM_Pin" DataType="BOOL" Value="0"/>
+<DataValueMember Name="Duty_Cycle" DataType="DINT" Radix="Decimal" Value="100"/>
+<DataValueMember Name="Frequency_Hz" DataType="DINT" Radix="Decimal" Value="500"/>
+</Structure>
+</Element>
+<Element Index="[1]">
+<Structure DataType="PWM_Out">
+<DataValueMember Name="EnableIn" DataType="BOOL" Value="0"/>
+<DataValueMember Name="EnableOut" DataType="BOOL" Value="0"/>
+<DataValueMember Name="PWM_Pin" DataType="BOOL" Value="0"/>
+<DataValueMember Name="Duty_Cycle" DataType="DINT" Radix="Decimal" Value="100"/>
+<DataValueMember Name="Frequency_Hz" DataType="DINT" Radix="Decimal" Value="500"/>
+</Structure>
+</Element>
+<Element Index="[2]">
+<Structure DataType="PWM_Out">
+<DataValueMember Name="EnableIn" DataType="BOOL" Value="0"/>
+<DataValueMember Name="EnableOut" DataType="BOOL" Value="0"/>
+<DataValueMember Name="PWM_Pin" DataType="BOOL" Value="0"/>
+<DataValueMember Name="Duty_Cycle" DataType="DINT" Radix="Decimal" Value="100"/>
+<DataValueMember Name="Frequency_Hz" DataType="DINT" Radix="Decimal" Value="500"/>
+</Structure>
+</Element>
+<Element Index="[3]">
+<Structure DataType="PWM_Out">
+<DataValueMember Name="EnableIn" DataType="BOOL" Value="0"/>
+<DataValueMember Name="EnableOut" DataType="BOOL" Value="0"/>
+<DataValueMember Name="PWM_Pin" DataType="BOOL" Value="0"/>
+<DataValueMember Name="Duty_Cycle" DataType="DINT" Radix="Decimal" Value="100"/>
+<DataValueMember Name="Frequency_Hz" DataType="DINT" Radix="Decimal" Value="500"/>
+</Structure>
+</Element>
+<Element Index="[4]">
+<Structure DataType="PWM_Out">
+<DataValueMember Name="EnableIn" DataType="BOOL" Value="0"/>
+<DataValueMember Name="EnableOut" DataType="BOOL" Value="0"/>
+<DataValueMember Name="PWM_Pin" DataType="BOOL" Value="0"/>
+<DataValueMember Name="Duty_Cycle" DataType="DINT" Radix="Decimal" Value="100"/>
+<DataValueMember Name="Frequency_Hz" DataType="DINT" Radix="Decimal" Value="500"/>
+</Structure>
+</Element>
+<Element Index="[5]">
+<Structure DataType="PWM_Out">
+<DataValueMember Name="EnableIn" DataType="BOOL" Value="0"/>
+<DataValueMember Name="EnableOut" DataType="BOOL" Value="0"/>
+<DataValueMember Name="PWM_Pin" DataType="BOOL" Value="0"/>
+<DataValueMember Name="Duty_Cycle" DataType="DINT" Radix="Decimal" Value="100"/>
+<DataValueMember Name="Frequency_Hz" DataType="DINT" Radix="Decimal" Value="500"/>
+</Structure>
+</Element>
+<Element Index="[6]">
+<Structure DataType="PWM_Out">
+<DataValueMember Name="EnableIn" DataType="BOOL" Value="0"/>
+<DataValueMember Name="EnableOut" DataType="BOOL" Value="0"/>
+<DataValueMember Name="PWM_Pin" DataType="BOOL" Value="0"/>
+<DataValueMember Name="Duty_Cycle" DataType="DINT" Radix="Decimal" Value="100"/>
+<DataValueMember Name="Frequency_Hz" DataType="DINT" Radix="Decimal" Value="500"/>
+</Structure>
+</Element>
+<Element Index="[7]">
+<Structure DataType="PWM_Out">
+<DataValueMember Name="EnableIn" DataType="BOOL" Value="0"/>
+<DataValueMember Name="EnableOut" DataType="BOOL" Value="0"/>
+<DataValueMember Name="PWM_Pin" DataType="BOOL" Value="0"/>
+<DataValueMember Name="Duty_Cycle" DataType="DINT" Radix="Decimal" Value="100"/>
+<DataValueMember Name="Frequency_Hz" DataType="DINT" Radix="Decimal" Value="500"/>
+</Structure>
+</Element>
+<Element Index="[8]">
+<Structure DataType="PWM_Out">
+<DataValueMember Name="EnableIn" DataType="BOOL" Value="0"/>
+<DataValueMember Name="EnableOut" DataType="BOOL" Value="0"/>
+<DataValueMember Name="PWM_Pin" DataType="BOOL" Value="0"/>
+<DataValueMember Name="Duty_Cycle" DataType="DINT" Radix="Decimal" Value="100"/>
+<DataValueMember Name="Frequency_Hz" DataType="DINT" Radix="Decimal" Value="500"/>
+</Structure>
+</Element>
+<Element Index="[9]">
+<Structure DataType="PWM_Out">
+<DataValueMember Name="EnableIn" DataType="BOOL" Value="0"/>
+<DataValueMember Name="EnableOut" DataType="BOOL" Value="0"/>
+<DataValueMember Name="PWM_Pin" DataType="BOOL" Value="0"/>
+<DataValueMember Name="Duty_Cycle" DataType="DINT" Radix="Decimal" Value="100"/>
+<DataValueMember Name="Frequency_Hz" DataType="DINT" Radix="Decimal" Value="500"/>
+</Structure>
+</Element>
+<Element Index="[10]">
+<Structure DataType="PWM_Out">
+<DataValueMember Name="EnableIn" DataType="BOOL" Value="0"/>
+<DataValueMember Name="EnableOut" DataType="BOOL" Value="0"/>
+<DataValueMember Name="PWM_Pin" DataType="BOOL" Value="0"/>
+<DataValueMember Name="Duty_Cycle" DataType="DINT" Radix="Decimal" Value="100"/>
+<DataValueMember Name="Frequency_Hz" DataType="DINT" Radix="Decimal" Value="500"/>
+</Structure>
+</Element>
+<Element Index="[11]">
+<Structure DataType="PWM_Out">
+<DataValueMember Name="EnableIn" DataType="BOOL" Value="1"/>
+<DataValueMember Name="EnableOut" DataType="BOOL" Value="0"/>
+<DataValueMember Name="PWM_Pin" DataType="BOOL" Value="0"/>
+<DataValueMember Name="Duty_Cycle" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="Frequency_Hz" DataType="DINT" Radix="Decimal" Value="0"/>
+</Structure>
+</Element>
+<Element Index="[12]">
+<Structure DataType="PWM_Out">
+<DataValueMember Name="EnableIn" DataType="BOOL" Value="1"/>
+<DataValueMember Name="EnableOut" DataType="BOOL" Value="0"/>
+<DataValueMember Name="PWM_Pin" DataType="BOOL" Value="0"/>
+<DataValueMember Name="Duty_Cycle" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="Frequency_Hz" DataType="DINT" Radix="Decimal" Value="0"/>
+</Structure>
+</Element>
+<Element Index="[13]">
+<Structure DataType="PWM_Out">
+<DataValueMember Name="EnableIn" DataType="BOOL" Value="1"/>
+<DataValueMember Name="EnableOut" DataType="BOOL" Value="0"/>
+<DataValueMember Name="PWM_Pin" DataType="BOOL" Value="0"/>
+<DataValueMember Name="Duty_Cycle" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="Frequency_Hz" DataType="DINT" Radix="Decimal" Value="0"/>
+</Structure>
+</Element>
+<Element Index="[14]">
+<Structure DataType="PWM_Out">
+<DataValueMember Name="EnableIn" DataType="BOOL" Value="1"/>
+<DataValueMember Name="EnableOut" DataType="BOOL" Value="0"/>
+<DataValueMember Name="PWM_Pin" DataType="BOOL" Value="0"/>
+<DataValueMember Name="Duty_Cycle" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="Frequency_Hz" DataType="DINT" Radix="Decimal" Value="0"/>
+</Structure>
+</Element>
+<Element Index="[15]">
+<Structure DataType="PWM_Out">
+<DataValueMember Name="EnableIn" DataType="BOOL" Value="1"/>
+<DataValueMember Name="EnableOut" DataType="BOOL" Value="0"/>
+<DataValueMember Name="PWM_Pin" DataType="BOOL" Value="0"/>
+<DataValueMember Name="Duty_Cycle" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="Frequency_Hz" DataType="DINT" Radix="Decimal" Value="0"/>
+</Structure>
+</Element>
+<Element Index="[16]">
+<Structure DataType="PWM_Out">
+<DataValueMember Name="EnableIn" DataType="BOOL" Value="1"/>
+<DataValueMember Name="EnableOut" DataType="BOOL" Value="0"/>
+<DataValueMember Name="PWM_Pin" DataType="BOOL" Value="0"/>
+<DataValueMember Name="Duty_Cycle" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="Frequency_Hz" DataType="DINT" Radix="Decimal" Value="0"/>
+</Structure>
+</Element>
+<Element Index="[17]">
+<Structure DataType="PWM_Out">
+<DataValueMember Name="EnableIn" DataType="BOOL" Value="1"/>
+<DataValueMember Name="EnableOut" DataType="BOOL" Value="0"/>
+<DataValueMember Name="PWM_Pin" DataType="BOOL" Value="0"/>
+<DataValueMember Name="Duty_Cycle" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="Frequency_Hz" DataType="DINT" Radix="Decimal" Value="0"/>
+</Structure>
+</Element>
+<Element Index="[18]">
+<Structure DataType="PWM_Out">
+<DataValueMember Name="EnableIn" DataType="BOOL" Value="1"/>
+<DataValueMember Name="EnableOut" DataType="BOOL" Value="0"/>
+<DataValueMember Name="PWM_Pin" DataType="BOOL" Value="0"/>
+<DataValueMember Name="Duty_Cycle" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="Frequency_Hz" DataType="DINT" Radix="Decimal" Value="0"/>
+</Structure>
+</Element>
+<Element Index="[19]">
+<Structure DataType="PWM_Out">
+<DataValueMember Name="EnableIn" DataType="BOOL" Value="1"/>
+<DataValueMember Name="EnableOut" DataType="BOOL" Value="0"/>
+<DataValueMember Name="PWM_Pin" DataType="BOOL" Value="0"/>
+<DataValueMember Name="Duty_Cycle" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="Frequency_Hz" DataType="DINT" Radix="Decimal" Value="0"/>
+</Structure>
+</Element>
+</Array>
+</Data>
+</Tag>
+<Tag Name="Scaled_Analog_Color_Sensor_SLD" TagType="Base" DataType="DINT" Radix="Decimal" Constant="false" ExternalAccess="Read/Write" OpcUaAccess="None">
+<Description>
+<![CDATA[SLD - A1 = Color sensor]]>
+</Description>
+<Data Format="L5K">
+<![CDATA[38340]]>
+</Data>
+<Data Format="Decorated">
+<DataValue DataType="DINT" Radix="Decimal" Value="38340"/>
+</Data>
+</Tag>
+<Tag Name="Slot_1_Faulted" TagType="Base" DataType="DINT" Radix="Decimal" Constant="false" ExternalAccess="Read/Write" OpcUaAccess="None">
+<Data Format="L5K">
+<![CDATA[0]]>
+</Data>
+<Data Format="Decorated">
+<DataValue DataType="DINT" Radix="Decimal" Value="0"/>
+</Data>
+</Tag>
+<Tag Name="Slot_2_Faulted" TagType="Base" DataType="DINT" Radix="Decimal" Constant="false" ExternalAccess="Read/Write" OpcUaAccess="None">
+<Data Format="L5K">
+<![CDATA[0]]>
+</Data>
+<Data Format="Decorated">
+<DataValue DataType="DINT" Radix="Decimal" Value="0"/>
+</Data>
+</Tag>
+<Tag Name="Slot_3_Faulted" TagType="Base" DataType="DINT" Radix="Decimal" Constant="false" ExternalAccess="Read/Write" OpcUaAccess="None">
+<Data Format="L5K">
+<![CDATA[0]]>
+</Data>
+<Data Format="Decorated">
+<DataValue DataType="DINT" Radix="Decimal" Value="0"/>
+</Data>
+</Tag>
+<Tag Name="Slot_4_Faulted" TagType="Base" DataType="DINT" Radix="Decimal" Constant="false" ExternalAccess="Read/Write" OpcUaAccess="None">
+<Data Format="L5K">
+<![CDATA[0]]>
+</Data>
+<Data Format="Decorated">
+<DataValue DataType="DINT" Radix="Decimal" Value="0"/>
+</Data>
+</Tag>
+<Tag Name="Slot_5_Faulted" TagType="Base" DataType="DINT" Radix="Decimal" Constant="false" ExternalAccess="Read/Write" OpcUaAccess="None">
+<Data Format="L5K">
+<![CDATA[0]]>
+</Data>
+<Data Format="Decorated">
+<DataValue DataType="DINT" Radix="Decimal" Value="0"/>
+</Data>
+</Tag>
+<Tag Name="Slot_6_Faulted" TagType="Base" DataType="DINT" Radix="Decimal" Constant="false" ExternalAccess="Read/Write" OpcUaAccess="None">
+<Data Format="L5K">
+<![CDATA[0]]>
+</Data>
+<Data Format="Decorated">
+<DataValue DataType="DINT" Radix="Decimal" Value="0"/>
+</Data>
+</Tag>
+<Tag Name="Slot_7_Faulted" TagType="Base" DataType="DINT" Radix="Decimal" Constant="false" ExternalAccess="Read/Write" OpcUaAccess="None">
+<Data Format="L5K">
+<![CDATA[0]]>
+</Data>
+<Data Format="Decorated">
+<DataValue DataType="DINT" Radix="Decimal" Value="0"/>
+</Data>
+</Tag>
+<Tag Name="Slot_9_Faulted" TagType="Base" DataType="DINT" Radix="Decimal" Constant="false" ExternalAccess="Read/Write" OpcUaAccess="None">
+<Data Format="L5K">
+<![CDATA[516]]>
+</Data>
+<Data Format="Decorated">
+<DataValue DataType="DINT" Radix="Decimal" Value="516"/>
+</Data>
+</Tag>
+</Tags>
+<Programs>
+<Program Name="MainProgram" TestEdits="false" MainRoutineName="MainRoutine" Disabled="false" UseAsFolder="false">
+<Tags>
+<Tag Name="SCL_01" TagType="Base" DataType="SCALE" Constant="false" ExternalAccess="Read/Write" OpcUaAccess="None">
+<Description>
+<![CDATA[Scaler for SLD - A1 = Color sensor]]>
+</Description>
+<Data Format="L5K">
+<![CDATA[[1,5.85026073e+000,1.00000000e+001,0.00000000e+000,6.55350000e+004,0.00000000e+000,1,3.83396836e+004
+		,0,0.00000000e+000,1.00000000e+001,1.00000000e-001,3.83396836e+004]]]>
+</Data>
+<Data Format="Decorated">
+<Structure DataType="SCALE">
+<DataValueMember Name="EnableIn" DataType="BOOL" Value="1"/>
+<DataValueMember Name="In" DataType="REAL" Radix="Float" Value="5.8502607"/>
+<DataValueMember Name="InRawMax" DataType="REAL" Radix="Float" Value="10.0"/>
+<DataValueMember Name="InRawMin" DataType="REAL" Radix="Float" Value="0.0"/>
+<DataValueMember Name="InEUMax" DataType="REAL" Radix="Float" Value="65535.0"/>
+<DataValueMember Name="InEUMin" DataType="REAL" Radix="Float" Value="0.0"/>
+<DataValueMember Name="Limiting" DataType="BOOL" Value="0"/>
+<DataValueMember Name="EnableOut" DataType="BOOL" Value="1"/>
+<DataValueMember Name="Out" DataType="REAL" Radix="Float" Value="38339.684"/>
+<DataValueMember Name="MaxAlarm" DataType="BOOL" Value="0"/>
+<DataValueMember Name="MinAlarm" DataType="BOOL" Value="0"/>
+<DataValueMember Name="Status" DataType="DINT" Radix="Hex" Value="16#0000_0000"/>
+<DataValueMember Name="InstructFault" DataType="BOOL" Value="0"/>
+<DataValueMember Name="InRawRangeInv" DataType="BOOL" Value="0"/>
+</Structure>
+</Data>
+</Tag>
+<Tag Name="SLD_Blue_Min" TagType="Base" DataType="DINT" Radix="Decimal" Constant="true" ExternalAccess="Read/Write" OpcUaAccess="None">
+<Data Format="L5K">
+<![CDATA[32000]]>
+</Data>
+<Data Format="Decorated">
+<DataValue DataType="DINT" Radix="Decimal" Value="32000"/>
+</Data>
+</Tag>
+<Tag Name="SLD_Blue_Time" TagType="Base" DataType="DINT" Radix="Decimal" Constant="true" ExternalAccess="Read/Write" OpcUaAccess="None">
+<Data Format="L5K">
+<![CDATA[2360]]>
+</Data>
+<Data Format="Decorated">
+<DataValue DataType="DINT" Radix="Decimal" Value="2360"/>
+</Data>
+</Tag>
+<Tag Name="SLD_Min_Value" TagType="Base" DataType="DINT" Radix="Decimal" Constant="false" ExternalAccess="Read/Write" OpcUaAccess="None">
+<Data Format="L5K">
+<![CDATA[38000]]>
+</Data>
+<Data Format="Decorated">
+<DataValue DataType="DINT" Radix="Decimal" Value="38000"/>
+</Data>
+</Tag>
+<Tag Name="SLD_Move_Puck_To_Sensor_Time" TagType="Base" DataType="DINT" Radix="Decimal" Constant="true" ExternalAccess="Read/Write" OpcUaAccess="None">
+<Data Format="L5K">
+<![CDATA[1800]]>
+</Data>
+<Data Format="Decorated">
+<DataValue DataType="DINT" Radix="Decimal" Value="1800"/>
+</Data>
+</Tag>
+<Tag Name="SLD_Move_Time" TagType="Base" DataType="DINT" Radix="Decimal" Constant="false" ExternalAccess="Read/Write" OpcUaAccess="None">
+<Data Format="L5K">
+<![CDATA[438]]>
+</Data>
+<Data Format="Decorated">
+<DataValue DataType="DINT" Radix="Decimal" Value="438"/>
+</Data>
+</Tag>
+<Tag Name="SLD_Normal" TagType="Base" DataType="DINT" Radix="Decimal" Constant="true" ExternalAccess="Read/Write" OpcUaAccess="None">
+<Data Format="L5K">
+<![CDATA[38000]]>
+</Data>
+<Data Format="Decorated">
+<DataValue DataType="DINT" Radix="Decimal" Value="38000"/>
+</Data>
+</Tag>
+<Tag Name="SLD_Red_Min" TagType="Base" DataType="DINT" Radix="Decimal" Constant="true" ExternalAccess="Read/Write" OpcUaAccess="None">
+<Data Format="L5K">
+<![CDATA[28000]]>
+</Data>
+<Data Format="Decorated">
+<DataValue DataType="DINT" Radix="Decimal" Value="28000"/>
+</Data>
+</Tag>
+<Tag Name="SLD_Red_Time" TagType="Base" DataType="DINT" Radix="Decimal" Constant="true" ExternalAccess="Read/Write" OpcUaAccess="None">
+<Data Format="L5K">
+<![CDATA[1420]]>
+</Data>
+<Data Format="Decorated">
+<DataValue DataType="DINT" Radix="Decimal" Value="1420"/>
+</Data>
+</Tag>
+<Tag Name="SLD_start" TagType="Base" DataType="DINT" Radix="Decimal" Constant="false" ExternalAccess="Read/Write" OpcUaAccess="None">
+<Data Format="L5K">
+<![CDATA[0]]>
+</Data>
+<Data Format="Decorated">
+<DataValue DataType="DINT" Radix="Decimal" Value="0"/>
+</Data>
+</Tag>
+<Tag Name="SLD_Step" TagType="Base" DataType="DINT" Radix="Decimal" Constant="false" ExternalAccess="Read/Write" OpcUaAccess="None">
+<Data Format="L5K">
+<![CDATA[20]]>
+</Data>
+<Data Format="Decorated">
+<DataValue DataType="DINT" Radix="Decimal" Value="20"/>
+</Data>
+</Tag>
+<Tag Name="SLD_White_Min" TagType="Base" DataType="DINT" Radix="Decimal" Constant="true" ExternalAccess="Read/Write" OpcUaAccess="None">
+<Data Format="L5K">
+<![CDATA[0]]>
+</Data>
+<Data Format="Decorated">
+<DataValue DataType="DINT" Radix="Decimal" Value="0"/>
+</Data>
+</Tag>
+<Tag Name="SLD_White_Time" TagType="Base" DataType="DINT" Radix="Decimal" Constant="true" ExternalAccess="Read/Write" OpcUaAccess="None">
+<Data Format="L5K">
+<![CDATA[438]]>
+</Data>
+<Data Format="Decorated">
+<DataValue DataType="DINT" Radix="Decimal" Value="438"/>
+</Data>
+</Tag>
+<Tag Name="StepTimers" TagType="Base" DataType="TIMER" Dimensions="20" Constant="false" ExternalAccess="Read/Write" OpcUaAccess="None">
+<Data Format="L5K">
+<![CDATA[[[0,2000,0],[0,438,0],[0,0,0],[0,1000,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0]]]]>
+</Data>
+<Data Format="Decorated">
+<Array DataType="TIMER" Dimensions="20">
+<Element Index="[0]">
+<Structure DataType="TIMER">
+<DataValueMember Name="PRE" DataType="DINT" Radix="Decimal" Value="2000"/>
+<DataValueMember Name="ACC" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="EN" DataType="BOOL" Value="0"/>
+<DataValueMember Name="TT" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DN" DataType="BOOL" Value="0"/>
+</Structure>
+</Element>
+<Element Index="[1]">
+<Structure DataType="TIMER">
+<DataValueMember Name="PRE" DataType="DINT" Radix="Decimal" Value="438"/>
+<DataValueMember Name="ACC" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="EN" DataType="BOOL" Value="0"/>
+<DataValueMember Name="TT" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DN" DataType="BOOL" Value="0"/>
+</Structure>
+</Element>
+<Element Index="[2]">
+<Structure DataType="TIMER">
+<DataValueMember Name="PRE" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="ACC" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="EN" DataType="BOOL" Value="0"/>
+<DataValueMember Name="TT" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DN" DataType="BOOL" Value="0"/>
+</Structure>
+</Element>
+<Element Index="[3]">
+<Structure DataType="TIMER">
+<DataValueMember Name="PRE" DataType="DINT" Radix="Decimal" Value="1000"/>
+<DataValueMember Name="ACC" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="EN" DataType="BOOL" Value="0"/>
+<DataValueMember Name="TT" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DN" DataType="BOOL" Value="0"/>
+</Structure>
+</Element>
+<Element Index="[4]">
+<Structure DataType="TIMER">
+<DataValueMember Name="PRE" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="ACC" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="EN" DataType="BOOL" Value="0"/>
+<DataValueMember Name="TT" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DN" DataType="BOOL" Value="0"/>
+</Structure>
+</Element>
+<Element Index="[5]">
+<Structure DataType="TIMER">
+<DataValueMember Name="PRE" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="ACC" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="EN" DataType="BOOL" Value="0"/>
+<DataValueMember Name="TT" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DN" DataType="BOOL" Value="0"/>
+</Structure>
+</Element>
+<Element Index="[6]">
+<Structure DataType="TIMER">
+<DataValueMember Name="PRE" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="ACC" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="EN" DataType="BOOL" Value="0"/>
+<DataValueMember Name="TT" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DN" DataType="BOOL" Value="0"/>
+</Structure>
+</Element>
+<Element Index="[7]">
+<Structure DataType="TIMER">
+<DataValueMember Name="PRE" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="ACC" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="EN" DataType="BOOL" Value="0"/>
+<DataValueMember Name="TT" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DN" DataType="BOOL" Value="0"/>
+</Structure>
+</Element>
+<Element Index="[8]">
+<Structure DataType="TIMER">
+<DataValueMember Name="PRE" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="ACC" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="EN" DataType="BOOL" Value="0"/>
+<DataValueMember Name="TT" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DN" DataType="BOOL" Value="0"/>
+</Structure>
+</Element>
+<Element Index="[9]">
+<Structure DataType="TIMER">
+<DataValueMember Name="PRE" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="ACC" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="EN" DataType="BOOL" Value="0"/>
+<DataValueMember Name="TT" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DN" DataType="BOOL" Value="0"/>
+</Structure>
+</Element>
+<Element Index="[10]">
+<Structure DataType="TIMER">
+<DataValueMember Name="PRE" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="ACC" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="EN" DataType="BOOL" Value="0"/>
+<DataValueMember Name="TT" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DN" DataType="BOOL" Value="0"/>
+</Structure>
+</Element>
+<Element Index="[11]">
+<Structure DataType="TIMER">
+<DataValueMember Name="PRE" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="ACC" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="EN" DataType="BOOL" Value="0"/>
+<DataValueMember Name="TT" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DN" DataType="BOOL" Value="0"/>
+</Structure>
+</Element>
+<Element Index="[12]">
+<Structure DataType="TIMER">
+<DataValueMember Name="PRE" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="ACC" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="EN" DataType="BOOL" Value="0"/>
+<DataValueMember Name="TT" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DN" DataType="BOOL" Value="0"/>
+</Structure>
+</Element>
+<Element Index="[13]">
+<Structure DataType="TIMER">
+<DataValueMember Name="PRE" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="ACC" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="EN" DataType="BOOL" Value="0"/>
+<DataValueMember Name="TT" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DN" DataType="BOOL" Value="0"/>
+</Structure>
+</Element>
+<Element Index="[14]">
+<Structure DataType="TIMER">
+<DataValueMember Name="PRE" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="ACC" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="EN" DataType="BOOL" Value="0"/>
+<DataValueMember Name="TT" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DN" DataType="BOOL" Value="0"/>
+</Structure>
+</Element>
+<Element Index="[15]">
+<Structure DataType="TIMER">
+<DataValueMember Name="PRE" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="ACC" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="EN" DataType="BOOL" Value="0"/>
+<DataValueMember Name="TT" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DN" DataType="BOOL" Value="0"/>
+</Structure>
+</Element>
+<Element Index="[16]">
+<Structure DataType="TIMER">
+<DataValueMember Name="PRE" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="ACC" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="EN" DataType="BOOL" Value="0"/>
+<DataValueMember Name="TT" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DN" DataType="BOOL" Value="0"/>
+</Structure>
+</Element>
+<Element Index="[17]">
+<Structure DataType="TIMER">
+<DataValueMember Name="PRE" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="ACC" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="EN" DataType="BOOL" Value="0"/>
+<DataValueMember Name="TT" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DN" DataType="BOOL" Value="0"/>
+</Structure>
+</Element>
+<Element Index="[18]">
+<Structure DataType="TIMER">
+<DataValueMember Name="PRE" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="ACC" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="EN" DataType="BOOL" Value="0"/>
+<DataValueMember Name="TT" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DN" DataType="BOOL" Value="0"/>
+</Structure>
+</Element>
+<Element Index="[19]">
+<Structure DataType="TIMER">
+<DataValueMember Name="PRE" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="ACC" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="EN" DataType="BOOL" Value="0"/>
+<DataValueMember Name="TT" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DN" DataType="BOOL" Value="0"/>
+</Structure>
+</Element>
+</Array>
+</Data>
+</Tag>
+<Tag Name="VGR_Finished" TagType="Base" DataType="BOOL" Radix="Decimal" Constant="false" ExternalAccess="Read/Write" OpcUaAccess="None">
+<Data Format="L5K">
+<![CDATA[0]]>
+</Data>
+<Data Format="Decorated">
+<DataValue DataType="BOOL" Radix="Decimal" Value="0"/>
+</Data>
+</Tag>
+<Tag Name="VGR_HBW_Horizontal" TagType="Base" DataType="DINT" Radix="Decimal" Constant="true" ExternalAccess="Read/Write" OpcUaAccess="None">
+<Description>
+<![CDATA[The horizontal Encoder value for interfacing with HBW]]>
+</Description>
+<Data Format="L5K">
+<![CDATA[166]]>
+</Data>
+<Data Format="Decorated">
+<DataValue DataType="DINT" Radix="Decimal" Value="166"/>
+</Data>
+</Tag>
+<Tag Name="VGR_HBW_Rotate" TagType="Base" DataType="DINT" Radix="Decimal" Constant="true" ExternalAccess="Read/Write" OpcUaAccess="None">
+<Data Format="L5K">
+<![CDATA[1337]]>
+</Data>
+<Data Format="Decorated">
+<DataValue DataType="DINT" Radix="Decimal" Value="1337"/>
+</Data>
+</Tag>
+<Tag Name="VGR_HBW_Vertical" TagType="Base" DataType="DINT" Radix="Decimal" Constant="true" ExternalAccess="Read/Write" OpcUaAccess="None">
+<Description>
+<![CDATA[The Vertical Encoder value for interfacing with the HBW]]>
+</Description>
+<Data Format="L5K">
+<![CDATA[150]]>
+</Data>
+<Data Format="Decorated">
+<DataValue DataType="DINT" Radix="Decimal" Value="150"/>
+</Data>
+</Tag>
+<Tag Name="VGR_Horizontal_Target" TagType="Base" DataType="DINT" Radix="Decimal" Constant="false" ExternalAccess="Read/Write" OpcUaAccess="None">
+<Data Format="L5K">
+<![CDATA[5]]>
+</Data>
+<Data Format="Decorated">
+<DataValue DataType="DINT" Radix="Decimal" Value="5"/>
+</Data>
+</Tag>
+<Tag Name="VGR_Move_Horizontal" TagType="Base" DataType="DINT" Radix="Decimal" Constant="true" ExternalAccess="Read/Write" OpcUaAccess="None">
+<Description>
+<![CDATA[The horizontal encoder value for movement]]>
+</Description>
+<Data Format="L5K">
+<![CDATA[5]]>
+</Data>
+<Data Format="Decorated">
+<DataValue DataType="DINT" Radix="Decimal" Value="5"/>
+</Data>
+</Tag>
+<Tag Name="VGR_Move_Vertical" TagType="Base" DataType="DINT" Radix="Decimal" Constant="true" ExternalAccess="Read/Write" OpcUaAccess="None">
+<Description>
+<![CDATA[The vertical encoder value for movement]]>
+</Description>
+<Data Format="L5K">
+<![CDATA[0]]>
+</Data>
+<Data Format="Decorated">
+<DataValue DataType="DINT" Radix="Decimal" Value="0"/>
+</Data>
+</Tag>
+<Tag Name="VGR_MPO_Horizontal" TagType="Base" DataType="DINT" Radix="Decimal" Constant="true" ExternalAccess="Read/Write" OpcUaAccess="None">
+<Description>
+<![CDATA[The Horizontal encoderr value for interfacing with MPO]]>
+</Description>
+<Data Format="L5K">
+<![CDATA[825]]>
+</Data>
+<Data Format="Decorated">
+<DataValue DataType="DINT" Radix="Decimal" Value="825"/>
+</Data>
+</Tag>
+<Tag Name="VGR_MPO_Rotate" TagType="Base" DataType="DINT" Radix="Decimal" Constant="true" ExternalAccess="Read/Write" OpcUaAccess="None">
+<Data Format="L5K">
+<![CDATA[885]]>
+</Data>
+<Data Format="Decorated">
+<DataValue DataType="DINT" Radix="Decimal" Value="885"/>
+</Data>
+</Tag>
+<Tag Name="VGR_MPO_Vertical" TagType="Base" DataType="DINT" Radix="Decimal" Constant="true" ExternalAccess="Read/Write" OpcUaAccess="None">
+<Description>
+<![CDATA[The vertical encoder value for interfacing with MPO]]>
+</Description>
+<Data Format="L5K">
+<![CDATA[475]]>
+</Data>
+<Data Format="Decorated">
+<DataValue DataType="DINT" Radix="Decimal" Value="475"/>
+</Data>
+</Tag>
+<Tag Name="VGR_Rotation_Target" TagType="Base" DataType="DINT" Radix="Decimal" Constant="false" ExternalAccess="Read/Write" OpcUaAccess="None">
+<Data Format="L5K">
+<![CDATA[1337]]>
+</Data>
+<Data Format="Decorated">
+<DataValue DataType="DINT" Radix="Decimal" Value="1337"/>
+</Data>
+</Tag>
+<Tag Name="VGR_start" TagType="Base" DataType="DINT" Radix="Decimal" Constant="false" ExternalAccess="Read/Write" OpcUaAccess="None">
+<Data Format="L5K">
+<![CDATA[0]]>
+</Data>
+<Data Format="Decorated">
+<DataValue DataType="DINT" Radix="Decimal" Value="0"/>
+</Data>
+</Tag>
+<Tag Name="VGR_Step" TagType="Base" DataType="DINT" Radix="Decimal" Constant="false" ExternalAccess="Read/Write" OpcUaAccess="None">
+<Data Format="L5K">
+<![CDATA[180]]>
+</Data>
+<Data Format="Decorated">
+<DataValue DataType="DINT" Radix="Decimal" Value="180"/>
+</Data>
+</Tag>
+<Tag Name="VGR_Timer" TagType="Base" DataType="DINT" Radix="Decimal" Constant="false" ExternalAccess="Read/Write" OpcUaAccess="None">
+<Data Format="L5K">
+<![CDATA[0]]>
+</Data>
+<Data Format="Decorated">
+<DataValue DataType="DINT" Radix="Decimal" Value="0"/>
+</Data>
+</Tag>
+<Tag Name="VGR_Vertical_Target" TagType="Base" DataType="DINT" Radix="Decimal" Constant="false" ExternalAccess="Read/Write" OpcUaAccess="None">
+<Data Format="L5K">
+<![CDATA[0]]>
+</Data>
+<Data Format="Decorated">
+<DataValue DataType="DINT" Radix="Decimal" Value="0"/>
+</Data>
+</Tag>
+</Tags>
+<Routines>
+<Routine Name="Analog_Scaling" Type="FBD">
+<FBDContent SheetSize="B - 11 x 17 in" SheetOrientation="Landscape">
+<Sheet Number="1">
+<IRef ID="0" X="220" Y="300" Operand="Local:5:I.Ch0Data" HideDesc="false"/>
+<ORef ID="1" X="520" Y="300" Operand="Scaled_Analog_Color_Sensor_SLD" HideDesc="false"/>
+<Block Type="SCL" ID="2" X="320" Y="240" Operand="SCL_01" VisiblePins="In Out" HideDesc="false"/>
+<Wire FromID="0" ToID="2" ToParam="In"/>
+<Wire FromID="2" FromParam="Out" ToID="1"/>
+</Sheet>
+</FBDContent>
+</Routine>
+<Routine Name="MainRoutine" Type="RLL">
+<RLLContent>
+<Rung Number="0" Type="N">
+<Text>
+<![CDATA[JSR(VGR_Encoders,0);]]>
+</Text>
+</Rung>
+<Rung Number="1" Type="N">
+<Text>
+<![CDATA[JSR(Analog_Scaling,0);]]>
+</Text>
+</Rung>
+<Rung Number="2" Type="N">
+<Text>
+<![CDATA[JSR(VGR_Sequencer,0);]]>
+</Text>
+</Rung>
+<Rung Number="3" Type="N">
+<Text>
+<![CDATA[JSR(SLD_Sequencer,0);]]>
+</Text>
+</Rung>
+<Rung Number="4" Type="N">
+<Text>
+<![CDATA[JSR(VGR_Controller,0);]]>
+</Text>
+</Rung>
+<Rung Number="5" Type="N">
+<Text>
+<![CDATA[JSR(SLD_Controller,0);]]>
+</Text>
+</Rung>
+<Rung Number="6" Type="N">
+<Text>
+<![CDATA[GSV(Module,Slot_1_Input,FaultCode,Slot_1_Faulted)GSV(Module,Slot_2_Input,FaultCode,Slot_2_Faulted)GSV(Module,Slot_3_Input,FaultCode,Slot_3_Faulted)GSV(Module,Slot_4_Input,FaultCode,Slot_4_Faulted)GSV(Module,Slot_5_Input,FaultCode,Slot_5_Faulted)GSV(Module,Slot_6_Output,FaultCode,Slot_6_Faulted)GSV(Module,Slot_7_Output,FaultCode,Slot_7_Faulted);]]>
+</Text>
+</Rung>
+<Rung Number="7" Type="N">
+<Text>
+<![CDATA[NE(Slot_1_Faulted,0)CTU(I_O_Counter[0],?,?);]]>
+</Text>
+</Rung>
+<Rung Number="8" Type="N">
+<Text>
+<![CDATA[NE(Slot_2_Faulted,0)CTU(I_O_Counter[1],?,?);]]>
+</Text>
+</Rung>
+<Rung Number="9" Type="N">
+<Text>
+<![CDATA[NE(Slot_3_Faulted,0)CTU(I_O_Counter[2],?,?);]]>
+</Text>
+</Rung>
+<Rung Number="10" Type="N">
+<Text>
+<![CDATA[NE(Slot_4_Faulted,0)CTU(I_O_Counter[3],?,?);]]>
+</Text>
+</Rung>
+<Rung Number="11" Type="N">
+<Text>
+<![CDATA[NE(Slot_5_Faulted,0)CTU(I_O_Counter[4],?,?);]]>
+</Text>
+</Rung>
+<Rung Number="12" Type="N">
+<Text>
+<![CDATA[NE(Slot_6_Faulted,0)CTU(I_O_Counter[5],?,?);]]>
+</Text>
+</Rung>
+<Rung Number="13" Type="N">
+<Text>
+<![CDATA[NE(Slot_7_Faulted,0)CTU(I_O_Counter[6],?,?);]]>
+</Text>
+</Rung>
+<Rung Number="14" Type="N">
+<Text>
+<![CDATA[NE(Slot_9_Faulted,0)CTU(I_O_Counter[9],?,?);]]>
+</Text>
+</Rung>
+</RLLContent>
+</Routine>
+<Routine Name="SLD_Controller" Type="RLL">
+<RLLContent>
+<Rung Number="0" Type="N">
+<Comment>
+<![CDATA[Test SLD Motor M1conveyor belt]]>
+</Comment>
+<Text>
+<![CDATA[XIC(SLD_start.0)OTE(Local:6:O.Data.14);]]>
+</Text>
+</Rung>
+<Rung Number="1" Type="N">
+<Comment>
+<![CDATA[Test SLD Compressor]]>
+</Comment>
+<Text>
+<![CDATA[XIC(SLD_start.1)OTE(Local:6:O.Data.15);]]>
+</Text>
+</Rung>
+<Rung Number="2" Type="N">
+<Comment>
+<![CDATA[Test SLD Valve first ejector (white)]]>
+</Comment>
+<Text>
+<![CDATA[XIC(SLD_start.2)OTE(Local:7:O.Data.0);]]>
+</Text>
+</Rung>
+<Rung Number="3" Type="N">
+<Comment>
+<![CDATA[Test SLD Valve second ejector (red)]]>
+</Comment>
+<Text>
+<![CDATA[XIC(SLD_start.3)OTE(Local:7:O.Data.1);]]>
+</Text>
+</Rung>
+<Rung Number="4" Type="N">
+<Comment>
+<![CDATA[Test SLD  Valve third ejector (blue)]]>
+</Comment>
+<Text>
+<![CDATA[XIC(SLD_start.4)OTE(Local:7:O.Data.2);]]>
+</Text>
+</Rung>
+</RLLContent>
+</Routine>
+<Routine Name="SLD_Sequencer" Type="RLL">
+<RLLContent>
+<Rung Number="0" Type="N">
+<Comment>
+<![CDATA[No Activity on SLD]]>
+</Comment>
+<Text>
+<![CDATA[EQ(SLD_Step,0)JMP(Done);]]>
+</Text>
+</Rung>
+<Rung Number="1" Type="N">
+<Comment>
+<![CDATA[Reset the SLD]]>
+</Comment>
+<Text>
+<![CDATA[EQ(SLD_Step,10)RES(StepTimers[1])MOVE(SLD_Normal,SLD_Min_Value)MOVE(20,SLD_Step)JMP(Done);]]>
+</Text>
+</Rung>
+<Rung Number="2" Type="N">
+<Comment>
+<![CDATA[Wait for new puck]]>
+</Comment>
+<Text>
+<![CDATA[EQ(SLD_Step,20)JMP(Wait_For_Pucl);]]>
+</Text>
+</Rung>
+<Rung Number="3" Type="N">
+<Comment>
+<![CDATA[Move the puck through the color detector
+]]>
+</Comment>
+<Text>
+<![CDATA[EQ(SLD_Step,30)JMP(Move_Puck_Through_Detector);]]>
+</Text>
+</Rung>
+<Rung Number="4" Type="N">
+<Comment>
+<![CDATA[Determine the puck type]]>
+</Comment>
+<Text>
+<![CDATA[EQ(SLD_Step,40)JMP(Determine_Puck_Type);]]>
+</Text>
+</Rung>
+<Rung Number="5" Type="N">
+<Comment>
+<![CDATA[Move Puck To Destination]]>
+</Comment>
+<Text>
+<![CDATA[EQ(SLD_Step,50)JMP(Move_Puck_To_Pusher);]]>
+</Text>
+</Rung>
+<Rung Number="6" Type="N">
+<Comment>
+<![CDATA[Push Puck
+]]>
+</Comment>
+<Text>
+<![CDATA[EQ(SLD_Step,60)JMP(Push_Puck);]]>
+</Text>
+</Rung>
+<Rung Number="7" Type="N">
+<Text>
+<![CDATA[LBL(Done)RET();]]>
+</Text>
+</Rung>
+<Rung Number="8" Type="N">
+<Text>
+<![CDATA[JMP(Done);]]>
+</Text>
+</Rung>
+<Rung Number="9" Type="N">
+<Comment>
+<![CDATA[Wait For Puck]]>
+</Comment>
+<Text>
+<![CDATA[LBL(Wait_For_Pucl)XIO(Local:3:I.Data.9)MOVE(30,SLD_Step);]]>
+</Text>
+</Rung>
+<Rung Number="10" Type="N">
+<Text>
+<![CDATA[JMP(Done);]]>
+</Text>
+</Rung>
+<Rung Number="11" Type="N">
+<Comment>
+<![CDATA[Responsible for deciding which color the puck is]]>
+</Comment>
+<Text>
+<![CDATA[LBL(Move_Puck_Through_Detector)OTL(SLD_start.0);]]>
+</Text>
+</Rung>
+<Rung Number="12" Type="N">
+<Text>
+<![CDATA[LT(Scaled_Analog_Color_Sensor_SLD,SLD_Min_Value)MOVE(Scaled_Analog_Color_Sensor_SLD,SLD_Min_Value);]]>
+</Text>
+</Rung>
+<Rung Number="13" Type="N">
+<Text>
+<![CDATA[XIO(Local:3:I.Data.10)ADD(10,SLD_Step,SLD_Step);]]>
+</Text>
+</Rung>
+<Rung Number="14" Type="N">
+<Text>
+<![CDATA[JMP(Done);]]>
+</Text>
+</Rung>
+<Rung Number="15" Type="N">
+<Comment>
+<![CDATA[Responsible for deciding which color the puck is. Also resets the minimum value tracker]]>
+</Comment>
+<Text>
+<![CDATA[LBL(Determine_Puck_Type)OTL(SLD_start.0)[LT(SLD_Min_Value,SLD_Red_Min) MOVE(SLD_White_Time,SLD_Move_Time) ,GT(SLD_Min_Value,SLD_Red_Min) LT(SLD_Min_Value,SLD_Blue_Min) MOVE(SLD_Red_Time,SLD_Move_Time) ,GT(SLD_Min_Value,SLD_Blue_Min) MOVE(SLD_Blue_Time,SLD_Move_Time) ]MOVE(SLD_Normal,SLD_Min_Value)ADD(SLD_Step,10,SLD_Step);]]>
+</Text>
+</Rung>
+<Rung Number="16" Type="N">
+<Text>
+<![CDATA[JMP(Done);]]>
+</Text>
+</Rung>
+<Rung Number="17" Type="N">
+<Text>
+<![CDATA[LBL(Move_Puck_To_Pusher)MOVE(SLD_Move_Time,StepTimers[1].PRE)TON(StepTimers[1],?,?);]]>
+</Text>
+</Rung>
+<Rung Number="18" Type="N">
+<Text>
+<![CDATA[XIC(StepTimers[1].DN)OTU(SLD_start.0)RES(StepTimers[1])ADD(SLD_Step,10,SLD_Step);]]>
+</Text>
+</Rung>
+<Rung Number="19" Type="N">
+<Text>
+<![CDATA[JMP(Done);]]>
+</Text>
+</Rung>
+<Rung Number="20" Type="N">
+<Comment>
+<![CDATA[Push Puck]]>
+</Comment>
+<Text>
+<![CDATA[LBL(Push_Puck)[EQ(SLD_Move_Time,SLD_White_Time) OTL(SLD_start.2) ,EQ(SLD_Move_Time,SLD_Red_Time) OTL(SLD_start.3) ,EQ(SLD_Move_Time,SLD_Blue_Time) OTL(SLD_start.4) ]OTL(SLD_start.1);]]>
+</Text>
+</Rung>
+<Rung Number="21" Type="N">
+<Text>
+<![CDATA[[EQ(SLD_Move_Time,SLD_White_Time) XIO(Local:3:I.Data.11) ,EQ(SLD_Move_Time,SLD_Red_Time) XIO(Local:3:I.Data.12) ,EQ(SLD_Move_Time,SLD_Blue_Time) XIO(Local:3:I.Data.13) ]OTU(SLD_start.0)OTU(SLD_start.1)OTU(SLD_start.2)OTU(SLD_start.3)OTU(SLD_start.4)MOVE(10,SLD_Step);]]>
+</Text>
+</Rung>
+<Rung Number="22" Type="N">
+<Text>
+<![CDATA[JMP(Done);]]>
+</Text>
+</Rung>
+</RLLContent>
+</Routine>
+<Routine Name="VGR_Controller" Type="RLL">
+<RLLContent>
+<Rung Number="0" Type="N">
+<Comment>
+<![CDATA[Test VGR Motor M1 vertical axis up
+]]>
+</Comment>
+<Text>
+<![CDATA[XIC(VGR_start.0)OTE(Local:6:O.Data.10);]]>
+</Text>
+</Rung>
+<Rung Number="1" Type="N">
+<Comment>
+<![CDATA[Test VGR Motor M1 vertical axis down
+]]>
+</Comment>
+<Text>
+<![CDATA[XIC(VGR_start.1)OTE(Local:6:O.Data.11);]]>
+</Text>
+</Rung>
+<Rung Number="2" Type="N">
+<Comment>
+<![CDATA[Test VGR Motor M2 horizontal axis backward
+]]>
+</Comment>
+<Text>
+<![CDATA[XIC(VGR_start.2)OTE(Local:6:O.Data.28);]]>
+</Text>
+</Rung>
+<Rung Number="3" Type="N">
+<Comment>
+<![CDATA[Test VGR Motor M2 horizontal axis forward]]>
+</Comment>
+<Text>
+<![CDATA[XIC(VGR_start.3)OTE(Local:6:O.Data.29);]]>
+</Text>
+</Rung>
+<Rung Number="4" Type="N">
+<Comment>
+<![CDATA[Test VGR  Motor M3 rotate clockwise
+]]>
+</Comment>
+<Text>
+<![CDATA[XIC(VGR_start.4)OTE(Local:6:O.Data.30);]]>
+</Text>
+</Rung>
+<Rung Number="5" Type="N">
+<Comment>
+<![CDATA[Test VGR Motor M3 rotate counterclockwise
+]]>
+</Comment>
+<Text>
+<![CDATA[XIC(VGR_start.5)OTE(Local:6:O.Data.31);]]>
+</Text>
+</Rung>
+<Rung Number="6" Type="N">
+<Comment>
+<![CDATA[Test VGR  Compressor]]>
+</Comment>
+<Text>
+<![CDATA[XIC(VGR_start.6)OTE(Local:6:O.Data.12);]]>
+</Text>
+</Rung>
+<Rung Number="7" Type="N">
+<Comment>
+<![CDATA[Test VGR Valve vacuum
+]]>
+</Comment>
+<Text>
+<![CDATA[XIC(VGR_start.7)OTE(Local:6:O.Data.13);]]>
+</Text>
+</Rung>
+<Rung Number="8" Type="N">
+<Text>
+<![CDATA[[XIC(VGR_start.0) ,XIC(VGR_start.1) ]PWM_Out(PWM_Outputs[8],Local:7:O.Data.18,100,500);]]>
+</Text>
+</Rung>
+<Rung Number="9" Type="N">
+<Text>
+<![CDATA[[XIC(VGR_start.2) ,XIC(VGR_start.3) ]PWM_Out(PWM_Outputs[9],Local:7:O.Data.19,100,500);]]>
+</Text>
+</Rung>
+<Rung Number="10" Type="N">
+<Text>
+<![CDATA[[XIC(VGR_start.4) ,XIC(VGR_start.5) ]PWM_Out(PWM_Outputs[10],Local:7:O.Data.20,100,500);]]>
+</Text>
+</Rung>
+</RLLContent>
+</Routine>
+<Routine Name="VGR_Encoders" Type="RLL">
+<RLLContent>
+<Rung Number="0" Type="N">
+<Comment>
+<![CDATA[VGR Encoders Start]]>
+</Comment>
+<Text>
+<![CDATA[NOP();]]>
+</Text>
+</Rung>
+<Rung Number="1" Type="N">
+<Comment>
+<![CDATA[VGR Vertical Axis Reset]]>
+</Comment>
+<Text>
+<![CDATA[XIC(S:FS)RES(Encoder_Counters_4X[2]);]]>
+</Text>
+</Rung>
+<Rung Number="2" Type="N">
+<Text>
+<![CDATA[XIC(S:FS)RES(Encoder_Counters_2X[2]);]]>
+</Text>
+</Rung>
+<Rung Number="3" Type="N">
+<Text>
+<![CDATA[XIC(S:FS)RES(Encoder_Counters_1X[2]);]]>
+</Text>
+</Rung>
+<Rung Number="4" Type="N">
+<Comment>
+<![CDATA[VGR M1 Vertical Positive(DOWNWARD) Direction 4X]]>
+</Comment>
+<Text>
+<![CDATA[XIC(Local:6:O.Data.11)XIC(Local:1:I.Pt[0].Data)[OSR(Encoder_Storage_Bits_VGR[0].0,Encoder_Output_Bits_VGR[0].0) ,OSF(Encoder_Storage_Bits_VGR[0].1,Encoder_Output_Bits_VGR[0].1) ]CTU(Encoder_Counters_4X[2],?,?);]]>
+</Text>
+</Rung>
+<Rung Number="5" Type="N">
+<Text>
+<![CDATA[XIC(Local:6:O.Data.11)XIC(Local:1:I.Pt[1].Data)[OSR(Encoder_Storage_Bits_VGR[0].2,Encoder_Output_Bits_VGR[0].2) ,OSF(Encoder_Storage_Bits_VGR[0].3,Encoder_Output_Bits_VGR[0].3) ]CTU(Encoder_Counters_4X[2],?,?);]]>
+</Text>
+</Rung>
+<Rung Number="6" Type="N">
+<Comment>
+<![CDATA[VGR M1 Vertical Negative(UPWARD) Direction 4X]]>
+</Comment>
+<Text>
+<![CDATA[XIC(Local:6:O.Data.10)XIC(Local:1:I.Pt[0].Data)[OSR(Encoder_Storage_Bits_VGR[0].4,Encoder_Output_Bits_VGR[0].4) ,OSF(Encoder_Storage_Bits_VGR[0].5,Encoder_Output_Bits_VGR[0].5) ]CTD(Encoder_Counters_4X[2],?,?);]]>
+</Text>
+</Rung>
+<Rung Number="7" Type="N">
+<Text>
+<![CDATA[XIC(Local:6:O.Data.10)XIC(Local:1:I.Pt[1].Data)[OSR(Encoder_Storage_Bits_VGR[0].6,Encoder_Output_Bits_VGR[0].6) ,OSF(Encoder_Storage_Bits_VGR[0].7,Encoder_Output_Bits_VGR[0].7) ]CTD(Encoder_Counters_4X[2],?,?);]]>
+</Text>
+</Rung>
+<Rung Number="8" Type="N">
+<Comment>
+<![CDATA[VGR M1 Vertical Positive(DOWNWARD) Direction 2X]]>
+</Comment>
+<Text>
+<![CDATA[XIC(Local:6:O.Data.11)XIC(Local:1:I.Pt[0].Data)[OSR(Encoder_Storage_Bits_VGR[0].8,Encoder_Output_Bits_VGR[0].8) ,OSF(Encoder_Storage_Bits_VGR[0].9,Encoder_Output_Bits_VGR[0].9) ]CTU(Encoder_Counters_2X[2],?,?);]]>
+</Text>
+</Rung>
+<Rung Number="9" Type="N">
+<Comment>
+<![CDATA[VGR M1 Vertical Negative(UPWARD) Direction 2X]]>
+</Comment>
+<Text>
+<![CDATA[XIC(Local:6:O.Data.10)XIC(Local:1:I.Pt[0].Data)[OSR(Encoder_Storage_Bits_VGR[0].10,Encoder_Output_Bits_VGR[0].10) ,OSF(Encoder_Storage_Bits_VGR[0].11,Encoder_Output_Bits_VGR[0].11) ]CTD(Encoder_Counters_2X[2],?,?);]]>
+</Text>
+</Rung>
+<Rung Number="10" Type="N">
+<Comment>
+<![CDATA[VGR M1 Vertical Positive(DOWNWARD) Direction 1X]]>
+</Comment>
+<Text>
+<![CDATA[XIC(Local:6:O.Data.11)XIC(Local:1:I.Pt[0].Data)OSR(Encoder_Storage_Bits_VGR[0].12,Encoder_Output_Bits_VGR[0].12)CTU(Encoder_Counters_1X[2],?,?);]]>
+</Text>
+</Rung>
+<Rung Number="11" Type="N">
+<Comment>
+<![CDATA[VGR M1 Vertical Negative(UPWARD) Direction 1X]]>
+</Comment>
+<Text>
+<![CDATA[XIC(Local:6:O.Data.10)XIC(Local:1:I.Pt[0].Data)OSR(Encoder_Storage_Bits_VGR[0].13,Encoder_Output_Bits_VGR[0].13)CTD(Encoder_Counters_1X[2],?,?);]]>
+</Text>
+</Rung>
+<Rung Number="12" Type="N">
+<Text>
+<![CDATA[NOP();]]>
+</Text>
+</Rung>
+<Rung Number="13" Type="N">
+<Comment>
+<![CDATA[VGR Arm Encoders Reset]]>
+</Comment>
+<Text>
+<![CDATA[XIC(S:FS)RES(Encoder_Counters_4X[3]);]]>
+</Text>
+</Rung>
+<Rung Number="14" Type="N">
+<Text>
+<![CDATA[XIC(S:FS)RES(Encoder_Counters_2X[3]);]]>
+</Text>
+</Rung>
+<Rung Number="15" Type="N">
+<Text>
+<![CDATA[XIC(S:FS)RES(Encoder_Counters_1X[3]);]]>
+</Text>
+</Rung>
+<Rung Number="16" Type="N">
+<Comment>
+<![CDATA[VGR M2 Horizontal Positive(Extending) Direction 4X]]>
+</Comment>
+<Text>
+<![CDATA[XIC(Local:6:O.Data.29)XIC(Local:1:I.Pt[2].Data)[OSR(Encoder_Storage_Bits_VGR[0].14,Encoder_Output_Bits_VGR[0].14) ,OSF(Encoder_Storage_Bits_VGR[0].15,Encoder_Output_Bits_VGR[0].15) ]CTU(Encoder_Counters_4X[3],?,?);]]>
+</Text>
+</Rung>
+<Rung Number="17" Type="N">
+<Text>
+<![CDATA[XIC(Local:6:O.Data.29)XIC(Local:1:I.Pt[3].Data)[OSR(Encoder_Storage_Bits_VGR[0].16,Encoder_Output_Bits_VGR[0].16) ,OSF(Encoder_Storage_Bits_VGR[0].17,Encoder_Output_Bits_VGR[0].17) ]CTU(Encoder_Counters_4X[3],?,?);]]>
+</Text>
+</Rung>
+<Rung Number="18" Type="N">
+<Comment>
+<![CDATA[VGR M2 Horizontal Negative(RETRACT) Direction 4X]]>
+</Comment>
+<Text>
+<![CDATA[XIC(Local:6:O.Data.28)XIC(Local:1:I.Pt[2].Data)[OSR(Encoder_Storage_Bits_VGR[0].18,Encoder_Output_Bits_VGR[0].18) ,OSF(Encoder_Storage_Bits_VGR[0].19,Encoder_Output_Bits_VGR[0].19) ]CTD(Encoder_Counters_4X[3],?,?);]]>
+</Text>
+</Rung>
+<Rung Number="19" Type="N">
+<Text>
+<![CDATA[XIC(Local:6:O.Data.28)XIC(Local:1:I.Pt[3].Data)[OSR(Encoder_Storage_Bits_VGR[0].20,Encoder_Output_Bits_VGR[0].20) ,OSF(Encoder_Storage_Bits_VGR[0].21,Encoder_Output_Bits_VGR[0].21) ]CTD(Encoder_Counters_4X[3],?,?);]]>
+</Text>
+</Rung>
+<Rung Number="20" Type="N">
+<Comment>
+<![CDATA[VGR M2 Horizontal Positive(EXTEND) Direction 2X]]>
+</Comment>
+<Text>
+<![CDATA[XIC(Local:6:O.Data.29)XIC(Local:1:I.Pt[2].Data)[OSR(Encoder_Storage_Bits_VGR[0].22,Encoder_Output_Bits_VGR[0].22) ,OSF(Encoder_Storage_Bits_VGR[0].23,Encoder_Output_Bits_VGR[0].23) ]CTU(Encoder_Counters_2X[3],?,?);]]>
+</Text>
+</Rung>
+<Rung Number="21" Type="N">
+<Comment>
+<![CDATA[VGR M2 Horizontal Negative(RETRACT) Direction 2X]]>
+</Comment>
+<Text>
+<![CDATA[XIC(Local:6:O.Data.28)XIC(Local:1:I.Pt[2].Data)[OSR(Encoder_Storage_Bits_VGR[0].24,Encoder_Output_Bits_VGR[0].24) ,OSF(Encoder_Storage_Bits_VGR[0].25,Encoder_Output_Bits_VGR[0].25) ]CTD(Encoder_Counters_2X[3],?,?);]]>
+</Text>
+</Rung>
+<Rung Number="22" Type="N">
+<Comment>
+<![CDATA[VGR M2 Horizontal Positive(EXTEND) Direction 1X]]>
+</Comment>
+<Text>
+<![CDATA[XIC(Local:6:O.Data.29)XIC(Local:1:I.Pt[2].Data)OSR(Encoder_Storage_Bits_VGR[0].26,Encoder_Output_Bits_VGR[0].26)CTU(Encoder_Counters_1X[3],?,?);]]>
+</Text>
+</Rung>
+<Rung Number="23" Type="N">
+<Comment>
+<![CDATA[VGR M2 Horizontal Negative(RETRACT) Direction 1X]]>
+</Comment>
+<Text>
+<![CDATA[XIC(Local:6:O.Data.28)XIC(Local:1:I.Pt[2].Data)OSR(Encoder_Storage_Bits_VGR[0].27,Encoder_Output_Bits_VGR[0].27)CTD(Encoder_Counters_1X[3],?,?);]]>
+</Text>
+</Rung>
+<Rung Number="24" Type="N">
+<Text>
+<![CDATA[NOP();]]>
+</Text>
+</Rung>
+<Rung Number="25" Type="N">
+<Comment>
+<![CDATA[VGR Rotation Encoders Reset]]>
+</Comment>
+<Text>
+<![CDATA[XIC(S:FS)RES(Encoder_Counters_4X[4]);]]>
+</Text>
+</Rung>
+<Rung Number="26" Type="N">
+<Text>
+<![CDATA[XIC(S:FS)RES(Encoder_Counters_2X[4]);]]>
+</Text>
+</Rung>
+<Rung Number="27" Type="N">
+<Text>
+<![CDATA[XIC(S:FS)RES(Encoder_Counters_1X[4]);]]>
+</Text>
+</Rung>
+<Rung Number="28" Type="N">
+<Comment>
+<![CDATA[VGR M3 Rotatel Positive(CClockwise) Direction 4X]]>
+</Comment>
+<Text>
+<![CDATA[XIC(Local:6:O.Data.31)XIC(Local:1:I.Pt[4].Data)[OSR(Encoder_Storage_Bits_VGR[0].28,Encoder_Output_Bits_VGR[0].28) ,OSF(Encoder_Storage_Bits_VGR[0].29,Encoder_Output_Bits_VGR[0].29) ]CTU(Encoder_Counters_4X[4],?,?);]]>
+</Text>
+</Rung>
+<Rung Number="29" Type="N">
+<Text>
+<![CDATA[XIC(Local:6:O.Data.31)XIC(Local:1:I.Pt[5].Data)[OSR(Encoder_Storage_Bits_VGR[0].30,Encoder_Output_Bits_VGR[0].30) ,OSF(Encoder_Storage_Bits_VGR[0].31,Encoder_Output_Bits_VGR[0].31) ]CTU(Encoder_Counters_4X[4],?,?);]]>
+</Text>
+</Rung>
+<Rung Number="30" Type="N">
+<Comment>
+<![CDATA[VGR M3 Rotate Negative(Clockwise) Direction 4X]]>
+</Comment>
+<Text>
+<![CDATA[XIC(Local:6:O.Data.30)XIC(Local:1:I.Pt[4].Data)[OSR(Encoder_Storage_Bits_VGR[1].0,Encoder_Output_Bits_VGR[1].0) ,OSF(Encoder_Storage_Bits_VGR[1].1,Encoder_Output_Bits_VGR[1].1) ]CTD(Encoder_Counters_4X[4],?,?);]]>
+</Text>
+</Rung>
+<Rung Number="31" Type="N">
+<Text>
+<![CDATA[XIC(Local:6:O.Data.30)XIC(Local:1:I.Pt[5].Data)[OSR(Encoder_Storage_Bits_VGR[1].2,Encoder_Output_Bits_VGR[1].2) ,OSF(Encoder_Storage_Bits_VGR[1].3,Encoder_Output_Bits_VGR[1].3) ]CTD(Encoder_Counters_4X[4],?,?);]]>
+</Text>
+</Rung>
+<Rung Number="32" Type="N">
+<Comment>
+<![CDATA[VGR M3 Rotate Positive(CClockwise) Direction 2X]]>
+</Comment>
+<Text>
+<![CDATA[XIC(Local:6:O.Data.31)XIC(Local:1:I.Pt[4].Data)[OSR(Encoder_Storage_Bits_VGR[1].4,Encoder_Output_Bits_VGR[1].4) ,OSF(Encoder_Storage_Bits_VGR[1].5,Encoder_Output_Bits_VGR[1].5) ]CTU(Encoder_Counters_2X[4],?,?);]]>
+</Text>
+</Rung>
+<Rung Number="33" Type="N">
+<Comment>
+<![CDATA[VGR M3 Rotate Negative(Clockwise) Direction 2X]]>
+</Comment>
+<Text>
+<![CDATA[XIC(Local:6:O.Data.30)XIC(Local:1:I.Pt[4].Data)[OSR(Encoder_Storage_Bits_VGR[1].6,Encoder_Output_Bits_VGR[1].6) ,OSF(Encoder_Storage_Bits_VGR[1].7,Encoder_Output_Bits_VGR[1].7) ]CTD(Encoder_Counters_2X[4],?,?);]]>
+</Text>
+</Rung>
+<Rung Number="34" Type="N">
+<Comment>
+<![CDATA[VGR M3 Rotate Positive(CClockwise) Direction 1X]]>
+</Comment>
+<Text>
+<![CDATA[XIC(Local:6:O.Data.31)XIC(Local:1:I.Pt[4].Data)OSR(Encoder_Storage_Bits_VGR[1].8,Encoder_Output_Bits_VGR[1].8)CTU(Encoder_Counters_1X[4],?,?);]]>
+</Text>
+</Rung>
+<Rung Number="35" Type="N">
+<Comment>
+<![CDATA[VGR M3 Rotate Negative(Clockwise) Direction 1X]]>
+</Comment>
+<Text>
+<![CDATA[XIC(Local:6:O.Data.30)XIC(Local:1:I.Pt[4].Data)OSR(Encoder_Storage_Bits_VGR[1].9,Encoder_Output_Bits_VGR[1].9)CTD(Encoder_Counters_1X[4],?,?);]]>
+</Text>
+</Rung>
+<Rung Number="36" Type="N">
+<Comment>
+<![CDATA[VGR Encoder Section End]]>
+</Comment>
+<Text>
+<![CDATA[NOP();]]>
+</Text>
+</Rung>
+</RLLContent>
+</Routine>
+<Routine Name="VGR_Sequencer" Type="RLL">
+<RLLContent>
+<Rung Number="0" Type="N">
+<Comment>
+<![CDATA[No activity on VGR]]>
+</Comment>
+<Text>
+<![CDATA[EQ(VGR_Step,0)JMP(Done);]]>
+</Text>
+</Rung>
+<Rung Number="1" Type="N">
+<Comment>
+<![CDATA[Reset VGR Encoders]]>
+</Comment>
+<Text>
+<![CDATA[EQ(VGR_Step,10)JMP(VGR_Encoder_Reset);]]>
+</Text>
+</Rung>
+<Rung Number="2" Type="N">
+<Comment>
+<![CDATA[Releases the vacuum in the VGR
+]]>
+</Comment>
+<Text>
+<![CDATA[EQ(VGR_Step,20)JMP(VGR_Disable_Vacuum);]]>
+</Text>
+</Rung>
+<Rung Number="3" Type="N">
+<Comment>
+<![CDATA[Raise Arm for Rotation]]>
+</Comment>
+<Text>
+<![CDATA[EQ(VGR_Step,30)MOVE(VGR_Move_Vertical,VGR_Vertical_Target)JMP(VGR_Raise_Arm_To);]]>
+</Text>
+</Rung>
+<Rung Number="4" Type="N">
+<Comment>
+<![CDATA[Retract the Arm to avoid collision]]>
+</Comment>
+<Text>
+<![CDATA[EQ(VGR_Step,40)MOVE(VGR_Move_Horizontal,VGR_Horizontal_Target)JMP(VGR_Extend_Arm_To);]]>
+</Text>
+</Rung>
+<Rung Number="5" Type="N">
+<Comment>
+<![CDATA[Rotate the arm to the puck]]>
+</Comment>
+<Text>
+<![CDATA[EQ(VGR_Step,50)MOVE(VGR_HBW_Rotate,VGR_Rotation_Target)JMP(VGR_Rotate_To);]]>
+</Text>
+</Rung>
+<Rung Number="6" Type="N">
+<Comment>
+<![CDATA[Extend the arm over the puck]]>
+</Comment>
+<Text>
+<![CDATA[EQ(VGR_Step,60)MOVE(VGR_HBW_Horizontal,VGR_Horizontal_Target)JMP(VGR_Extend_Arm_To);]]>
+</Text>
+</Rung>
+<Rung Number="7" Type="N">
+<Comment>
+<![CDATA[Lower the arm onto the puck]]>
+</Comment>
+<Text>
+<![CDATA[EQ(VGR_Step,70)MOVE(VGR_HBW_Vertical,VGR_Vertical_Target)JMP(VGR_Raise_Arm_To);]]>
+</Text>
+</Rung>
+<Rung Number="8" Type="N">
+<Comment>
+<![CDATA[Enable vacuum to pick up the puck]]>
+</Comment>
+<Text>
+<![CDATA[EQ(VGR_Step,80)JMP(VGR_Enable_Vacuum);]]>
+</Text>
+</Rung>
+<Rung Number="9" Type="N">
+<Comment>
+<![CDATA[Raise arm up with puck]]>
+</Comment>
+<Text>
+<![CDATA[EQ(VGR_Step,90)MOVE(VGR_Move_Vertical,VGR_Vertical_Target)JMP(VGR_Raise_Arm_To);]]>
+</Text>
+</Rung>
+<Rung Number="10" Type="N">
+<Comment>
+<![CDATA[Retract the arm to avoid collision]]>
+</Comment>
+<Text>
+<![CDATA[EQ(VGR_Step,100)MOVE(VGR_Move_Horizontal,VGR_Horizontal_Target)JMP(VGR_Extend_Arm_To);]]>
+</Text>
+</Rung>
+<Rung Number="11" Type="N">
+<Comment>
+<![CDATA[Rotate to the Oven]]>
+</Comment>
+<Text>
+<![CDATA[EQ(VGR_Step,110)MOVE(VGR_MPO_Rotate,VGR_Rotation_Target)JMP(VGR_Rotate_To);]]>
+</Text>
+</Rung>
+<Rung Number="12" Type="N">
+<Comment>
+<![CDATA[Extend the arm over the oven]]>
+</Comment>
+<Text>
+<![CDATA[EQ(VGR_Step,120)MOVE(VGR_MPO_Horizontal,VGR_Horizontal_Target)JMP(VGR_Extend_Arm_To);]]>
+</Text>
+</Rung>
+<Rung Number="13" Type="N">
+<Comment>
+<![CDATA[Lower arm into the oven]]>
+</Comment>
+<Text>
+<![CDATA[EQ(VGR_Step,130)MOVE(VGR_MPO_Vertical,VGR_Vertical_Target)JMP(VGR_Raise_Arm_To);]]>
+</Text>
+</Rung>
+<Rung Number="14" Type="N">
+<Comment>
+<![CDATA[Release Puck]]>
+</Comment>
+<Text>
+<![CDATA[EQ(VGR_Step,140)JMP(VGR_Disable_Vacuum);]]>
+</Text>
+</Rung>
+<Rung Number="15" Type="N">
+<Comment>
+<![CDATA[Raise Arm]]>
+</Comment>
+<Text>
+<![CDATA[EQ(VGR_Step,150)MOVE(VGR_Move_Vertical,VGR_Vertical_Target)JMP(VGR_Raise_Arm_To);]]>
+</Text>
+</Rung>
+<Rung Number="16" Type="N">
+<Comment>
+<![CDATA[Raise Arm]]>
+</Comment>
+<Text>
+<![CDATA[EQ(VGR_Step,160)MOVE(VGR_Move_Horizontal,VGR_Horizontal_Target)JMP(VGR_Extend_Arm_To);]]>
+</Text>
+</Rung>
+<Rung Number="17" Type="N">
+<Comment>
+<![CDATA[Raise Arm]]>
+</Comment>
+<Text>
+<![CDATA[EQ(VGR_Step,170)MOVE(VGR_HBW_Rotate,VGR_Rotation_Target)JMP(VGR_Rotate_To);]]>
+</Text>
+</Rung>
+<Rung Number="18" Type="N">
+<Comment>
+<![CDATA[Return if we didn't provide a valid step for the jump table
+Return when done with a sequence.
+]]>
+</Comment>
+<Text>
+<![CDATA[LBL(Done)RET();]]>
+</Text>
+</Rung>
+<Rung Number="19" Type="N">
+<Text>
+<![CDATA[NOP();]]>
+</Text>
+</Rung>
+<Rung Number="20" Type="N">
+<Comment>
+<![CDATA[Homes all of the encoder values]]>
+</Comment>
+<Text>
+<![CDATA[LBL(VGR_Encoder_Reset)XIO(Local:3:I.Data.7)OTU(VGR_start.5)OTL(VGR_start.4);]]>
+</Text>
+</Rung>
+<Rung Number="21" Type="N">
+<Text>
+<![CDATA[XIC(Local:3:I.Data.7)RES(Encoder_Counters_1X[4])OTU(VGR_start.4);]]>
+</Text>
+</Rung>
+<Rung Number="22" Type="N">
+<Text>
+<![CDATA[XIO(Local:3:I.Data.5)OTL(VGR_start.0);]]>
+</Text>
+</Rung>
+<Rung Number="23" Type="N">
+<Text>
+<![CDATA[XIC(Local:3:I.Data.5)RES(Encoder_Counters_1X[2])OTU(VGR_start.0);]]>
+</Text>
+</Rung>
+<Rung Number="24" Type="N">
+<Text>
+<![CDATA[XIO(Local:3:I.Data.6)OTL(VGR_start.2);]]>
+</Text>
+</Rung>
+<Rung Number="25" Type="N">
+<Text>
+<![CDATA[XIC(Local:3:I.Data.6)RES(Encoder_Counters_1X[3])OTU(VGR_start.2);]]>
+</Text>
+</Rung>
+<Rung Number="26" Type="N">
+<Text>
+<![CDATA[XIC(Local:3:I.Data.7)XIC(Local:3:I.Data.5)XIC(Local:3:I.Data.6)MOVE(0,VGR_Step);]]>
+</Text>
+</Rung>
+<Rung Number="27" Type="N">
+<Text>
+<![CDATA[JMP(Done);]]>
+</Text>
+</Rung>
+<Rung Number="28" Type="N">
+<Comment>
+<![CDATA[Turns off the vacuum gripper]]>
+</Comment>
+<Text>
+<![CDATA[LBL(VGR_Disable_Vacuum)OTU(VGR_start.6)OTU(VGR_start.7);]]>
+</Text>
+</Rung>
+<Rung Number="29" Type="N">
+<Text>
+<![CDATA[ADD(VGR_Step,10,VGR_Step)JMP(Done);]]>
+</Text>
+</Rung>
+<Rung Number="30" Type="N">
+<Comment>
+<![CDATA[Turns on the vacuum gripper]]>
+</Comment>
+<Text>
+<![CDATA[LBL(VGR_Enable_Vacuum)OTL(VGR_start.6)OTL(VGR_start.7);]]>
+</Text>
+</Rung>
+<Rung Number="31" Type="N">
+<Text>
+<![CDATA[ADD(VGR_Step,10,VGR_Step)JMP(Done);]]>
+</Text>
+</Rung>
+<Rung Number="32" Type="N">
+<Comment>
+<![CDATA[Rotates the VGR to a certain encoder value]]>
+</Comment>
+<Text>
+<![CDATA[LBL(VGR_Rotate_To)[GT(Encoder_Counters_1X[4].ACC,VGR_Rotation_Target) OTL(VGR_start.4) ,LT(Encoder_Counters_1X[4].ACC,VGR_Rotation_Target) OTL(VGR_start.5) ];]]>
+</Text>
+</Rung>
+<Rung Number="33" Type="N">
+<Text>
+<![CDATA[EQ(Encoder_Counters_1X[4].ACC,VGR_Rotation_Target)ADD(VGR_Step,10,VGR_Step)OTU(VGR_start.4)OTU(VGR_start.5);]]>
+</Text>
+</Rung>
+<Rung Number="34" Type="N">
+<Text>
+<![CDATA[JMP(Done);]]>
+</Text>
+</Rung>
+<Rung Number="35" Type="N">
+<Comment>
+<![CDATA[Raises the VGR to a certain encoder value]]>
+</Comment>
+<Text>
+<![CDATA[LBL(VGR_Raise_Arm_To)[GT(Encoder_Counters_1X[2].ACC,VGR_Vertical_Target) OTL(VGR_start.0) ,LT(Encoder_Counters_1X[2].ACC,VGR_Vertical_Target) OTL(VGR_start.1) ];]]>
+</Text>
+</Rung>
+<Rung Number="36" Type="N">
+<Text>
+<![CDATA[EQ(Encoder_Counters_1X[2].ACC,VGR_Vertical_Target)ADD(VGR_Step,10,VGR_Step)OTU(VGR_start.0)OTU(VGR_start.1);]]>
+</Text>
+</Rung>
+<Rung Number="37" Type="N">
+<Text>
+<![CDATA[JMP(Done);]]>
+</Text>
+</Rung>
+<Rung Number="38" Type="N">
+<Comment>
+<![CDATA[Extends the VGR to a certain encoder value]]>
+</Comment>
+<Text>
+<![CDATA[LBL(VGR_Extend_Arm_To)[GT(Encoder_Counters_1X[3].ACC,VGR_Horizontal_Target) OTL(VGR_start.2) ,LT(Encoder_Counters_1X[3].ACC,VGR_Horizontal_Target) OTL(VGR_start.3) ];]]>
+</Text>
+</Rung>
+<Rung Number="39" Type="N">
+<Text>
+<![CDATA[EQ(Encoder_Counters_1X[3].ACC,VGR_Horizontal_Target)ADD(VGR_Step,10,VGR_Step)OTU(VGR_start.2)OTU(VGR_start.3);]]>
+</Text>
+</Rung>
+<Rung Number="40" Type="N">
+<Text>
+<![CDATA[JMP(Done);]]>
+</Text>
+</Rung>
+<Rung Number="41" Type="N">
+<Text>
+<![CDATA[LBL(TIMED_MOTOR_ON)OTL(VGR_start.4);]]>
+</Text>
+</Rung>
+<Rung Number="42" Type="N">
+<Text>
+<![CDATA[TON(StepTimers[3],?,?);]]>
+</Text>
+</Rung>
+<Rung Number="43" Type="N">
+<Text>
+<![CDATA[XIC(StepTimers[3].DN)OTU(VGR_start.4)MOVE(0,VGR_Step)MOVE(0,StepTimers[3].ACC)RES(StepTimers[3]);]]>
+</Text>
+</Rung>
+<Rung Number="44" Type="N">
+<Text>
+<![CDATA[JMP(Done);]]>
+</Text>
+</Rung>
+</RLLContent>
+</Routine>
+</Routines>
+</Program>
+</Programs>
+<Tasks>
+<Task Name="MainTask" Type="CONTINUOUS" Priority="10" Watchdog="500" DisableUpdateOutputs="false" InhibitTask="false" SynchronizeRedundancyDataDisabled="false">
+<ScheduledPrograms>
+<ScheduledProgram Name="MainProgram"/>
+</ScheduledPrograms>
+</Task>
+</Tasks>
+<CST MasterID="0"/>
+<WallClockTime LocalTimeAdjustment="0" TimeZone="0"/>
+<Trends/>
+<TimeSynchronize Priority1="128" Priority2="128" PTPEnable="true"/>
+<EthernetPorts>
+<EthernetPort Port="1" Label="1" PortEnabled="true"/>
+</EthernetPorts>
+<OpcUaInfo EnabledPorts=""/>
+</Controller>
+</RSLogix5000Content>

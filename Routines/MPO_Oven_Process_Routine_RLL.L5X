@@ -1,0 +1,392 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<RSLogix5000Content SchemaRevision="1.0" SoftwareRevision="38.00" TargetName="MPO_Oven_Process" TargetType="Routine" TargetSubType="RLL" ContainsContext="true" ExportDate="Sun Dec 14 17:50:17 2025" ExportOptions="References NoRawData L5KData DecoratedData Context Dependencies ForceProtectedEncoding AllProjDocTrans">
+<Controller Use="Context" Name="Uidaho_Factory">
+<DataTypes Use="Context">
+</DataTypes>
+<Modules Use="Context">
+<Module Use="Reference" Name="Local">
+</Module>
+<Module Use="Reference" Name="Slot_3_Input">
+</Module>
+<Module Use="Reference" Name="Slot_6_Output">
+</Module>
+<Module Use="Reference" Name="Slot_7_Output">
+</Module>
+</Modules>
+<Tags Use="Context">
+</Tags>
+<Programs Use="Context">
+<Program Use="Context" Name="MainProgram">
+<Tags Use="Context">
+<Tag Name="MPO_Gripper_Start" TagType="Base" DataType="BOOL" Radix="Decimal" Constant="false" ExternalAccess="Read/Write" OpcUaAccess="None">
+<Data Format="L5K">
+<![CDATA[0]]>
+</Data>
+<Data Format="Decorated">
+<DataValue DataType="BOOL" Radix="Decimal" Value="0"/>
+</Data>
+</Tag>
+<Tag Name="MPO_Oven_Start" TagType="Base" DataType="BOOL" Radix="Decimal" Constant="false" ExternalAccess="Read/Write" OpcUaAccess="None">
+<Data Format="L5K">
+<![CDATA[0]]>
+</Data>
+<Data Format="Decorated">
+<DataValue DataType="BOOL" Radix="Decimal" Value="0"/>
+</Data>
+</Tag>
+<Tag Name="OvenTimers" TagType="Base" DataType="TIMER" Dimensions="10" Constant="false" ExternalAccess="Read/Write" OpcUaAccess="None">
+<Data Format="L5K">
+<![CDATA[[[275652,1000,0],[0,1000,0],[0,3000,0],[0,1000,0],[0,1000,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0]]]]>
+</Data>
+<Data Format="Decorated">
+<Array DataType="TIMER" Dimensions="10">
+<Element Index="[0]">
+<Structure DataType="TIMER">
+<DataValueMember Name="PRE" DataType="DINT" Radix="Decimal" Value="1000"/>
+<DataValueMember Name="ACC" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="EN" DataType="BOOL" Value="0"/>
+<DataValueMember Name="TT" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DN" DataType="BOOL" Value="0"/>
+</Structure>
+</Element>
+<Element Index="[1]">
+<Structure DataType="TIMER">
+<DataValueMember Name="PRE" DataType="DINT" Radix="Decimal" Value="1000"/>
+<DataValueMember Name="ACC" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="EN" DataType="BOOL" Value="0"/>
+<DataValueMember Name="TT" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DN" DataType="BOOL" Value="0"/>
+</Structure>
+</Element>
+<Element Index="[2]">
+<Structure DataType="TIMER">
+<DataValueMember Name="PRE" DataType="DINT" Radix="Decimal" Value="3000"/>
+<DataValueMember Name="ACC" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="EN" DataType="BOOL" Value="0"/>
+<DataValueMember Name="TT" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DN" DataType="BOOL" Value="0"/>
+</Structure>
+</Element>
+<Element Index="[3]">
+<Structure DataType="TIMER">
+<DataValueMember Name="PRE" DataType="DINT" Radix="Decimal" Value="1000"/>
+<DataValueMember Name="ACC" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="EN" DataType="BOOL" Value="0"/>
+<DataValueMember Name="TT" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DN" DataType="BOOL" Value="0"/>
+</Structure>
+</Element>
+<Element Index="[4]">
+<Structure DataType="TIMER">
+<DataValueMember Name="PRE" DataType="DINT" Radix="Decimal" Value="1000"/>
+<DataValueMember Name="ACC" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="EN" DataType="BOOL" Value="0"/>
+<DataValueMember Name="TT" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DN" DataType="BOOL" Value="0"/>
+</Structure>
+</Element>
+<Element Index="[5]">
+<Structure DataType="TIMER">
+<DataValueMember Name="PRE" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="ACC" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="EN" DataType="BOOL" Value="0"/>
+<DataValueMember Name="TT" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DN" DataType="BOOL" Value="0"/>
+</Structure>
+</Element>
+<Element Index="[6]">
+<Structure DataType="TIMER">
+<DataValueMember Name="PRE" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="ACC" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="EN" DataType="BOOL" Value="0"/>
+<DataValueMember Name="TT" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DN" DataType="BOOL" Value="0"/>
+</Structure>
+</Element>
+<Element Index="[7]">
+<Structure DataType="TIMER">
+<DataValueMember Name="PRE" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="ACC" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="EN" DataType="BOOL" Value="0"/>
+<DataValueMember Name="TT" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DN" DataType="BOOL" Value="0"/>
+</Structure>
+</Element>
+<Element Index="[8]">
+<Structure DataType="TIMER">
+<DataValueMember Name="PRE" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="ACC" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="EN" DataType="BOOL" Value="0"/>
+<DataValueMember Name="TT" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DN" DataType="BOOL" Value="0"/>
+</Structure>
+</Element>
+<Element Index="[9]">
+<Structure DataType="TIMER">
+<DataValueMember Name="PRE" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="ACC" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="EN" DataType="BOOL" Value="0"/>
+<DataValueMember Name="TT" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DN" DataType="BOOL" Value="0"/>
+</Structure>
+</Element>
+</Array>
+</Data>
+</Tag>
+<Tag Name="Step" TagType="Base" DataType="DINT" Dimensions="20" Radix="Decimal" Constant="false" ExternalAccess="Read/Write" OpcUaAccess="None">
+<Data Format="L5K">
+<![CDATA[[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]]]>
+</Data>
+<Data Format="Decorated">
+<Array DataType="DINT" Dimensions="20" Radix="Decimal">
+<Element Index="[0]" Value="0"/>
+<Element Index="[1]" Value="0"/>
+<Element Index="[2]" Value="0"/>
+<Element Index="[3]" Value="0"/>
+<Element Index="[4]" Value="0"/>
+<Element Index="[5]" Value="0"/>
+<Element Index="[6]" Value="0"/>
+<Element Index="[7]" Value="0"/>
+<Element Index="[8]" Value="0"/>
+<Element Index="[9]" Value="0"/>
+<Element Index="[10]" Value="0"/>
+<Element Index="[11]" Value="0"/>
+<Element Index="[12]" Value="0"/>
+<Element Index="[13]" Value="0"/>
+<Element Index="[14]" Value="0"/>
+<Element Index="[15]" Value="0"/>
+<Element Index="[16]" Value="0"/>
+<Element Index="[17]" Value="0"/>
+<Element Index="[18]" Value="0"/>
+<Element Index="[19]" Value="0"/>
+</Array>
+</Data>
+</Tag>
+</Tags>
+<Routines Use="Context">
+<Routine Use="Target" Name="MPO_Oven_Process" Type="RLL">
+<RLLContent>
+<Rung Number="0" Type="N">
+<Text>
+<![CDATA[EQ(0,Step[0])JMP(Oven_Idle);]]>
+</Text>
+</Rung>
+<Rung Number="1" Type="N">
+<Text>
+<![CDATA[EQ(10,Step[0])JMP(Oven_Load_Open);]]>
+</Text>
+</Rung>
+<Rung Number="2" Type="N">
+<Text>
+<![CDATA[EQ(20,Step[0])JMP(Oven_Retract);]]>
+</Text>
+</Rung>
+<Rung Number="3" Type="N">
+<Text>
+<![CDATA[EQ(30,Step[0])JMP(Oven_Load_Close);]]>
+</Text>
+</Rung>
+<Rung Number="4" Type="N">
+<Text>
+<![CDATA[EQ(40,Step[0])JMP(Oven_Light_On);]]>
+</Text>
+</Rung>
+<Rung Number="5" Type="N">
+<Text>
+<![CDATA[EQ(50,Step[0])JMP(Oven_Light_Off);]]>
+</Text>
+</Rung>
+<Rung Number="6" Type="N">
+<Text>
+<![CDATA[EQ(60,Step[0])JMP(Oven_Unload_Open);]]>
+</Text>
+</Rung>
+<Rung Number="7" Type="N">
+<Text>
+<![CDATA[EQ(70,Step[0])JMP(Oven_Extend);]]>
+</Text>
+</Rung>
+<Rung Number="8" Type="N">
+<Text>
+<![CDATA[EQ(80,Step[0])JMP(Oven_Unload_Close);]]>
+</Text>
+</Rung>
+<Rung Number="9" Type="N">
+<Comment>
+<![CDATA[Oven idle]]>
+</Comment>
+<Text>
+<![CDATA[LBL(Oven_Idle)XIC(MPO_Oven_Start)MOVE(10,Step[0]);]]>
+</Text>
+</Rung>
+<Rung Number="10" Type="N">
+<Text>
+<![CDATA[RET();]]>
+</Text>
+</Rung>
+<Rung Number="11" Type="N">
+<Comment>
+<![CDATA[Oven door open to load]]>
+</Comment>
+<Text>
+<![CDATA[LBL(Oven_Load_Open)OTL(Local:6:O.Data.8);]]>
+</Text>
+</Rung>
+<Rung Number="12" Type="N">
+<Text>
+<![CDATA[TON(OvenTimers[0],?,?);]]>
+</Text>
+</Rung>
+<Rung Number="13" Type="N">
+<Text>
+<![CDATA[XIC(OvenTimers[0].DN)[MOVE(20,Step[0]) ,RES(OvenTimers[0]) ];]]>
+</Text>
+</Rung>
+<Rung Number="14" Type="N">
+<Text>
+<![CDATA[JMP(Oven_Idle);]]>
+</Text>
+</Rung>
+<Rung Number="15" Type="N">
+<Comment>
+<![CDATA[Oven feeder retract]]>
+</Comment>
+<Text>
+<![CDATA[LBL(Oven_Retract)OTL(Local:6:O.Data.20);]]>
+</Text>
+</Rung>
+<Rung Number="16" Type="N">
+<Text>
+<![CDATA[XIC(Local:3:I.Data.1)[MOVE(30,Step[0]) ,OTU(Local:6:O.Data.20) ];]]>
+</Text>
+</Rung>
+<Rung Number="17" Type="N">
+<Text>
+<![CDATA[JMP(Oven_Idle);]]>
+</Text>
+</Rung>
+<Rung Number="18" Type="N">
+<Comment>
+<![CDATA[Oven door close while loaded]]>
+</Comment>
+<Text>
+<![CDATA[LBL(Oven_Load_Close)OTU(Local:6:O.Data.8);]]>
+</Text>
+</Rung>
+<Rung Number="19" Type="N">
+<Text>
+<![CDATA[MOVE(40,Step[0]);]]>
+</Text>
+</Rung>
+<Rung Number="20" Type="N">
+<Text>
+<![CDATA[JMP(Oven_Idle);]]>
+</Text>
+</Rung>
+<Rung Number="21" Type="N">
+<Comment>
+<![CDATA[Oven light on]]>
+</Comment>
+<Text>
+<![CDATA[LBL(Oven_Light_On)OTL(Local:6:O.Data.24);]]>
+</Text>
+</Rung>
+<Rung Number="22" Type="N">
+<Text>
+<![CDATA[TON(OvenTimers[2],?,?);]]>
+</Text>
+</Rung>
+<Rung Number="23" Type="N">
+<Text>
+<![CDATA[XIC(OvenTimers[2].DN)[MOVE(50,Step[0]) ,RES(OvenTimers[2]) ];]]>
+</Text>
+</Rung>
+<Rung Number="24" Type="N">
+<Text>
+<![CDATA[JMP(Oven_Idle);]]>
+</Text>
+</Rung>
+<Rung Number="25" Type="N">
+<Comment>
+<![CDATA[Oven light off]]>
+</Comment>
+<Text>
+<![CDATA[LBL(Oven_Light_Off)[OTU(Local:6:O.Data.24) ,MOVE(60,Step[0]) ];]]>
+</Text>
+</Rung>
+<Rung Number="26" Type="N">
+<Text>
+<![CDATA[JMP(Oven_Idle);]]>
+</Text>
+</Rung>
+<Rung Number="27" Type="N">
+<Comment>
+<![CDATA[Oven door open to unload]]>
+</Comment>
+<Text>
+<![CDATA[LBL(Oven_Unload_Open)OTL(Local:6:O.Data.8);]]>
+</Text>
+</Rung>
+<Rung Number="28" Type="N">
+<Text>
+<![CDATA[TON(OvenTimers[3],?,?);]]>
+</Text>
+</Rung>
+<Rung Number="29" Type="N">
+<Text>
+<![CDATA[XIC(OvenTimers[3].DN)[MOVE(70,Step[0]) ,RES(OvenTimers[3]) ];]]>
+</Text>
+</Rung>
+<Rung Number="30" Type="N">
+<Text>
+<![CDATA[JMP(Oven_Idle);]]>
+</Text>
+</Rung>
+<Rung Number="31" Type="N">
+<Comment>
+<![CDATA[Oven feeder extend]]>
+</Comment>
+<Text>
+<![CDATA[LBL(Oven_Extend)OTL(Local:7:O.Data.8);]]>
+</Text>
+</Rung>
+<Rung Number="32" Type="N">
+<Text>
+<![CDATA[XIC(Local:3:I.Data.2)[MOVE(80,Step[0]) ,OTU(Local:7:O.Data.8) ];]]>
+</Text>
+</Rung>
+<Rung Number="33" Type="N">
+<Text>
+<![CDATA[JMP(Oven_Idle);]]>
+</Text>
+</Rung>
+<Rung Number="34" Type="N">
+<Comment>
+<![CDATA[Oven door close after unloaded]]>
+</Comment>
+<Text>
+<![CDATA[LBL(Oven_Unload_Close)OTU(Local:6:O.Data.8);]]>
+</Text>
+</Rung>
+<Rung Number="35" Type="N">
+<Text>
+<![CDATA[OTL(MPO_Gripper_Start);]]>
+</Text>
+</Rung>
+<Rung Number="36" Type="N">
+<Text>
+<![CDATA[MOVE(0,Step[0]);]]>
+</Text>
+</Rung>
+<Rung Number="37" Type="N">
+<Text>
+<![CDATA[JMP(Oven_Idle);]]>
+</Text>
+</Rung>
+</RLLContent>
+</Routine>
+</Routines>
+</Program>
+</Programs>
+</Controller>
+</RSLogix5000Content>

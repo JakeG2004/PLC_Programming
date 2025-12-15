@@ -1,0 +1,904 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<RSLogix5000Content SchemaRevision="1.0" SoftwareRevision="38.00" TargetName="Encoder_Values" TargetType="Routine" TargetSubType="RLL" ContainsContext="true" ExportDate="Sun Dec 14 17:49:51 2025" ExportOptions="References NoRawData L5KData DecoratedData Context Dependencies ForceProtectedEncoding AllProjDocTrans">
+<Controller Use="Context" Name="Uidaho_Factory">
+<DataTypes Use="Context">
+</DataTypes>
+<Modules Use="Context">
+<Module Use="Reference" Name="Local">
+</Module>
+<Module Use="Reference" Name="Slot_1_Input">
+</Module>
+<Module Use="Reference" Name="Slot_2_Input">
+</Module>
+<Module Use="Reference" Name="Slot_6_Output">
+</Module>
+<Module Use="Reference" Name="Slot_7_Output">
+</Module>
+</Modules>
+<Tags Use="Context">
+<Tag Name="Encoder_Counters_1X" TagType="Base" DataType="COUNTER" Dimensions="10" Constant="false" ExternalAccess="Read/Write" OpcUaAccess="None">
+<Comments>
+<Comment Operand="[0]">
+<![CDATA[HBW M2 Horizontal 1X]]>
+</Comment>
+<Comment Operand="[1]">
+<![CDATA[HBW M3 Vertical 1X]]>
+</Comment>
+<Comment Operand="[2]">
+<![CDATA[VGR M1 Vertical 1X]]>
+</Comment>
+<Comment Operand="[3]">
+<![CDATA[VGR M2 Horizontal 1X]]>
+</Comment>
+<Comment Operand="[4]">
+<![CDATA[VGR M3 Rotate 1X]]>
+</Comment>
+</Comments>
+<Data Format="L5K">
+<![CDATA[[[536870912,0,0],[536870912,0,0],[536870912,0,0],[536870912,0,0],[536870912,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0]]]]>
+</Data>
+<Data Format="Decorated">
+<Array DataType="COUNTER" Dimensions="10">
+<Element Index="[0]">
+<Structure DataType="COUNTER">
+<DataValueMember Name="PRE" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="ACC" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="CU" DataType="BOOL" Value="0"/>
+<DataValueMember Name="CD" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DN" DataType="BOOL" Value="1"/>
+<DataValueMember Name="OV" DataType="BOOL" Value="0"/>
+<DataValueMember Name="UN" DataType="BOOL" Value="0"/>
+</Structure>
+</Element>
+<Element Index="[1]">
+<Structure DataType="COUNTER">
+<DataValueMember Name="PRE" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="ACC" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="CU" DataType="BOOL" Value="0"/>
+<DataValueMember Name="CD" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DN" DataType="BOOL" Value="1"/>
+<DataValueMember Name="OV" DataType="BOOL" Value="0"/>
+<DataValueMember Name="UN" DataType="BOOL" Value="0"/>
+</Structure>
+</Element>
+<Element Index="[2]">
+<Structure DataType="COUNTER">
+<DataValueMember Name="PRE" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="ACC" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="CU" DataType="BOOL" Value="0"/>
+<DataValueMember Name="CD" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DN" DataType="BOOL" Value="1"/>
+<DataValueMember Name="OV" DataType="BOOL" Value="0"/>
+<DataValueMember Name="UN" DataType="BOOL" Value="0"/>
+</Structure>
+</Element>
+<Element Index="[3]">
+<Structure DataType="COUNTER">
+<DataValueMember Name="PRE" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="ACC" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="CU" DataType="BOOL" Value="0"/>
+<DataValueMember Name="CD" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DN" DataType="BOOL" Value="1"/>
+<DataValueMember Name="OV" DataType="BOOL" Value="0"/>
+<DataValueMember Name="UN" DataType="BOOL" Value="0"/>
+</Structure>
+</Element>
+<Element Index="[4]">
+<Structure DataType="COUNTER">
+<DataValueMember Name="PRE" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="ACC" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="CU" DataType="BOOL" Value="0"/>
+<DataValueMember Name="CD" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DN" DataType="BOOL" Value="1"/>
+<DataValueMember Name="OV" DataType="BOOL" Value="0"/>
+<DataValueMember Name="UN" DataType="BOOL" Value="0"/>
+</Structure>
+</Element>
+<Element Index="[5]">
+<Structure DataType="COUNTER">
+<DataValueMember Name="PRE" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="ACC" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="CU" DataType="BOOL" Value="0"/>
+<DataValueMember Name="CD" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DN" DataType="BOOL" Value="0"/>
+<DataValueMember Name="OV" DataType="BOOL" Value="0"/>
+<DataValueMember Name="UN" DataType="BOOL" Value="0"/>
+</Structure>
+</Element>
+<Element Index="[6]">
+<Structure DataType="COUNTER">
+<DataValueMember Name="PRE" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="ACC" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="CU" DataType="BOOL" Value="0"/>
+<DataValueMember Name="CD" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DN" DataType="BOOL" Value="0"/>
+<DataValueMember Name="OV" DataType="BOOL" Value="0"/>
+<DataValueMember Name="UN" DataType="BOOL" Value="0"/>
+</Structure>
+</Element>
+<Element Index="[7]">
+<Structure DataType="COUNTER">
+<DataValueMember Name="PRE" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="ACC" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="CU" DataType="BOOL" Value="0"/>
+<DataValueMember Name="CD" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DN" DataType="BOOL" Value="0"/>
+<DataValueMember Name="OV" DataType="BOOL" Value="0"/>
+<DataValueMember Name="UN" DataType="BOOL" Value="0"/>
+</Structure>
+</Element>
+<Element Index="[8]">
+<Structure DataType="COUNTER">
+<DataValueMember Name="PRE" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="ACC" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="CU" DataType="BOOL" Value="0"/>
+<DataValueMember Name="CD" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DN" DataType="BOOL" Value="0"/>
+<DataValueMember Name="OV" DataType="BOOL" Value="0"/>
+<DataValueMember Name="UN" DataType="BOOL" Value="0"/>
+</Structure>
+</Element>
+<Element Index="[9]">
+<Structure DataType="COUNTER">
+<DataValueMember Name="PRE" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="ACC" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="CU" DataType="BOOL" Value="0"/>
+<DataValueMember Name="CD" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DN" DataType="BOOL" Value="0"/>
+<DataValueMember Name="OV" DataType="BOOL" Value="0"/>
+<DataValueMember Name="UN" DataType="BOOL" Value="0"/>
+</Structure>
+</Element>
+</Array>
+</Data>
+</Tag>
+<Tag Name="Encoder_Counters_2X" TagType="Base" DataType="COUNTER" Dimensions="10" Constant="false" ExternalAccess="Read/Write" OpcUaAccess="None">
+<Comments>
+<Comment Operand="[0]">
+<![CDATA[HBW M2 Horizontal 2X]]>
+</Comment>
+<Comment Operand="[1]">
+<![CDATA[HBW M3 Vertical 2X]]>
+</Comment>
+<Comment Operand="[2]">
+<![CDATA[VGR M1 Vertical 2X]]>
+</Comment>
+<Comment Operand="[3]">
+<![CDATA[VGR M2 Horizontal 2X]]>
+</Comment>
+<Comment Operand="[4]">
+<![CDATA[VGR M3 Rotate 2X]]>
+</Comment>
+</Comments>
+<Data Format="L5K">
+<![CDATA[[[536870912,0,0],[536870912,0,0],[536870912,0,0],[536870912,0,0],[536870912,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0]]]]>
+</Data>
+<Data Format="Decorated">
+<Array DataType="COUNTER" Dimensions="10">
+<Element Index="[0]">
+<Structure DataType="COUNTER">
+<DataValueMember Name="PRE" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="ACC" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="CU" DataType="BOOL" Value="0"/>
+<DataValueMember Name="CD" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DN" DataType="BOOL" Value="1"/>
+<DataValueMember Name="OV" DataType="BOOL" Value="0"/>
+<DataValueMember Name="UN" DataType="BOOL" Value="0"/>
+</Structure>
+</Element>
+<Element Index="[1]">
+<Structure DataType="COUNTER">
+<DataValueMember Name="PRE" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="ACC" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="CU" DataType="BOOL" Value="0"/>
+<DataValueMember Name="CD" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DN" DataType="BOOL" Value="1"/>
+<DataValueMember Name="OV" DataType="BOOL" Value="0"/>
+<DataValueMember Name="UN" DataType="BOOL" Value="0"/>
+</Structure>
+</Element>
+<Element Index="[2]">
+<Structure DataType="COUNTER">
+<DataValueMember Name="PRE" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="ACC" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="CU" DataType="BOOL" Value="0"/>
+<DataValueMember Name="CD" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DN" DataType="BOOL" Value="1"/>
+<DataValueMember Name="OV" DataType="BOOL" Value="0"/>
+<DataValueMember Name="UN" DataType="BOOL" Value="0"/>
+</Structure>
+</Element>
+<Element Index="[3]">
+<Structure DataType="COUNTER">
+<DataValueMember Name="PRE" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="ACC" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="CU" DataType="BOOL" Value="0"/>
+<DataValueMember Name="CD" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DN" DataType="BOOL" Value="1"/>
+<DataValueMember Name="OV" DataType="BOOL" Value="0"/>
+<DataValueMember Name="UN" DataType="BOOL" Value="0"/>
+</Structure>
+</Element>
+<Element Index="[4]">
+<Structure DataType="COUNTER">
+<DataValueMember Name="PRE" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="ACC" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="CU" DataType="BOOL" Value="0"/>
+<DataValueMember Name="CD" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DN" DataType="BOOL" Value="1"/>
+<DataValueMember Name="OV" DataType="BOOL" Value="0"/>
+<DataValueMember Name="UN" DataType="BOOL" Value="0"/>
+</Structure>
+</Element>
+<Element Index="[5]">
+<Structure DataType="COUNTER">
+<DataValueMember Name="PRE" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="ACC" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="CU" DataType="BOOL" Value="0"/>
+<DataValueMember Name="CD" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DN" DataType="BOOL" Value="0"/>
+<DataValueMember Name="OV" DataType="BOOL" Value="0"/>
+<DataValueMember Name="UN" DataType="BOOL" Value="0"/>
+</Structure>
+</Element>
+<Element Index="[6]">
+<Structure DataType="COUNTER">
+<DataValueMember Name="PRE" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="ACC" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="CU" DataType="BOOL" Value="0"/>
+<DataValueMember Name="CD" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DN" DataType="BOOL" Value="0"/>
+<DataValueMember Name="OV" DataType="BOOL" Value="0"/>
+<DataValueMember Name="UN" DataType="BOOL" Value="0"/>
+</Structure>
+</Element>
+<Element Index="[7]">
+<Structure DataType="COUNTER">
+<DataValueMember Name="PRE" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="ACC" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="CU" DataType="BOOL" Value="0"/>
+<DataValueMember Name="CD" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DN" DataType="BOOL" Value="0"/>
+<DataValueMember Name="OV" DataType="BOOL" Value="0"/>
+<DataValueMember Name="UN" DataType="BOOL" Value="0"/>
+</Structure>
+</Element>
+<Element Index="[8]">
+<Structure DataType="COUNTER">
+<DataValueMember Name="PRE" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="ACC" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="CU" DataType="BOOL" Value="0"/>
+<DataValueMember Name="CD" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DN" DataType="BOOL" Value="0"/>
+<DataValueMember Name="OV" DataType="BOOL" Value="0"/>
+<DataValueMember Name="UN" DataType="BOOL" Value="0"/>
+</Structure>
+</Element>
+<Element Index="[9]">
+<Structure DataType="COUNTER">
+<DataValueMember Name="PRE" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="ACC" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="CU" DataType="BOOL" Value="0"/>
+<DataValueMember Name="CD" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DN" DataType="BOOL" Value="0"/>
+<DataValueMember Name="OV" DataType="BOOL" Value="0"/>
+<DataValueMember Name="UN" DataType="BOOL" Value="0"/>
+</Structure>
+</Element>
+</Array>
+</Data>
+</Tag>
+<Tag Name="Encoder_Counters_4X" TagType="Base" DataType="COUNTER" Dimensions="10" Constant="false" ExternalAccess="Read/Write" OpcUaAccess="None">
+<Comments>
+<Comment Operand="[0]">
+<![CDATA[HBW M2 Horizontal 4X]]>
+</Comment>
+<Comment Operand="[1]">
+<![CDATA[HBW M3 Vertical 4X]]>
+</Comment>
+<Comment Operand="[2]">
+<![CDATA[VGR M1 Vertical 4X]]>
+</Comment>
+<Comment Operand="[3]">
+<![CDATA[VGR M2 Horizontal 4X]]>
+</Comment>
+<Comment Operand="[4]">
+<![CDATA[VGR M3 Rotate 4X]]>
+</Comment>
+</Comments>
+<Data Format="L5K">
+<![CDATA[[[536870912,0,0],[536870912,0,0],[536870912,0,0],[536870912,0,0],[536870912,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0]]]]>
+</Data>
+<Data Format="Decorated">
+<Array DataType="COUNTER" Dimensions="10">
+<Element Index="[0]">
+<Structure DataType="COUNTER">
+<DataValueMember Name="PRE" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="ACC" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="CU" DataType="BOOL" Value="0"/>
+<DataValueMember Name="CD" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DN" DataType="BOOL" Value="1"/>
+<DataValueMember Name="OV" DataType="BOOL" Value="0"/>
+<DataValueMember Name="UN" DataType="BOOL" Value="0"/>
+</Structure>
+</Element>
+<Element Index="[1]">
+<Structure DataType="COUNTER">
+<DataValueMember Name="PRE" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="ACC" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="CU" DataType="BOOL" Value="0"/>
+<DataValueMember Name="CD" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DN" DataType="BOOL" Value="1"/>
+<DataValueMember Name="OV" DataType="BOOL" Value="0"/>
+<DataValueMember Name="UN" DataType="BOOL" Value="0"/>
+</Structure>
+</Element>
+<Element Index="[2]">
+<Structure DataType="COUNTER">
+<DataValueMember Name="PRE" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="ACC" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="CU" DataType="BOOL" Value="0"/>
+<DataValueMember Name="CD" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DN" DataType="BOOL" Value="1"/>
+<DataValueMember Name="OV" DataType="BOOL" Value="0"/>
+<DataValueMember Name="UN" DataType="BOOL" Value="0"/>
+</Structure>
+</Element>
+<Element Index="[3]">
+<Structure DataType="COUNTER">
+<DataValueMember Name="PRE" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="ACC" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="CU" DataType="BOOL" Value="0"/>
+<DataValueMember Name="CD" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DN" DataType="BOOL" Value="1"/>
+<DataValueMember Name="OV" DataType="BOOL" Value="0"/>
+<DataValueMember Name="UN" DataType="BOOL" Value="0"/>
+</Structure>
+</Element>
+<Element Index="[4]">
+<Structure DataType="COUNTER">
+<DataValueMember Name="PRE" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="ACC" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="CU" DataType="BOOL" Value="0"/>
+<DataValueMember Name="CD" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DN" DataType="BOOL" Value="1"/>
+<DataValueMember Name="OV" DataType="BOOL" Value="0"/>
+<DataValueMember Name="UN" DataType="BOOL" Value="0"/>
+</Structure>
+</Element>
+<Element Index="[5]">
+<Structure DataType="COUNTER">
+<DataValueMember Name="PRE" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="ACC" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="CU" DataType="BOOL" Value="0"/>
+<DataValueMember Name="CD" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DN" DataType="BOOL" Value="0"/>
+<DataValueMember Name="OV" DataType="BOOL" Value="0"/>
+<DataValueMember Name="UN" DataType="BOOL" Value="0"/>
+</Structure>
+</Element>
+<Element Index="[6]">
+<Structure DataType="COUNTER">
+<DataValueMember Name="PRE" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="ACC" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="CU" DataType="BOOL" Value="0"/>
+<DataValueMember Name="CD" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DN" DataType="BOOL" Value="0"/>
+<DataValueMember Name="OV" DataType="BOOL" Value="0"/>
+<DataValueMember Name="UN" DataType="BOOL" Value="0"/>
+</Structure>
+</Element>
+<Element Index="[7]">
+<Structure DataType="COUNTER">
+<DataValueMember Name="PRE" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="ACC" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="CU" DataType="BOOL" Value="0"/>
+<DataValueMember Name="CD" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DN" DataType="BOOL" Value="0"/>
+<DataValueMember Name="OV" DataType="BOOL" Value="0"/>
+<DataValueMember Name="UN" DataType="BOOL" Value="0"/>
+</Structure>
+</Element>
+<Element Index="[8]">
+<Structure DataType="COUNTER">
+<DataValueMember Name="PRE" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="ACC" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="CU" DataType="BOOL" Value="0"/>
+<DataValueMember Name="CD" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DN" DataType="BOOL" Value="0"/>
+<DataValueMember Name="OV" DataType="BOOL" Value="0"/>
+<DataValueMember Name="UN" DataType="BOOL" Value="0"/>
+</Structure>
+</Element>
+<Element Index="[9]">
+<Structure DataType="COUNTER">
+<DataValueMember Name="PRE" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="ACC" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="CU" DataType="BOOL" Value="0"/>
+<DataValueMember Name="CD" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DN" DataType="BOOL" Value="0"/>
+<DataValueMember Name="OV" DataType="BOOL" Value="0"/>
+<DataValueMember Name="UN" DataType="BOOL" Value="0"/>
+</Structure>
+</Element>
+</Array>
+</Data>
+</Tag>
+<Tag Name="Encoder_Output_Bits_HBW" TagType="Base" DataType="DINT" Radix="Decimal" Constant="false" ExternalAccess="Read/Write" OpcUaAccess="None">
+<Data Format="L5K">
+<![CDATA[0]]>
+</Data>
+<Data Format="Decorated">
+<DataValue DataType="DINT" Radix="Decimal" Value="0"/>
+</Data>
+</Tag>
+<Tag Name="Encoder_Output_Bits_VGR" TagType="Base" DataType="DINT" Dimensions="2" Radix="Decimal" Constant="false" ExternalAccess="Read/Write" OpcUaAccess="None">
+<Data Format="L5K">
+<![CDATA[[0,0]]]>
+</Data>
+<Data Format="Decorated">
+<Array DataType="DINT" Dimensions="2" Radix="Decimal">
+<Element Index="[0]" Value="0"/>
+<Element Index="[1]" Value="0"/>
+</Array>
+</Data>
+</Tag>
+<Tag Name="Encoder_Storage_Bits_HBW" TagType="Base" DataType="DINT" Radix="Decimal" Constant="false" ExternalAccess="Read/Write" OpcUaAccess="None">
+<Data Format="L5K">
+<![CDATA[0]]>
+</Data>
+<Data Format="Decorated">
+<DataValue DataType="DINT" Radix="Decimal" Value="0"/>
+</Data>
+</Tag>
+<Tag Name="Encoder_Storage_Bits_VGR" TagType="Base" DataType="DINT" Dimensions="2" Radix="Decimal" Constant="false" ExternalAccess="Read/Write" OpcUaAccess="None">
+<Data Format="L5K">
+<![CDATA[[0,0]]]>
+</Data>
+<Data Format="Decorated">
+<Array DataType="DINT" Dimensions="2" Radix="Decimal">
+<Element Index="[0]" Value="0"/>
+<Element Index="[1]" Value="0"/>
+</Array>
+</Data>
+</Tag>
+</Tags>
+<Programs Use="Context">
+<Program Use="Context" Name="MainProgram">
+<Routines Use="Context">
+<Routine Use="Target" Name="Encoder_Values" Type="RLL">
+<RLLContent>
+<Rung Number="0" Type="N">
+<Comment>
+<![CDATA[HBW Encoder Section Start]]>
+</Comment>
+<Text>
+<![CDATA[NOP();]]>
+</Text>
+</Rung>
+<Rung Number="1" Type="N">
+<Comment>
+<![CDATA[HBW M2 Encoders First Scan Reset]]>
+</Comment>
+<Text>
+<![CDATA[XIC(S:FS)RES(Encoder_Counters_4X[0]);]]>
+</Text>
+</Rung>
+<Rung Number="2" Type="N">
+<Text>
+<![CDATA[XIC(S:FS)RES(Encoder_Counters_2X[0]);]]>
+</Text>
+</Rung>
+<Rung Number="3" Type="N">
+<Text>
+<![CDATA[XIC(S:FS)RES(Encoder_Counters_1X[0]);]]>
+</Text>
+</Rung>
+<Rung Number="4" Type="N">
+<Comment>
+<![CDATA[HBW M2 Horizontal Positive(Toward Rack) Direction 4X]]>
+</Comment>
+<Text>
+<![CDATA[XIC(Local:7:O.Data.12)XIC(Local:2:I.Data.8)[OSR(Encoder_Storage_Bits_HBW.0,Encoder_Output_Bits_HBW.0) ,OSF(Encoder_Storage_Bits_HBW.1,Encoder_Output_Bits_HBW.1) ]CTU(Encoder_Counters_4X[0],?,?);]]>
+</Text>
+</Rung>
+<Rung Number="5" Type="N">
+<Text>
+<![CDATA[XIC(Local:7:O.Data.12)XIC(Local:2:I.Data.9)[OSR(Encoder_Storage_Bits_HBW.2,Encoder_Output_Bits_HBW.2) ,OSF(Encoder_Storage_Bits_HBW.3,Encoder_Output_Bits_HBW.3) ]CTU(Encoder_Counters_4X[0],?,?);]]>
+</Text>
+</Rung>
+<Rung Number="6" Type="N">
+<Comment>
+<![CDATA[HBW M2 Horizontal Negative(Toward Belt) Direction 4X]]>
+</Comment>
+<Text>
+<![CDATA[XIC(Local:7:O.Data.13)XIC(Local:2:I.Data.8)[OSR(Encoder_Storage_Bits_HBW.4,Encoder_Output_Bits_HBW.4) ,OSF(Encoder_Storage_Bits_HBW.5,Encoder_Output_Bits_HBW.5) ]CTD(Encoder_Counters_4X[0],?,?);]]>
+</Text>
+</Rung>
+<Rung Number="7" Type="N">
+<Text>
+<![CDATA[XIC(Local:7:O.Data.13)XIC(Local:2:I.Data.9)[OSR(Encoder_Storage_Bits_HBW.6,Encoder_Output_Bits_HBW.6) ,OSF(Encoder_Storage_Bits_HBW.7,Encoder_Output_Bits_HBW.7) ]CTD(Encoder_Counters_4X[0],?,?);]]>
+</Text>
+</Rung>
+<Rung Number="8" Type="N">
+<Comment>
+<![CDATA[HBW M2 Horizontal Positive(Toward Rack) Direction 2X]]>
+</Comment>
+<Text>
+<![CDATA[XIC(Local:7:O.Data.12)XIC(Local:2:I.Data.8)[OSR(Encoder_Storage_Bits_HBW.8,Encoder_Output_Bits_HBW.8) ,OSF(Encoder_Storage_Bits_HBW.9,Encoder_Output_Bits_HBW.9) ]CTU(Encoder_Counters_2X[0],?,?);]]>
+</Text>
+</Rung>
+<Rung Number="9" Type="N">
+<Comment>
+<![CDATA[HBW M2 Horizontal Negative(Toward Belt) Direction 2X]]>
+</Comment>
+<Text>
+<![CDATA[XIC(Local:7:O.Data.13)XIC(Local:2:I.Data.8)[OSR(Encoder_Storage_Bits_HBW.10,Encoder_Output_Bits_HBW.10) ,OSF(Encoder_Storage_Bits_HBW.11,Encoder_Output_Bits_HBW.11) ]CTD(Encoder_Counters_2X[0],?,?);]]>
+</Text>
+</Rung>
+<Rung Number="10" Type="N">
+<Comment>
+<![CDATA[HBW M2 Horizontal Positive(Toward Rack) Direction 1X]]>
+</Comment>
+<Text>
+<![CDATA[XIC(Local:7:O.Data.12)XIC(Local:2:I.Data.8)OSR(Encoder_Storage_Bits_HBW.12,Encoder_Output_Bits_HBW.12)CTU(Encoder_Counters_1X[0],?,?);]]>
+</Text>
+</Rung>
+<Rung Number="11" Type="N">
+<Comment>
+<![CDATA[HBW M2 Horizontal Negative(Toward Belt) Direction 1X]]>
+</Comment>
+<Text>
+<![CDATA[XIC(Local:7:O.Data.13)XIC(Local:2:I.Data.8)OSR(Encoder_Storage_Bits_HBW.13,Encoder_Output_Bits_HBW.13)CTD(Encoder_Counters_1X[0],?,?);]]>
+</Text>
+</Rung>
+<Rung Number="12" Type="N">
+<Text>
+<![CDATA[NOP();]]>
+</Text>
+</Rung>
+<Rung Number="13" Type="N">
+<Comment>
+<![CDATA[HBW M3 Encoder First Scan Reset]]>
+</Comment>
+<Text>
+<![CDATA[XIC(S:FS)RES(Encoder_Counters_4X[1]);]]>
+</Text>
+</Rung>
+<Rung Number="14" Type="N">
+<Text>
+<![CDATA[XIC(S:FS)RES(Encoder_Counters_2X[1]);]]>
+</Text>
+</Rung>
+<Rung Number="15" Type="N">
+<Text>
+<![CDATA[XIC(S:FS)RES(Encoder_Counters_1X[1]);]]>
+</Text>
+</Rung>
+<Rung Number="16" Type="N">
+<Comment>
+<![CDATA[HBW M3 Vertical Positive (DOWNWARD) Direction 4X]]>
+</Comment>
+<Text>
+<![CDATA[XIC(Local:6:O.Data.0)XIC(Local:2:I.Data.6)[OSR(Encoder_Storage_Bits_HBW.14,Encoder_Output_Bits_HBW.14) ,OSF(Encoder_Storage_Bits_HBW.15,Encoder_Output_Bits_HBW.15) ]CTU(Encoder_Counters_4X[1],?,?);]]>
+</Text>
+</Rung>
+<Rung Number="17" Type="N">
+<Text>
+<![CDATA[XIC(Local:6:O.Data.0)XIC(Local:2:I.Data.7)[OSR(Encoder_Storage_Bits_HBW.16,Encoder_Output_Bits_HBW.16) ,OSF(Encoder_Storage_Bits_HBW.17,Encoder_Output_Bits_HBW.17) ]CTU(Encoder_Counters_4X[1],?,?);]]>
+</Text>
+</Rung>
+<Rung Number="18" Type="N">
+<Comment>
+<![CDATA[HBW M3 Vertical Negative(UPWARD) Direction 4X]]>
+</Comment>
+<Text>
+<![CDATA[XIC(Local:6:O.Data.1)XIC(Local:2:I.Data.6)[OSR(Encoder_Storage_Bits_HBW.18,Encoder_Output_Bits_HBW.18) ,OSF(Encoder_Storage_Bits_HBW.19,Encoder_Output_Bits_HBW.19) ]CTD(Encoder_Counters_4X[1],?,?);]]>
+</Text>
+</Rung>
+<Rung Number="19" Type="N">
+<Text>
+<![CDATA[XIC(Local:6:O.Data.1)XIC(Local:2:I.Data.7)[OSR(Encoder_Storage_Bits_HBW.20,Encoder_Output_Bits_HBW.20) ,OSF(Encoder_Storage_Bits_HBW.21,Encoder_Output_Bits_HBW.21) ]CTD(Encoder_Counters_4X[1],?,?);]]>
+</Text>
+</Rung>
+<Rung Number="20" Type="N">
+<Comment>
+<![CDATA[HBW M3 Vertical Positive(DOWNWARD) Direction 2X]]>
+</Comment>
+<Text>
+<![CDATA[XIC(Local:6:O.Data.0)XIC(Local:2:I.Data.6)[OSR(Encoder_Storage_Bits_HBW.22,Encoder_Output_Bits_HBW.22) ,OSF(Encoder_Storage_Bits_HBW.23,Encoder_Output_Bits_HBW.23) ]CTU(Encoder_Counters_2X[1],?,?);]]>
+</Text>
+</Rung>
+<Rung Number="21" Type="N">
+<Comment>
+<![CDATA[HBW M3 Vertical Negative(UPWARD) Direction 2X]]>
+</Comment>
+<Text>
+<![CDATA[XIC(Local:6:O.Data.1)XIC(Local:2:I.Data.6)[OSR(Encoder_Storage_Bits_HBW.24,Encoder_Output_Bits_HBW.24) ,OSF(Encoder_Storage_Bits_HBW.25,Encoder_Output_Bits_HBW.25) ]CTD(Encoder_Counters_2X[1],?,?);]]>
+</Text>
+</Rung>
+<Rung Number="22" Type="N">
+<Comment>
+<![CDATA[HBW M2 Vertical Positive(DOWNWARD) Direction 1X]]>
+</Comment>
+<Text>
+<![CDATA[XIC(Local:6:O.Data.0)XIC(Local:2:I.Data.6)OSR(Encoder_Storage_Bits_HBW.26,Encoder_Output_Bits_HBW.26)CTU(Encoder_Counters_1X[1],?,?);]]>
+</Text>
+</Rung>
+<Rung Number="23" Type="N">
+<Comment>
+<![CDATA[HBW M3 Vertical Negative(UPWARD) Direction 1X]]>
+</Comment>
+<Text>
+<![CDATA[XIC(Local:6:O.Data.1)XIC(Local:2:I.Data.6)OSR(Encoder_Storage_Bits_HBW.27,Encoder_Output_Bits_HBW.27)CTD(Encoder_Counters_1X[1],?,?);]]>
+</Text>
+</Rung>
+<Rung Number="24" Type="N">
+<Comment>
+<![CDATA[HBW Encoder Section End]]>
+</Comment>
+<Text>
+<![CDATA[NOP();]]>
+</Text>
+</Rung>
+<Rung Number="25" Type="N">
+<Comment>
+<![CDATA[VGR Encoder Section Start]]>
+</Comment>
+<Text>
+<![CDATA[NOP();]]>
+</Text>
+</Rung>
+<Rung Number="26" Type="N">
+<Comment>
+<![CDATA[VGR M1 Encoders First Scan Reset]]>
+</Comment>
+<Text>
+<![CDATA[XIC(S:FS)RES(Encoder_Counters_4X[2]);]]>
+</Text>
+</Rung>
+<Rung Number="27" Type="N">
+<Text>
+<![CDATA[XIC(S:FS)RES(Encoder_Counters_2X[2]);]]>
+</Text>
+</Rung>
+<Rung Number="28" Type="N">
+<Text>
+<![CDATA[XIC(S:FS)RES(Encoder_Counters_1X[2]);]]>
+</Text>
+</Rung>
+<Rung Number="29" Type="N">
+<Comment>
+<![CDATA[VGR M1 Vertical Positive(DOWNWARD) Direction 4X]]>
+</Comment>
+<Text>
+<![CDATA[XIC(Local:6:O.Data.11)XIC(Local:1:I.Pt[0].Data)[OSR(Encoder_Storage_Bits_VGR[0].0,Encoder_Output_Bits_VGR[0].0) ,OSF(Encoder_Storage_Bits_VGR[0].1,Encoder_Output_Bits_VGR[0].1) ]CTU(Encoder_Counters_4X[2],?,?);]]>
+</Text>
+</Rung>
+<Rung Number="30" Type="N">
+<Text>
+<![CDATA[XIC(Local:6:O.Data.11)XIC(Local:1:I.Pt[1].Data)[OSR(Encoder_Storage_Bits_VGR[0].2,Encoder_Output_Bits_VGR[0].2) ,OSF(Encoder_Storage_Bits_VGR[0].3,Encoder_Output_Bits_VGR[0].3) ]CTU(Encoder_Counters_4X[2],?,?);]]>
+</Text>
+</Rung>
+<Rung Number="31" Type="N">
+<Comment>
+<![CDATA[VGR M1 Vertical Negative(UPWARD) Direction 4X]]>
+</Comment>
+<Text>
+<![CDATA[XIC(Local:6:O.Data.10)XIC(Local:1:I.Pt[0].Data)[OSR(Encoder_Storage_Bits_VGR[0].4,Encoder_Output_Bits_VGR[0].4) ,OSF(Encoder_Storage_Bits_VGR[0].5,Encoder_Output_Bits_VGR[0].5) ]CTD(Encoder_Counters_4X[2],?,?);]]>
+</Text>
+</Rung>
+<Rung Number="32" Type="N">
+<Text>
+<![CDATA[XIC(Local:6:O.Data.10)XIC(Local:1:I.Pt[1].Data)[OSR(Encoder_Storage_Bits_VGR[0].6,Encoder_Output_Bits_VGR[0].6) ,OSF(Encoder_Storage_Bits_VGR[0].7,Encoder_Output_Bits_VGR[0].7) ]CTD(Encoder_Counters_4X[2],?,?);]]>
+</Text>
+</Rung>
+<Rung Number="33" Type="N">
+<Comment>
+<![CDATA[VGR M1 Vertical Positive(DOWNWARD) Direction 2X]]>
+</Comment>
+<Text>
+<![CDATA[XIC(Local:6:O.Data.11)XIC(Local:1:I.Pt[0].Data)[OSR(Encoder_Storage_Bits_VGR[0].8,Encoder_Output_Bits_VGR[0].8) ,OSF(Encoder_Storage_Bits_VGR[0].9,Encoder_Output_Bits_VGR[0].9) ]CTU(Encoder_Counters_2X[2],?,?);]]>
+</Text>
+</Rung>
+<Rung Number="34" Type="N">
+<Comment>
+<![CDATA[VGR M1 Vertical Negative(UPWARD) Direction 2X]]>
+</Comment>
+<Text>
+<![CDATA[XIC(Local:6:O.Data.10)XIC(Local:1:I.Pt[0].Data)[OSR(Encoder_Storage_Bits_VGR[0].10,Encoder_Output_Bits_VGR[0].10) ,OSF(Encoder_Storage_Bits_VGR[0].11,Encoder_Output_Bits_VGR[0].11) ]CTD(Encoder_Counters_2X[2],?,?);]]>
+</Text>
+</Rung>
+<Rung Number="35" Type="N">
+<Comment>
+<![CDATA[VGR M1 Vertical Positive(DOWNWARD) Direction 1X]]>
+</Comment>
+<Text>
+<![CDATA[XIC(Local:6:O.Data.11)XIC(Local:1:I.Pt[0].Data)OSR(Encoder_Storage_Bits_VGR[0].12,Encoder_Output_Bits_VGR[0].12)CTU(Encoder_Counters_1X[2],?,?);]]>
+</Text>
+</Rung>
+<Rung Number="36" Type="N">
+<Comment>
+<![CDATA[VGR M1 Vertical Negative(UPWARD) Direction 1X]]>
+</Comment>
+<Text>
+<![CDATA[XIC(Local:6:O.Data.10)XIC(Local:1:I.Pt[0].Data)OSR(Encoder_Storage_Bits_VGR[0].13,Encoder_Output_Bits_VGR[0].13)CTD(Encoder_Counters_1X[2],?,?);]]>
+</Text>
+</Rung>
+<Rung Number="37" Type="N">
+<Text>
+<![CDATA[NOP();]]>
+</Text>
+</Rung>
+<Rung Number="38" Type="N">
+<Comment>
+<![CDATA[VGR M2 Encoders First Scan Reset]]>
+</Comment>
+<Text>
+<![CDATA[XIC(S:FS)RES(Encoder_Counters_4X[3]);]]>
+</Text>
+</Rung>
+<Rung Number="39" Type="N">
+<Text>
+<![CDATA[XIC(S:FS)RES(Encoder_Counters_2X[3]);]]>
+</Text>
+</Rung>
+<Rung Number="40" Type="N">
+<Text>
+<![CDATA[XIC(S:FS)RES(Encoder_Counters_1X[3]);]]>
+</Text>
+</Rung>
+<Rung Number="41" Type="N">
+<Comment>
+<![CDATA[VGR M2 Horizontal Positive(Extending) Direction 4X]]>
+</Comment>
+<Text>
+<![CDATA[XIC(Local:6:O.Data.29)XIC(Local:1:I.Pt[2].Data)[OSR(Encoder_Storage_Bits_VGR[0].14,Encoder_Output_Bits_VGR[0].14) ,OSF(Encoder_Storage_Bits_VGR[0].15,Encoder_Output_Bits_VGR[0].15) ]CTU(Encoder_Counters_4X[3],?,?);]]>
+</Text>
+</Rung>
+<Rung Number="42" Type="N">
+<Text>
+<![CDATA[XIC(Local:6:O.Data.29)XIC(Local:1:I.Pt[3].Data)[OSR(Encoder_Storage_Bits_VGR[0].16,Encoder_Output_Bits_VGR[0].16) ,OSF(Encoder_Storage_Bits_VGR[0].17,Encoder_Output_Bits_VGR[0].17) ]CTU(Encoder_Counters_4X[3],?,?);]]>
+</Text>
+</Rung>
+<Rung Number="43" Type="N">
+<Comment>
+<![CDATA[VGR M2 Horizontal Negative(RETRACT) Direction 4X]]>
+</Comment>
+<Text>
+<![CDATA[XIC(Local:6:O.Data.28)XIC(Local:1:I.Pt[2].Data)[OSR(Encoder_Storage_Bits_VGR[0].18,Encoder_Output_Bits_VGR[0].18) ,OSF(Encoder_Storage_Bits_VGR[0].19,Encoder_Output_Bits_VGR[0].19) ]CTD(Encoder_Counters_4X[3],?,?);]]>
+</Text>
+</Rung>
+<Rung Number="44" Type="N">
+<Text>
+<![CDATA[XIC(Local:6:O.Data.28)XIC(Local:1:I.Pt[3].Data)[OSR(Encoder_Storage_Bits_VGR[0].20,Encoder_Output_Bits_VGR[0].20) ,OSF(Encoder_Storage_Bits_VGR[0].21,Encoder_Output_Bits_VGR[0].21) ]CTD(Encoder_Counters_4X[3],?,?);]]>
+</Text>
+</Rung>
+<Rung Number="45" Type="N">
+<Comment>
+<![CDATA[VGR M2 Horizontal Positive(EXTEND) Direction 2X]]>
+</Comment>
+<Text>
+<![CDATA[XIC(Local:6:O.Data.29)XIC(Local:1:I.Pt[2].Data)[OSR(Encoder_Storage_Bits_VGR[0].22,Encoder_Output_Bits_VGR[0].22) ,OSF(Encoder_Storage_Bits_VGR[0].23,Encoder_Output_Bits_VGR[0].23) ]CTU(Encoder_Counters_2X[3],?,?);]]>
+</Text>
+</Rung>
+<Rung Number="46" Type="N">
+<Comment>
+<![CDATA[VGR M2 Horizontal Negative(RETRACT) Direction 2X]]>
+</Comment>
+<Text>
+<![CDATA[XIC(Local:6:O.Data.28)XIC(Local:1:I.Pt[2].Data)[OSR(Encoder_Storage_Bits_VGR[0].24,Encoder_Output_Bits_VGR[0].24) ,OSF(Encoder_Storage_Bits_VGR[0].25,Encoder_Output_Bits_VGR[0].25) ]CTD(Encoder_Counters_2X[3],?,?);]]>
+</Text>
+</Rung>
+<Rung Number="47" Type="N">
+<Comment>
+<![CDATA[VGR M2 Horizontal Positive(EXTEND) Direction 1X]]>
+</Comment>
+<Text>
+<![CDATA[XIC(Local:6:O.Data.29)XIC(Local:1:I.Pt[2].Data)OSR(Encoder_Storage_Bits_VGR[0].26,Encoder_Output_Bits_VGR[0].26)CTU(Encoder_Counters_1X[3],?,?);]]>
+</Text>
+</Rung>
+<Rung Number="48" Type="N">
+<Comment>
+<![CDATA[VGR M2 Horizontal Negative(RETRACT) Direction 1X]]>
+</Comment>
+<Text>
+<![CDATA[XIC(Local:6:O.Data.28)XIC(Local:1:I.Pt[2].Data)OSR(Encoder_Storage_Bits_VGR[0].27,Encoder_Output_Bits_VGR[0].27)CTD(Encoder_Counters_1X[3],?,?);]]>
+</Text>
+</Rung>
+<Rung Number="49" Type="N">
+<Text>
+<![CDATA[NOP();]]>
+</Text>
+</Rung>
+<Rung Number="50" Type="N">
+<Comment>
+<![CDATA[VGR M3 Encoders First Scan Reset]]>
+</Comment>
+<Text>
+<![CDATA[XIC(S:FS)RES(Encoder_Counters_4X[4]);]]>
+</Text>
+</Rung>
+<Rung Number="51" Type="N">
+<Text>
+<![CDATA[XIC(S:FS)RES(Encoder_Counters_2X[4]);]]>
+</Text>
+</Rung>
+<Rung Number="52" Type="N">
+<Text>
+<![CDATA[XIC(S:FS)RES(Encoder_Counters_1X[4]);]]>
+</Text>
+</Rung>
+<Rung Number="53" Type="N">
+<Comment>
+<![CDATA[VGR M3 Rotatel Positive(CClockwise) Direction 4X]]>
+</Comment>
+<Text>
+<![CDATA[XIC(Local:6:O.Data.31)XIC(Local:1:I.Pt[4].Data)[OSR(Encoder_Storage_Bits_VGR[0].28,Encoder_Output_Bits_VGR[0].28) ,OSF(Encoder_Storage_Bits_VGR[0].29,Encoder_Output_Bits_VGR[0].29) ]CTU(Encoder_Counters_4X[4],?,?);]]>
+</Text>
+</Rung>
+<Rung Number="54" Type="N">
+<Text>
+<![CDATA[XIC(Local:6:O.Data.31)XIC(Local:1:I.Pt[5].Data)[OSR(Encoder_Storage_Bits_VGR[0].30,Encoder_Output_Bits_VGR[0].30) ,OSF(Encoder_Storage_Bits_VGR[0].31,Encoder_Output_Bits_VGR[0].31) ]CTU(Encoder_Counters_4X[4],?,?);]]>
+</Text>
+</Rung>
+<Rung Number="55" Type="N">
+<Comment>
+<![CDATA[VGR M3 Rotate Negative(Clockwise) Direction 4X]]>
+</Comment>
+<Text>
+<![CDATA[XIC(Local:6:O.Data.30)XIC(Local:1:I.Pt[4].Data)[OSR(Encoder_Storage_Bits_VGR[1].0,Encoder_Output_Bits_VGR[1].0) ,OSF(Encoder_Storage_Bits_VGR[1].1,Encoder_Output_Bits_VGR[1].1) ]CTD(Encoder_Counters_4X[4],?,?);]]>
+</Text>
+</Rung>
+<Rung Number="56" Type="N">
+<Text>
+<![CDATA[XIC(Local:6:O.Data.30)XIC(Local:1:I.Pt[5].Data)[OSR(Encoder_Storage_Bits_VGR[1].2,Encoder_Output_Bits_VGR[1].2) ,OSF(Encoder_Storage_Bits_VGR[1].3,Encoder_Output_Bits_VGR[1].3) ]CTD(Encoder_Counters_4X[4],?,?);]]>
+</Text>
+</Rung>
+<Rung Number="57" Type="N">
+<Comment>
+<![CDATA[VGR M3 Rotate Positive(CClockwise) Direction 2X]]>
+</Comment>
+<Text>
+<![CDATA[XIC(Local:6:O.Data.31)XIC(Local:1:I.Pt[4].Data)[OSR(Encoder_Storage_Bits_VGR[1].4,Encoder_Output_Bits_VGR[1].4) ,OSF(Encoder_Storage_Bits_VGR[1].5,Encoder_Output_Bits_VGR[1].5) ]CTU(Encoder_Counters_2X[4],?,?);]]>
+</Text>
+</Rung>
+<Rung Number="58" Type="N">
+<Comment>
+<![CDATA[VGR M3 Rotate Negative(Clockwise) Direction 2X]]>
+</Comment>
+<Text>
+<![CDATA[XIC(Local:6:O.Data.30)XIC(Local:1:I.Pt[4].Data)[OSR(Encoder_Storage_Bits_VGR[1].6,Encoder_Output_Bits_VGR[1].6) ,OSF(Encoder_Storage_Bits_VGR[1].7,Encoder_Output_Bits_VGR[1].7) ]CTD(Encoder_Counters_2X[4],?,?);]]>
+</Text>
+</Rung>
+<Rung Number="59" Type="N">
+<Comment>
+<![CDATA[VGR M3 Rotate Positive(CClockwise) Direction 1X]]>
+</Comment>
+<Text>
+<![CDATA[XIC(Local:6:O.Data.31)XIC(Local:1:I.Pt[4].Data)OSR(Encoder_Storage_Bits_VGR[1].8,Encoder_Output_Bits_VGR[1].8)CTU(Encoder_Counters_1X[4],?,?);]]>
+</Text>
+</Rung>
+<Rung Number="60" Type="N">
+<Comment>
+<![CDATA[VGR M3 Rotate Negative(Clockwise) Direction 1X]]>
+</Comment>
+<Text>
+<![CDATA[XIC(Local:6:O.Data.30)XIC(Local:1:I.Pt[4].Data)OSR(Encoder_Storage_Bits_VGR[1].9,Encoder_Output_Bits_VGR[1].9)CTD(Encoder_Counters_1X[4],?,?);]]>
+</Text>
+</Rung>
+<Rung Number="61" Type="N">
+<Comment>
+<![CDATA[VGR Encoder Section End]]>
+</Comment>
+<Text>
+<![CDATA[NOP();]]>
+</Text>
+</Rung>
+</RLLContent>
+</Routine>
+</Routines>
+</Program>
+</Programs>
+</Controller>
+</RSLogix5000Content>

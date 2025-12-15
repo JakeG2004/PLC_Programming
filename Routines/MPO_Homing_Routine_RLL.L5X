@@ -1,0 +1,461 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<RSLogix5000Content SchemaRevision="1.0" SoftwareRevision="38.00" TargetName="MPO_Homing" TargetType="Routine" TargetSubType="RLL" ContainsContext="true" ExportDate="Sun Dec 14 17:50:05 2025" ExportOptions="References NoRawData L5KData DecoratedData Context Dependencies ForceProtectedEncoding AllProjDocTrans">
+<Controller Use="Context" Name="Uidaho_Factory">
+<DataTypes Use="Context">
+</DataTypes>
+<Modules Use="Context">
+<Module Use="Reference" Name="Local">
+</Module>
+<Module Use="Reference" Name="Slot_2_Input">
+</Module>
+<Module Use="Reference" Name="Slot_3_Input">
+</Module>
+<Module Use="Reference" Name="Slot_6_Output">
+</Module>
+<Module Use="Reference" Name="Slot_7_Output">
+</Module>
+</Modules>
+<AddOnInstructionDefinitions Use="Context">
+<AddOnInstructionDefinition Name="PWM_Out" Revision="1.0" ExecutePrescan="true" ExecutePostscan="false" ExecuteEnableInFalse="false" CreatedDate="2025-10-21T21:47:35.336Z" CreatedBy="DESKTOP-QJHSHBT\Moscow-MCCL422-Admin" EditedDate="2025-10-29T20:51:19.422Z" EditedBy="DESKTOP-QJHSHBT\Moscow-MCCL422-Admin" SoftwareRevision="v38.00">
+<Parameters>
+<Parameter Name="EnableIn" TagType="Base" DataType="BOOL" Usage="Input" Radix="Decimal" Required="false" Visible="false" ExternalAccess="Read Only">
+<Description>
+<![CDATA[Enable Input - System Defined Parameter]]>
+</Description>
+</Parameter>
+<Parameter Name="EnableOut" TagType="Base" DataType="BOOL" Usage="Output" Radix="Decimal" Required="false" Visible="false" ExternalAccess="Read Only">
+<Description>
+<![CDATA[Enable Output - System Defined Parameter]]>
+</Description>
+</Parameter>
+<Parameter Name="PWM_Pin" TagType="Base" DataType="BOOL" Usage="Output" Radix="Decimal" Required="true" Visible="true" ExternalAccess="Read/Write">
+<DefaultData Format="L5K">
+<![CDATA[0]]>
+</DefaultData>
+<DefaultData Format="Decorated">
+<DataValue DataType="BOOL" Radix="Decimal" Value="0"/>
+</DefaultData>
+</Parameter>
+<Parameter Name="Duty_Cycle" TagType="Base" DataType="DINT" Usage="Input" Radix="Decimal" Required="true" Visible="true" ExternalAccess="Read/Write">
+<DefaultData Format="L5K">
+<![CDATA[0]]>
+</DefaultData>
+<DefaultData Format="Decorated">
+<DataValue DataType="DINT" Radix="Decimal" Value="0"/>
+</DefaultData>
+</Parameter>
+<Parameter Name="Frequency_Hz" TagType="Base" DataType="DINT" Usage="Input" Radix="Decimal" Required="true" Visible="true" ExternalAccess="Read/Write">
+<DefaultData Format="L5K">
+<![CDATA[0]]>
+</DefaultData>
+<DefaultData Format="Decorated">
+<DataValue DataType="DINT" Radix="Decimal" Value="0"/>
+</DefaultData>
+</Parameter>
+</Parameters>
+<LocalTags>
+<LocalTag Name="PWM_Timer_On" DataType="TIMER" ExternalAccess="None">
+<DefaultData Format="L5K">
+<![CDATA[[0,0,0]]]>
+</DefaultData>
+<DefaultData Format="Decorated">
+<Structure DataType="TIMER">
+<DataValueMember Name="PRE" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="ACC" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="EN" DataType="BOOL" Value="0"/>
+<DataValueMember Name="TT" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DN" DataType="BOOL" Value="0"/>
+</Structure>
+</DefaultData>
+</LocalTag>
+<LocalTag Name="PWM_Timer_Off" DataType="TIMER" ExternalAccess="None">
+<DefaultData Format="L5K">
+<![CDATA[[0,0,0]]]>
+</DefaultData>
+<DefaultData Format="Decorated">
+<Structure DataType="TIMER">
+<DataValueMember Name="PRE" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="ACC" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="EN" DataType="BOOL" Value="0"/>
+<DataValueMember Name="TT" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DN" DataType="BOOL" Value="0"/>
+</Structure>
+</DefaultData>
+</LocalTag>
+<LocalTag Name="Duty_Cycle_Scaler" DataType="REAL" Radix="Float" ExternalAccess="None">
+<DefaultData Format="L5K">
+<![CDATA[0.00000000e+000]]>
+</DefaultData>
+<DefaultData Format="Decorated">
+<DataValue DataType="REAL" Radix="Float" Value="0.0"/>
+</DefaultData>
+</LocalTag>
+<LocalTag Name="Frequency_Ms" DataType="REAL" Radix="Float" ExternalAccess="None">
+<DefaultData Format="L5K">
+<![CDATA[6.00000000e+001]]>
+</DefaultData>
+<DefaultData Format="Decorated">
+<DataValue DataType="REAL" Radix="Float" Value="60.0"/>
+</DefaultData>
+</LocalTag>
+<LocalTag Name="Fault_Bit" DataType="BOOL" Radix="Decimal" ExternalAccess="None">
+<DefaultData Format="L5K">
+<![CDATA[0]]>
+</DefaultData>
+<DefaultData Format="Decorated">
+<DataValue DataType="BOOL" Radix="Decimal" Value="0"/>
+</DefaultData>
+</LocalTag>
+</LocalTags>
+<Routines>
+<Routine Name="Logic" Type="RLL">
+<RLLContent>
+<Rung Number="0" Type="N">
+<Text>
+<![CDATA[XIO(PWM_Timer_Off.DN)TON(PWM_Timer_On,?,?);]]>
+</Text>
+</Rung>
+<Rung Number="1" Type="N">
+<Text>
+<![CDATA[XIC(PWM_Timer_On.DN)TON(PWM_Timer_Off,?,?);]]>
+</Text>
+</Rung>
+<Rung Number="2" Type="N">
+<Text>
+<![CDATA[XIO(PWM_Timer_On.DN)OTE(PWM_Pin);]]>
+</Text>
+</Rung>
+</RLLContent>
+</Routine>
+<Routine Name="Prescan" Type="RLL">
+<Description>
+<![CDATA[Perform Calculations for PWM Timing]]>
+</Description>
+<RLLContent>
+<Rung Number="0" Type="N">
+<Comment>
+<![CDATA[Clamp Inputs to valid range]]>
+</Comment>
+<Text>
+<![CDATA[NOP();]]>
+</Text>
+</Rung>
+<Rung Number="1" Type="N">
+<Comment>
+<![CDATA[Interval notation
+Duty_Cycle = [0,100]
+
+]]>
+</Comment>
+<Text>
+<![CDATA[[GT(Duty_Cycle,100) MOVE(100,Duty_Cycle) ,LT(Duty_Cycle,0) MOVE(0,Duty_Cycle) ];]]>
+</Text>
+</Rung>
+<Rung Number="2" Type="N">
+<Comment>
+<![CDATA[Interval notation
+Frequency_Hz = [0,1000]]]>
+</Comment>
+<Text>
+<![CDATA[[GT(Frequency_Hz,1000) MOVE(1000,Frequency_Hz) ,LT(Frequency_Hz,0) MOVE(0,Frequency_Hz) ];]]>
+</Text>
+</Rung>
+<Rung Number="3" Type="N">
+<Comment>
+<![CDATA[Start of PWM math calculations]]>
+</Comment>
+<Text>
+<![CDATA[NOP();]]>
+</Text>
+</Rung>
+<Rung Number="4" Type="N">
+<Comment>
+<![CDATA[Calculate duty cycle scaler in range of  [0,1] for adjusting timer presets ]]>
+</Comment>
+<Text>
+<![CDATA[DIV(Duty_Cycle,100,Duty_Cycle_Scaler);]]>
+</Text>
+</Rung>
+<Rung Number="5" Type="N">
+<Comment>
+<![CDATA[Convert Frequency Hz to Frequency Ms(milliseconds) for timers]]>
+</Comment>
+<Text>
+<![CDATA[CPT(Frequency_Ms,1000/(Frequency_Hz));]]>
+</Text>
+</Rung>
+<Rung Number="6" Type="N">
+<Comment>
+<![CDATA[scale Frequency_Ms by our Duty_Cycle_Scaler  to obtain the time spent On component for PWM]]>
+</Comment>
+<Text>
+<![CDATA[CPT(PWM_Timer_On.PRE,TRUNC((Frequency_Ms)*(Duty_Cycle_Scaler)));]]>
+</Text>
+</Rung>
+<Rung Number="7" Type="N">
+<Comment>
+<![CDATA[Calculate Remaining time which is Spent off ]]>
+</Comment>
+<Text>
+<![CDATA[CPT(PWM_Timer_Off.PRE,TRUNC((Frequency_Ms)-(PWM_Timer_On.PRE)));]]>
+</Text>
+</Rung>
+</RLLContent>
+</Routine>
+</Routines>
+</AddOnInstructionDefinition>
+</AddOnInstructionDefinitions>
+<Tags Use="Context">
+<Tag Name="PWM_Outputs" TagType="Base" DataType="PWM_Out" Dimensions="20" Constant="false" ExternalAccess="Read/Write" OpcUaAccess="None">
+<Data Format="L5K">
+<![CDATA[[[0,100,500,[230280,2,0],[230279,0,0],1.00000000e+000,2.00000000e+000],[0,100,500,[230280,2,0],[230279,0,0],1.00000000e+000
+		,2.00000000e+000],[0,100,500,[0,2,0],[0,0,0],1.00000000e+000,2.00000000e+000],[0,100,500,[0,2,0],[0,0,0],1.00000000e+000
+		,2.00000000e+000],[0,100,500,[4034494,2,0],[4034494,0,0],1.00000000e+000,2.00000000e+000],[0,100,500,[4138914
+		,2,0],[4138913,0,0],1.00000000e+000,2.00000000e+000],[0,100,500,[4169694,2,0],[4169693,0,0],1.00000000e+000
+		,2.00000000e+000],[0,100,500,[0,2,0],[0,0,0],1.00000000e+000,2.00000000e+000],[0,100,500,[3207093,2,0],[3207092
+		,0,0],1.00000000e+000,2.00000000e+000],[0,100,500,[3199178,2,0],[3199178,0,0],1.00000000e+000,2.00000000e+000
+		],[0,100,500,[0,2,0],[0,0,0],1.00000000e+000,2.00000000e+000],[1,0,0,[0,0,0],[0,0,0],0.00000000e+000,6.00000000e+001
+		],[1,0,0,[0,0,0],[0,0,0],0.00000000e+000,6.00000000e+001],[1,0,0,[0,0,0],[0,0,0],0.00000000e+000,6.00000000e+001],[1,0,0
+		,[0,0,0],[0,0,0],0.00000000e+000,6.00000000e+001],[1,0,0,[0,0,0],[0,0,0],0.00000000e+000,6.00000000e+001],[1,0,0,[0,0,0
+		],[0,0,0],0.00000000e+000,6.00000000e+001],[1,0,0,[0,0,0],[0,0,0],0.00000000e+000,6.00000000e+001],[1,0,0,[0,0,0],[0,0,0
+		],0.00000000e+000,6.00000000e+001],[1,0,0,[0,0,0],[0,0,0],0.00000000e+000,6.00000000e+001]]]]>
+</Data>
+<Data Format="Decorated">
+<Array DataType="PWM_Out" Dimensions="20">
+<Element Index="[0]">
+<Structure DataType="PWM_Out">
+<DataValueMember Name="EnableIn" DataType="BOOL" Value="0"/>
+<DataValueMember Name="EnableOut" DataType="BOOL" Value="0"/>
+<DataValueMember Name="PWM_Pin" DataType="BOOL" Value="0"/>
+<DataValueMember Name="Duty_Cycle" DataType="DINT" Radix="Decimal" Value="100"/>
+<DataValueMember Name="Frequency_Hz" DataType="DINT" Radix="Decimal" Value="500"/>
+</Structure>
+</Element>
+<Element Index="[1]">
+<Structure DataType="PWM_Out">
+<DataValueMember Name="EnableIn" DataType="BOOL" Value="0"/>
+<DataValueMember Name="EnableOut" DataType="BOOL" Value="0"/>
+<DataValueMember Name="PWM_Pin" DataType="BOOL" Value="0"/>
+<DataValueMember Name="Duty_Cycle" DataType="DINT" Radix="Decimal" Value="100"/>
+<DataValueMember Name="Frequency_Hz" DataType="DINT" Radix="Decimal" Value="500"/>
+</Structure>
+</Element>
+<Element Index="[2]">
+<Structure DataType="PWM_Out">
+<DataValueMember Name="EnableIn" DataType="BOOL" Value="0"/>
+<DataValueMember Name="EnableOut" DataType="BOOL" Value="0"/>
+<DataValueMember Name="PWM_Pin" DataType="BOOL" Value="0"/>
+<DataValueMember Name="Duty_Cycle" DataType="DINT" Radix="Decimal" Value="100"/>
+<DataValueMember Name="Frequency_Hz" DataType="DINT" Radix="Decimal" Value="500"/>
+</Structure>
+</Element>
+<Element Index="[3]">
+<Structure DataType="PWM_Out">
+<DataValueMember Name="EnableIn" DataType="BOOL" Value="0"/>
+<DataValueMember Name="EnableOut" DataType="BOOL" Value="0"/>
+<DataValueMember Name="PWM_Pin" DataType="BOOL" Value="0"/>
+<DataValueMember Name="Duty_Cycle" DataType="DINT" Radix="Decimal" Value="100"/>
+<DataValueMember Name="Frequency_Hz" DataType="DINT" Radix="Decimal" Value="500"/>
+</Structure>
+</Element>
+<Element Index="[4]">
+<Structure DataType="PWM_Out">
+<DataValueMember Name="EnableIn" DataType="BOOL" Value="0"/>
+<DataValueMember Name="EnableOut" DataType="BOOL" Value="0"/>
+<DataValueMember Name="PWM_Pin" DataType="BOOL" Value="0"/>
+<DataValueMember Name="Duty_Cycle" DataType="DINT" Radix="Decimal" Value="100"/>
+<DataValueMember Name="Frequency_Hz" DataType="DINT" Radix="Decimal" Value="500"/>
+</Structure>
+</Element>
+<Element Index="[5]">
+<Structure DataType="PWM_Out">
+<DataValueMember Name="EnableIn" DataType="BOOL" Value="0"/>
+<DataValueMember Name="EnableOut" DataType="BOOL" Value="0"/>
+<DataValueMember Name="PWM_Pin" DataType="BOOL" Value="0"/>
+<DataValueMember Name="Duty_Cycle" DataType="DINT" Radix="Decimal" Value="100"/>
+<DataValueMember Name="Frequency_Hz" DataType="DINT" Radix="Decimal" Value="500"/>
+</Structure>
+</Element>
+<Element Index="[6]">
+<Structure DataType="PWM_Out">
+<DataValueMember Name="EnableIn" DataType="BOOL" Value="0"/>
+<DataValueMember Name="EnableOut" DataType="BOOL" Value="0"/>
+<DataValueMember Name="PWM_Pin" DataType="BOOL" Value="0"/>
+<DataValueMember Name="Duty_Cycle" DataType="DINT" Radix="Decimal" Value="100"/>
+<DataValueMember Name="Frequency_Hz" DataType="DINT" Radix="Decimal" Value="500"/>
+</Structure>
+</Element>
+<Element Index="[7]">
+<Structure DataType="PWM_Out">
+<DataValueMember Name="EnableIn" DataType="BOOL" Value="0"/>
+<DataValueMember Name="EnableOut" DataType="BOOL" Value="0"/>
+<DataValueMember Name="PWM_Pin" DataType="BOOL" Value="0"/>
+<DataValueMember Name="Duty_Cycle" DataType="DINT" Radix="Decimal" Value="100"/>
+<DataValueMember Name="Frequency_Hz" DataType="DINT" Radix="Decimal" Value="500"/>
+</Structure>
+</Element>
+<Element Index="[8]">
+<Structure DataType="PWM_Out">
+<DataValueMember Name="EnableIn" DataType="BOOL" Value="0"/>
+<DataValueMember Name="EnableOut" DataType="BOOL" Value="0"/>
+<DataValueMember Name="PWM_Pin" DataType="BOOL" Value="0"/>
+<DataValueMember Name="Duty_Cycle" DataType="DINT" Radix="Decimal" Value="100"/>
+<DataValueMember Name="Frequency_Hz" DataType="DINT" Radix="Decimal" Value="500"/>
+</Structure>
+</Element>
+<Element Index="[9]">
+<Structure DataType="PWM_Out">
+<DataValueMember Name="EnableIn" DataType="BOOL" Value="0"/>
+<DataValueMember Name="EnableOut" DataType="BOOL" Value="0"/>
+<DataValueMember Name="PWM_Pin" DataType="BOOL" Value="0"/>
+<DataValueMember Name="Duty_Cycle" DataType="DINT" Radix="Decimal" Value="100"/>
+<DataValueMember Name="Frequency_Hz" DataType="DINT" Radix="Decimal" Value="500"/>
+</Structure>
+</Element>
+<Element Index="[10]">
+<Structure DataType="PWM_Out">
+<DataValueMember Name="EnableIn" DataType="BOOL" Value="0"/>
+<DataValueMember Name="EnableOut" DataType="BOOL" Value="0"/>
+<DataValueMember Name="PWM_Pin" DataType="BOOL" Value="0"/>
+<DataValueMember Name="Duty_Cycle" DataType="DINT" Radix="Decimal" Value="100"/>
+<DataValueMember Name="Frequency_Hz" DataType="DINT" Radix="Decimal" Value="500"/>
+</Structure>
+</Element>
+<Element Index="[11]">
+<Structure DataType="PWM_Out">
+<DataValueMember Name="EnableIn" DataType="BOOL" Value="1"/>
+<DataValueMember Name="EnableOut" DataType="BOOL" Value="0"/>
+<DataValueMember Name="PWM_Pin" DataType="BOOL" Value="0"/>
+<DataValueMember Name="Duty_Cycle" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="Frequency_Hz" DataType="DINT" Radix="Decimal" Value="0"/>
+</Structure>
+</Element>
+<Element Index="[12]">
+<Structure DataType="PWM_Out">
+<DataValueMember Name="EnableIn" DataType="BOOL" Value="1"/>
+<DataValueMember Name="EnableOut" DataType="BOOL" Value="0"/>
+<DataValueMember Name="PWM_Pin" DataType="BOOL" Value="0"/>
+<DataValueMember Name="Duty_Cycle" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="Frequency_Hz" DataType="DINT" Radix="Decimal" Value="0"/>
+</Structure>
+</Element>
+<Element Index="[13]">
+<Structure DataType="PWM_Out">
+<DataValueMember Name="EnableIn" DataType="BOOL" Value="1"/>
+<DataValueMember Name="EnableOut" DataType="BOOL" Value="0"/>
+<DataValueMember Name="PWM_Pin" DataType="BOOL" Value="0"/>
+<DataValueMember Name="Duty_Cycle" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="Frequency_Hz" DataType="DINT" Radix="Decimal" Value="0"/>
+</Structure>
+</Element>
+<Element Index="[14]">
+<Structure DataType="PWM_Out">
+<DataValueMember Name="EnableIn" DataType="BOOL" Value="1"/>
+<DataValueMember Name="EnableOut" DataType="BOOL" Value="0"/>
+<DataValueMember Name="PWM_Pin" DataType="BOOL" Value="0"/>
+<DataValueMember Name="Duty_Cycle" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="Frequency_Hz" DataType="DINT" Radix="Decimal" Value="0"/>
+</Structure>
+</Element>
+<Element Index="[15]">
+<Structure DataType="PWM_Out">
+<DataValueMember Name="EnableIn" DataType="BOOL" Value="1"/>
+<DataValueMember Name="EnableOut" DataType="BOOL" Value="0"/>
+<DataValueMember Name="PWM_Pin" DataType="BOOL" Value="0"/>
+<DataValueMember Name="Duty_Cycle" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="Frequency_Hz" DataType="DINT" Radix="Decimal" Value="0"/>
+</Structure>
+</Element>
+<Element Index="[16]">
+<Structure DataType="PWM_Out">
+<DataValueMember Name="EnableIn" DataType="BOOL" Value="1"/>
+<DataValueMember Name="EnableOut" DataType="BOOL" Value="0"/>
+<DataValueMember Name="PWM_Pin" DataType="BOOL" Value="0"/>
+<DataValueMember Name="Duty_Cycle" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="Frequency_Hz" DataType="DINT" Radix="Decimal" Value="0"/>
+</Structure>
+</Element>
+<Element Index="[17]">
+<Structure DataType="PWM_Out">
+<DataValueMember Name="EnableIn" DataType="BOOL" Value="1"/>
+<DataValueMember Name="EnableOut" DataType="BOOL" Value="0"/>
+<DataValueMember Name="PWM_Pin" DataType="BOOL" Value="0"/>
+<DataValueMember Name="Duty_Cycle" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="Frequency_Hz" DataType="DINT" Radix="Decimal" Value="0"/>
+</Structure>
+</Element>
+<Element Index="[18]">
+<Structure DataType="PWM_Out">
+<DataValueMember Name="EnableIn" DataType="BOOL" Value="1"/>
+<DataValueMember Name="EnableOut" DataType="BOOL" Value="0"/>
+<DataValueMember Name="PWM_Pin" DataType="BOOL" Value="0"/>
+<DataValueMember Name="Duty_Cycle" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="Frequency_Hz" DataType="DINT" Radix="Decimal" Value="0"/>
+</Structure>
+</Element>
+<Element Index="[19]">
+<Structure DataType="PWM_Out">
+<DataValueMember Name="EnableIn" DataType="BOOL" Value="1"/>
+<DataValueMember Name="EnableOut" DataType="BOOL" Value="0"/>
+<DataValueMember Name="PWM_Pin" DataType="BOOL" Value="0"/>
+<DataValueMember Name="Duty_Cycle" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="Frequency_Hz" DataType="DINT" Radix="Decimal" Value="0"/>
+</Structure>
+</Element>
+</Array>
+</Data>
+</Tag>
+</Tags>
+<Programs Use="Context">
+<Program Use="Context" Name="MainProgram">
+<Tags Use="Context">
+<Tag Name="MPO_Homing" TagType="Base" DataType="BOOL" Radix="Decimal" Constant="false" ExternalAccess="Read/Write" OpcUaAccess="None">
+<Data Format="L5K">
+<![CDATA[0]]>
+</Data>
+<Data Format="Decorated">
+<DataValue DataType="BOOL" Radix="Decimal" Value="0"/>
+</Data>
+</Tag>
+</Tags>
+<Routines Use="Context">
+<Routine Use="Target" Name="MPO_Homing" Type="RLL">
+<RLLContent>
+<Rung Number="0" Type="N">
+<Comment>
+<![CDATA[Gripper Homing]]>
+</Comment>
+<Text>
+<![CDATA[XIO(Local:3:I.Data.0)[OTL(Local:6:O.Data.7) ,PWM_Out(PWM_Outputs[9],Local:7:O.Data.21,100,500) ];]]>
+</Text>
+</Rung>
+<Rung Number="1" Type="N">
+<Text>
+<![CDATA[XIC(Local:3:I.Data.0)OTU(Local:6:O.Data.7);]]>
+</Text>
+</Rung>
+<Rung Number="2" Type="N">
+<Comment>
+<![CDATA[Turntable Homing]]>
+</Comment>
+<Text>
+<![CDATA[XIO(Local:2:I.Data.12)[OTL(Local:6:O.Data.22) ,PWM_Out(PWM_Outputs[10],Local:6:O.Data.6,100,500) ];]]>
+</Text>
+</Rung>
+<Rung Number="3" Type="N">
+<Text>
+<![CDATA[XIC(Local:2:I.Data.12)OTU(Local:6:O.Data.22);]]>
+</Text>
+</Rung>
+<Rung Number="4" Type="N">
+<Text>
+<![CDATA[XIC(Local:3:I.Data.0)XIC(Local:2:I.Data.12)OTU(MPO_Homing);]]>
+</Text>
+</Rung>
+</RLLContent>
+</Routine>
+</Routines>
+</Program>
+</Programs>
+</Controller>
+</RSLogix5000Content>
