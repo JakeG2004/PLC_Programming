@@ -1,0 +1,626 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<RSLogix5000Content SchemaRevision="1.0" SoftwareRevision="38.00" TargetName="HBW_Sequencer" TargetType="Routine" TargetSubType="RLL" ContainsContext="true" ExportDate="Wed Dec 17 02:55:31 2025" ExportOptions="References NoRawData L5KData DecoratedData Context Dependencies ForceProtectedEncoding AllProjDocTrans">
+<Controller Use="Context" Name="Uidaho_Factory">
+<DataTypes Use="Context">
+</DataTypes>
+<Modules Use="Context">
+<Module Use="Reference" Name="Local">
+</Module>
+<Module Use="Reference" Name="Slot_2_Input">
+</Module>
+</Modules>
+<Tags Use="Context">
+<Tag Name="Encoder_Counters_1X" TagType="Base" DataType="COUNTER" Dimensions="10" Constant="false" ExternalAccess="Read/Write" OpcUaAccess="None">
+<Comments>
+<Comment Operand="[0]">
+<![CDATA[HBW M2 Horizontal 1X]]>
+</Comment>
+<Comment Operand="[1]">
+<![CDATA[HBW M3 Vertical 1X]]>
+</Comment>
+<Comment Operand="[2]">
+<![CDATA[VGR M1 Vertical 1X]]>
+</Comment>
+<Comment Operand="[3]">
+<![CDATA[VGR M2 Horizontal 1X]]>
+</Comment>
+<Comment Operand="[4]">
+<![CDATA[VGR M3 Rotate 1X]]>
+</Comment>
+</Comments>
+<Data Format="L5K">
+<![CDATA[[[536870912,0,730],[536870912,0,1940],[536870912,0,0],[536870912,0,0],[536870912,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0]]]]>
+</Data>
+<Data Format="Decorated">
+<Array DataType="COUNTER" Dimensions="10">
+<Element Index="[0]">
+<Structure DataType="COUNTER">
+<DataValueMember Name="PRE" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="ACC" DataType="DINT" Radix="Decimal" Value="730"/>
+<DataValueMember Name="CU" DataType="BOOL" Value="0"/>
+<DataValueMember Name="CD" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DN" DataType="BOOL" Value="1"/>
+<DataValueMember Name="OV" DataType="BOOL" Value="0"/>
+<DataValueMember Name="UN" DataType="BOOL" Value="0"/>
+</Structure>
+</Element>
+<Element Index="[1]">
+<Structure DataType="COUNTER">
+<DataValueMember Name="PRE" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="ACC" DataType="DINT" Radix="Decimal" Value="1940"/>
+<DataValueMember Name="CU" DataType="BOOL" Value="0"/>
+<DataValueMember Name="CD" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DN" DataType="BOOL" Value="1"/>
+<DataValueMember Name="OV" DataType="BOOL" Value="0"/>
+<DataValueMember Name="UN" DataType="BOOL" Value="0"/>
+</Structure>
+</Element>
+<Element Index="[2]">
+<Structure DataType="COUNTER">
+<DataValueMember Name="PRE" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="ACC" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="CU" DataType="BOOL" Value="0"/>
+<DataValueMember Name="CD" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DN" DataType="BOOL" Value="1"/>
+<DataValueMember Name="OV" DataType="BOOL" Value="0"/>
+<DataValueMember Name="UN" DataType="BOOL" Value="0"/>
+</Structure>
+</Element>
+<Element Index="[3]">
+<Structure DataType="COUNTER">
+<DataValueMember Name="PRE" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="ACC" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="CU" DataType="BOOL" Value="0"/>
+<DataValueMember Name="CD" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DN" DataType="BOOL" Value="1"/>
+<DataValueMember Name="OV" DataType="BOOL" Value="0"/>
+<DataValueMember Name="UN" DataType="BOOL" Value="0"/>
+</Structure>
+</Element>
+<Element Index="[4]">
+<Structure DataType="COUNTER">
+<DataValueMember Name="PRE" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="ACC" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="CU" DataType="BOOL" Value="0"/>
+<DataValueMember Name="CD" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DN" DataType="BOOL" Value="1"/>
+<DataValueMember Name="OV" DataType="BOOL" Value="0"/>
+<DataValueMember Name="UN" DataType="BOOL" Value="0"/>
+</Structure>
+</Element>
+<Element Index="[5]">
+<Structure DataType="COUNTER">
+<DataValueMember Name="PRE" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="ACC" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="CU" DataType="BOOL" Value="0"/>
+<DataValueMember Name="CD" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DN" DataType="BOOL" Value="0"/>
+<DataValueMember Name="OV" DataType="BOOL" Value="0"/>
+<DataValueMember Name="UN" DataType="BOOL" Value="0"/>
+</Structure>
+</Element>
+<Element Index="[6]">
+<Structure DataType="COUNTER">
+<DataValueMember Name="PRE" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="ACC" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="CU" DataType="BOOL" Value="0"/>
+<DataValueMember Name="CD" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DN" DataType="BOOL" Value="0"/>
+<DataValueMember Name="OV" DataType="BOOL" Value="0"/>
+<DataValueMember Name="UN" DataType="BOOL" Value="0"/>
+</Structure>
+</Element>
+<Element Index="[7]">
+<Structure DataType="COUNTER">
+<DataValueMember Name="PRE" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="ACC" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="CU" DataType="BOOL" Value="0"/>
+<DataValueMember Name="CD" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DN" DataType="BOOL" Value="0"/>
+<DataValueMember Name="OV" DataType="BOOL" Value="0"/>
+<DataValueMember Name="UN" DataType="BOOL" Value="0"/>
+</Structure>
+</Element>
+<Element Index="[8]">
+<Structure DataType="COUNTER">
+<DataValueMember Name="PRE" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="ACC" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="CU" DataType="BOOL" Value="0"/>
+<DataValueMember Name="CD" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DN" DataType="BOOL" Value="0"/>
+<DataValueMember Name="OV" DataType="BOOL" Value="0"/>
+<DataValueMember Name="UN" DataType="BOOL" Value="0"/>
+</Structure>
+</Element>
+<Element Index="[9]">
+<Structure DataType="COUNTER">
+<DataValueMember Name="PRE" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="ACC" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="CU" DataType="BOOL" Value="0"/>
+<DataValueMember Name="CD" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DN" DataType="BOOL" Value="0"/>
+<DataValueMember Name="OV" DataType="BOOL" Value="0"/>
+<DataValueMember Name="UN" DataType="BOOL" Value="0"/>
+</Structure>
+</Element>
+</Array>
+</Data>
+</Tag>
+</Tags>
+<Programs Use="Context">
+<Program Use="Context" Name="MainProgram">
+<Tags Use="Context">
+<Tag Name="ESTOP" TagType="Base" DataType="BOOL" Radix="Decimal" Constant="false" ExternalAccess="Read/Write" OpcUaAccess="None">
+<Data Format="L5K">
+<![CDATA[0]]>
+</Data>
+<Data Format="Decorated">
+<DataValue DataType="BOOL" Radix="Decimal" Value="0"/>
+</Data>
+</Tag>
+<Tag Name="HBW_Start" TagType="Base" DataType="DINT" Radix="Decimal" Constant="false" ExternalAccess="Read/Write" OpcUaAccess="None">
+<Data Format="L5K">
+<![CDATA[805306368]]>
+</Data>
+<Data Format="Decorated">
+<DataValue DataType="DINT" Radix="Decimal" Value="805306368"/>
+</Data>
+</Tag>
+<Tag Name="Start" TagType="Base" DataType="DINT" Radix="Decimal" Constant="false" ExternalAccess="Read/Write" OpcUaAccess="None">
+<Data Format="L5K">
+<![CDATA[0]]>
+</Data>
+<Data Format="Decorated">
+<DataValue DataType="DINT" Radix="Decimal" Value="0"/>
+</Data>
+</Tag>
+<Tag Name="Step" TagType="Base" DataType="DINT" Radix="Decimal" Constant="false" ExternalAccess="Read/Write" OpcUaAccess="None">
+<Data Format="L5K">
+<![CDATA[150]]>
+</Data>
+<Data Format="Decorated">
+<DataValue DataType="DINT" Radix="Decimal" Value="150"/>
+</Data>
+</Tag>
+<Tag Name="X_Position" TagType="Base" DataType="DINT" Radix="Decimal" Constant="false" ExternalAccess="Read/Write" OpcUaAccess="None">
+<Data Format="L5K">
+<![CDATA[740]]>
+</Data>
+<Data Format="Decorated">
+<DataValue DataType="DINT" Radix="Decimal" Value="740"/>
+</Data>
+</Tag>
+<Tag Name="X_Position_Return" TagType="Base" DataType="DINT" Radix="Decimal" Constant="false" ExternalAccess="Read/Write" OpcUaAccess="None">
+<Data Format="L5K">
+<![CDATA[720]]>
+</Data>
+<Data Format="Decorated">
+<DataValue DataType="DINT" Radix="Decimal" Value="720"/>
+</Data>
+</Tag>
+<Tag Name="Y_Position" TagType="Base" DataType="DINT" Radix="Decimal" Constant="false" ExternalAccess="Read/Write" OpcUaAccess="None">
+<Data Format="L5K">
+<![CDATA[90]]>
+</Data>
+<Data Format="Decorated">
+<DataValue DataType="DINT" Radix="Decimal" Value="90"/>
+</Data>
+</Tag>
+<Tag Name="Y_Position_Drop_off" TagType="Base" DataType="DINT" Radix="Decimal" Constant="false" ExternalAccess="Read/Write" OpcUaAccess="None">
+<Data Format="L5K">
+<![CDATA[670]]>
+</Data>
+<Data Format="Decorated">
+<DataValue DataType="DINT" Radix="Decimal" Value="670"/>
+</Data>
+</Tag>
+<Tag Name="Y_Position_DropOff_At_Rack" TagType="Base" DataType="DINT" Radix="Decimal" Constant="false" ExternalAccess="Read/Write" OpcUaAccess="None">
+<Data Format="L5K">
+<![CDATA[90]]>
+</Data>
+<Data Format="Decorated">
+<DataValue DataType="DINT" Radix="Decimal" Value="90"/>
+</Data>
+</Tag>
+<Tag Name="Y_Position_Pick_Up" TagType="Base" DataType="DINT" Radix="Decimal" Constant="false" ExternalAccess="Read/Write" OpcUaAccess="None">
+<Data Format="L5K">
+<![CDATA[30]]>
+</Data>
+<Data Format="Decorated">
+<DataValue DataType="DINT" Radix="Decimal" Value="30"/>
+</Data>
+</Tag>
+<Tag Name="Y_Position_Return" TagType="Base" DataType="DINT" Radix="Decimal" Constant="false" ExternalAccess="Read/Write" OpcUaAccess="None">
+<Data Format="L5K">
+<![CDATA[30]]>
+</Data>
+<Data Format="Decorated">
+<DataValue DataType="DINT" Radix="Decimal" Value="30"/>
+</Data>
+</Tag>
+</Tags>
+<Routines Use="Context">
+<Routine Use="Target" Name="HBW_Sequencer" Type="RLL">
+<RLLContent>
+<Rung Number="0" Type="N">
+<Text>
+<![CDATA[XIC(ESTOP)NOP();]]>
+</Text>
+</Rung>
+<Rung Number="1" Type="N">
+<Text>
+<![CDATA[XIC(Start.1)CPT(Step,10);]]>
+</Text>
+</Rung>
+<Rung Number="2" Type="N">
+<Text>
+<![CDATA[XIC(Local:2:I.Data.0)RES(Encoder_Counters_1X[0]);]]>
+</Text>
+</Rung>
+<Rung Number="3" Type="N">
+<Text>
+<![CDATA[XIC(Local:2:I.Data.3)RES(Encoder_Counters_1X[1]);]]>
+</Text>
+</Rung>
+<Rung Number="4" Type="N">
+<Text>
+<![CDATA[GE(Encoder_Counters_1X[0].ACC,57000)NOP();]]>
+</Text>
+</Rung>
+<Rung Number="5" Type="N">
+<Text>
+<![CDATA[GE(Encoder_Counters_1X[1].ACC,57000)NOP();]]>
+</Text>
+</Rung>
+<Rung Number="6" Type="N">
+<Text>
+<![CDATA[EQ(Step,10)JMP(Retract_Cantilever_10);]]>
+</Text>
+</Rung>
+<Rung Number="7" Type="N">
+<Text>
+<![CDATA[EQ(Step,20)JMP(Go_Up_and_Right_20);]]>
+</Text>
+</Rung>
+<Rung Number="8" Type="N">
+<Text>
+<![CDATA[EQ(Step,30)JMP(Pick_Up_30);]]>
+</Text>
+</Rung>
+<Rung Number="9" Type="N">
+<Text>
+<![CDATA[EQ(Step,40)JMP(Extend_To_Pick_Up_40);]]>
+</Text>
+</Rung>
+<Rung Number="10" Type="N">
+<Text>
+<![CDATA[EQ(Step,50)JMP(Lift_50);]]>
+</Text>
+</Rung>
+<Rung Number="11" Type="N">
+<Text>
+<![CDATA[EQ(Step,60)JMP(Go_To_Conv_60);]]>
+</Text>
+</Rung>
+<Rung Number="12" Type="N">
+<Text>
+<![CDATA[EQ(Step,70)JMP(Extend_To_DropOff_At_Conv_70);]]>
+</Text>
+</Rung>
+<Rung Number="13" Type="N">
+<Text>
+<![CDATA[EQ(Step,80)JMP(Move_Conv_Forward_80);]]>
+</Text>
+</Rung>
+<Rung Number="14" Type="N">
+<Text>
+<![CDATA[EQ(Step,90)JMP(Move_Conv_Backward_90);]]>
+</Text>
+</Rung>
+<Rung Number="15" Type="N">
+<Text>
+<![CDATA[EQ(Step,100)JMP(Return_To_Rack_100);]]>
+</Text>
+</Rung>
+<Rung Number="16" Type="N">
+<Text>
+<![CDATA[EQ(Step,101)JMP(Retract_Cantilever_101);]]>
+</Text>
+</Rung>
+<Rung Number="17" Type="N">
+<Text>
+<![CDATA[EQ(Step,102)JMP(Drop_Off_At_Rack_102);]]>
+</Text>
+</Rung>
+<Rung Number="18" Type="N">
+<Text>
+<![CDATA[EQ(Step,110)JMP(Initial_State_100);]]>
+</Text>
+</Rung>
+<Rung Number="19" Type="N">
+<Text>
+<![CDATA[EQ(Step,111)JMP(Next_111);]]>
+</Text>
+</Rung>
+<Rung Number="20" Type="N">
+<Text>
+<![CDATA[EQ(Step,120)JMP(Idle);]]>
+</Text>
+</Rung>
+<Rung Number="21" Type="N">
+<Text>
+<![CDATA[LBL(Idle)RET();]]>
+</Text>
+</Rung>
+<Rung Number="22" Type="N">
+<Text>
+<![CDATA[LBL(Retract_Cantilever_10)XIO(ESTOP)OTL(HBW_Start.3);]]>
+</Text>
+</Rung>
+<Rung Number="23" Type="N">
+<Text>
+<![CDATA[XIC(Local:2:I.Data.11)OTU(HBW_Start.3)MOVE(20,Step);]]>
+</Text>
+</Rung>
+<Rung Number="24" Type="N">
+<Text>
+<![CDATA[JMP(Idle);]]>
+</Text>
+</Rung>
+<Rung Number="25" Type="N">
+<Text>
+<![CDATA[LBL(Go_Up_and_Right_20)XIO(ESTOP)XIO(HBW_Start.6)XIO(HBW_Start.0)OTL(HBW_Start.7)OTL(HBW_Start.1);]]>
+</Text>
+</Rung>
+<Rung Number="26" Type="N">
+<Text>
+<![CDATA[XIC(Local:2:I.Data.3)XIC(Local:2:I.Data.0)OTU(HBW_Start.7)OTU(HBW_Start.1)MOVE(30,Step);]]>
+</Text>
+</Rung>
+<Rung Number="27" Type="N">
+<Text>
+<![CDATA[JMP(Idle);]]>
+</Text>
+</Rung>
+<Rung Number="28" Type="N">
+<Text>
+<![CDATA[JMP(Idle);]]>
+</Text>
+</Rung>
+<Rung Number="29" Type="N">
+<Text>
+<![CDATA[LBL(Pick_Up_30)NOP();]]>
+</Text>
+</Rung>
+<Rung Number="30" Type="N">
+<Text>
+<![CDATA[GT(Y_Position,Encoder_Counters_1X[1].ACC)XIO(ESTOP)XIO(HBW_Start.1)OTE(HBW_Start.0);]]>
+</Text>
+</Rung>
+<Rung Number="31" Type="N">
+<Text>
+<![CDATA[GT(X_Position,Encoder_Counters_1X[0].ACC)XIO(ESTOP)OTE(HBW_Start.6);]]>
+</Text>
+</Rung>
+<Rung Number="32" Type="N">
+<Text>
+<![CDATA[LE(X_Position,Encoder_Counters_1X[0].ACC)LE(Y_Position,Encoder_Counters_1X[1].ACC)MOVE(40,Step);]]>
+</Text>
+</Rung>
+<Rung Number="33" Type="N">
+<Text>
+<![CDATA[JMP(Idle);]]>
+</Text>
+</Rung>
+<Rung Number="34" Type="N">
+<Text>
+<![CDATA[LBL(Extend_To_Pick_Up_40)XIO(ESTOP)XIO(HBW_Start.3)XIO(HBW_Start.7)XIO(HBW_Start.6)OTL(HBW_Start.2);]]>
+</Text>
+</Rung>
+<Rung Number="35" Type="N">
+<Text>
+<![CDATA[XIC(Local:2:I.Data.10)OTU(HBW_Start.2)MOVE(50,Step);]]>
+</Text>
+</Rung>
+<Rung Number="36" Type="N">
+<Text>
+<![CDATA[JMP(Idle);]]>
+</Text>
+</Rung>
+<Rung Number="37" Type="N">
+<Text>
+<![CDATA[LBL(Lift_50)NOP();]]>
+</Text>
+</Rung>
+<Rung Number="38" Type="N">
+<Text>
+<![CDATA[LE(Y_Position_Pick_Up,Encoder_Counters_1X[1].ACC)XIO(ESTOP)OTE(HBW_Start.1);]]>
+</Text>
+</Rung>
+<Rung Number="39" Type="N">
+<Text>
+<![CDATA[GT(Y_Position_Pick_Up,Encoder_Counters_1X[1].ACC)XIO(ESTOP)MOVE(60,Step);]]>
+</Text>
+</Rung>
+<Rung Number="40" Type="N">
+<Text>
+<![CDATA[JMP(Idle);]]>
+</Text>
+</Rung>
+<Rung Number="41" Type="N">
+<Text>
+<![CDATA[LBL(Go_To_Conv_60)XIO(ESTOP)OTL(HBW_Start.3);]]>
+</Text>
+</Rung>
+<Rung Number="42" Type="N">
+<Text>
+<![CDATA[XIC(Local:2:I.Data.11)XIO(ESTOP)OTU(HBW_Start.3)XIO(HBW_Start.6)OTL(HBW_Start.7);]]>
+</Text>
+</Rung>
+<Rung Number="43" Type="N">
+<Text>
+<![CDATA[XIC(Local:2:I.Data.0)OTU(HBW_Start.7)MOVE(70,Step);]]>
+</Text>
+</Rung>
+<Rung Number="44" Type="N">
+<Text>
+<![CDATA[JMP(Idle);]]>
+</Text>
+</Rung>
+<Rung Number="45" Type="N">
+<Text>
+<![CDATA[LBL(Extend_To_DropOff_At_Conv_70)XIO(ESTOP)OTL(HBW_Start.0);]]>
+</Text>
+</Rung>
+<Rung Number="46" Type="N">
+<Text>
+<![CDATA[LE(Y_Position_Drop_off,Encoder_Counters_1X[1].ACC)OTU(HBW_Start.0)XIO(HBW_Start.3)XIO(HBW_Start.7)OTL(HBW_Start.2);]]>
+</Text>
+</Rung>
+<Rung Number="47" Type="N">
+<Text>
+<![CDATA[XIC(Local:2:I.Data.10)XIO(ESTOP)OTU(HBW_Start.2)MOVE(80,Step);]]>
+</Text>
+</Rung>
+<Rung Number="48" Type="N">
+<Text>
+<![CDATA[JMP(Idle);]]>
+</Text>
+</Rung>
+<Rung Number="49" Type="N">
+<Text>
+<![CDATA[LBL(Move_Conv_Forward_80)NOP();]]>
+</Text>
+</Rung>
+<Rung Number="50" Type="N">
+<Text>
+<![CDATA[XIC(Local:2:I.Data.2)XIO(ESTOP)OTE(HBW_Start.4);]]>
+</Text>
+</Rung>
+<Rung Number="51" Type="N">
+<Text>
+<![CDATA[XIO(Local:2:I.Data.2)MOVE(90,Step);]]>
+</Text>
+</Rung>
+<Rung Number="52" Type="N">
+<Text>
+<![CDATA[JMP(Idle);]]>
+</Text>
+</Rung>
+<Rung Number="53" Type="N">
+<Text>
+<![CDATA[LBL(Move_Conv_Backward_90)NOP();]]>
+</Text>
+</Rung>
+<Rung Number="54" Type="N">
+<Text>
+<![CDATA[XIC(Local:2:I.Data.1)XIO(ESTOP)OTE(HBW_Start.5);]]>
+</Text>
+</Rung>
+<Rung Number="55" Type="N">
+<Text>
+<![CDATA[XIO(Local:2:I.Data.1)MOVE(110,Step);]]>
+</Text>
+</Rung>
+<Rung Number="56" Type="N">
+<Text>
+<![CDATA[JMP(Idle);]]>
+</Text>
+</Rung>
+<Rung Number="57" Type="N">
+<Text>
+<![CDATA[LBL(Initial_State_100)XIO(ESTOP)OTL(HBW_Start.3)OTL(HBW_Start.1);]]>
+</Text>
+</Rung>
+<Rung Number="58" Type="N">
+<Text>
+<![CDATA[XIC(Local:2:I.Data.3)XIC(Local:2:I.Data.11)OTU(HBW_Start.3)OTU(HBW_Start.1)MOVE(100,Step);]]>
+</Text>
+</Rung>
+<Rung Number="59" Type="N">
+<Text>
+<![CDATA[JMP(Idle);]]>
+</Text>
+</Rung>
+<Rung Number="60" Type="N">
+<Text>
+<![CDATA[LBL(Return_To_Rack_100)CPT(X_Position_Return,X_Position)CPT(Y_Position_Return,Y_Position-60)NOP();]]>
+</Text>
+</Rung>
+<Rung Number="61" Type="N">
+<Text>
+<![CDATA[GT(X_Position_Return,Encoder_Counters_1X[0].ACC)XIO(ESTOP)OTE(HBW_Start.6);]]>
+</Text>
+</Rung>
+<Rung Number="62" Type="N">
+<Text>
+<![CDATA[GT(Y_Position_Return,Encoder_Counters_1X[1].ACC)XIO(ESTOP)OTE(HBW_Start.0);]]>
+</Text>
+</Rung>
+<Rung Number="63" Type="N">
+<Text>
+<![CDATA[LE(X_Position_Return,Encoder_Counters_1X[0].ACC)LE(Y_Position_Return,Encoder_Counters_1X[1].ACC)XIO(HBW_Start.3)OTL(HBW_Start.2);]]>
+</Text>
+</Rung>
+<Rung Number="64" Type="N">
+<Text>
+<![CDATA[XIC(Local:2:I.Data.10)OTU(HBW_Start.2)MOVE(102,Step);]]>
+</Text>
+</Rung>
+<Rung Number="65" Type="N">
+<Text>
+<![CDATA[JMP(Idle);]]>
+</Text>
+</Rung>
+<Rung Number="66" Type="N">
+<Text>
+<![CDATA[LBL(Drop_Off_At_Rack_102)CPT(Y_Position_DropOff_At_Rack,Y_Position-30);]]>
+</Text>
+</Rung>
+<Rung Number="67" Type="N">
+<Text>
+<![CDATA[GE(Y_Position_DropOff_At_Rack,Encoder_Counters_1X[1].ACC)XIO(ESTOP)OTE(HBW_Start.0);]]>
+</Text>
+</Rung>
+<Rung Number="68" Type="N">
+<Text>
+<![CDATA[LT(Y_Position_DropOff_At_Rack,Encoder_Counters_1X[1].ACC)XIO(ESTOP)MOVE(101,Step);]]>
+</Text>
+</Rung>
+<Rung Number="69" Type="N">
+<Text>
+<![CDATA[LBL(Retract_Cantilever_101)OTL(HBW_Start.3);]]>
+</Text>
+</Rung>
+<Rung Number="70" Type="N">
+<Text>
+<![CDATA[XIC(Local:2:I.Data.11)OTU(HBW_Start.3)LE(X_Position,1940)LE(Y_Position,90)CPT(X_Position,X_Position+570)MOVE(30,Step);]]>
+</Text>
+</Rung>
+<Rung Number="71" Type="N">
+<Text>
+<![CDATA[GT(X_Position,1940)LE(Y_Position,90)MOVE(111,Step);]]>
+</Text>
+</Rung>
+<Rung Number="72" Type="N">
+<Text>
+<![CDATA[LBL(Next_111)GT(X_Position,1940)CPT(Y_Position_Pick_Up,380)CPT(Y_Position,440)CPT(X_Position,160);]]>
+</Text>
+</Rung>
+<Rung Number="73" Type="N">
+<Text>
+<![CDATA[GE(Y_Position,Encoder_Counters_1X[1].ACC)GE(Y_Position,100)OTE(HBW_Start.0);]]>
+</Text>
+</Rung>
+<Rung Number="74" Type="N">
+<Text>
+<![CDATA[LE(X_Position,Encoder_Counters_1X[0].ACC)XIO(HBW_Start.6)OTE(HBW_Start.7);]]>
+</Text>
+</Rung>
+</RLLContent>
+</Routine>
+</Routines>
+</Program>
+</Programs>
+</Controller>
+</RSLogix5000Content>
