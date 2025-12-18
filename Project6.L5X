@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<RSLogix5000Content SchemaRevision="1.0" SoftwareRevision="38.00" TargetName="Uidaho_Factory" TargetType="Controller" ContainsContext="false" ExportDate="Thu Dec 18 00:12:19 2025" ExportOptions="NoRawData L5KData DecoratedData ForceProtectedEncoding AllProjDocTrans">
-<Controller Use="Target" Name="Uidaho_Factory" ProcessorType="1756-L82E" MajorRev="38" MinorRev="11" ProjectCreationDate="Tue Jul 01 07:56:26 2025" LastModifiedDate="Thu Dec 18 00:11:55 2025" SFCExecutionControl="CurrentActive" SFCRestartPosition="MostRecent" SFCLastScan="DontScan" CommPath="Ethernet\10.8.0.120"
+<RSLogix5000Content SchemaRevision="1.0" SoftwareRevision="38.00" TargetName="Uidaho_Factory" TargetType="Controller" ContainsContext="false" ExportDate="Thu Dec 18 14:25:47 2025" ExportOptions="NoRawData L5KData DecoratedData ForceProtectedEncoding AllProjDocTrans">
+<Controller Use="Target" Name="Uidaho_Factory" ProcessorType="1756-L82E" MajorRev="38" MinorRev="11" ProjectCreationDate="Tue Jul 01 07:56:26 2025" LastModifiedDate="Thu Dec 18 14:25:18 2025" SFCExecutionControl="CurrentActive" SFCRestartPosition="MostRecent" SFCLastScan="DontScan" CommPath="Ethernet\10.8.0.120"
  ProjectSN="16#0159_a2eb" MatchProjectToController="false" CanUseRPIFromProducer="false" InhibitAutomaticFirmwareUpdate="0" PassThroughConfiguration="EnabledWithAppend" DownloadProjectDocumentationAndExtendedProperties="true" DownloadProjectCustomProperties="true" ReportMinorOverflow="false" AutoDiagsEnabled="true" WebServerEnabled="false" DataExchangeId="{9AD0E7CD-0058-42CC-96F4-40C424699980}"
 >
 <RedundancyInfo Enabled="false" KeepTestEditsOnSwitchOver="false"/>
@@ -3034,6 +3034,14 @@ Frequency_Hz = [0,1000]]]>
 </Array>
 </Data>
 </Tag>
+<Tag Name="HBW_Puck_Index" TagType="Base" DataType="DINT" Radix="Decimal" Constant="false" ExternalAccess="Read/Write" OpcUaAccess="None">
+<Data Format="L5K">
+<![CDATA[0]]>
+</Data>
+<Data Format="Decorated">
+<DataValue DataType="DINT" Radix="Decimal" Value="0"/>
+</Data>
+</Tag>
 <Tag Name="HBW_Start" TagType="Base" DataType="DINT" Radix="Decimal" Constant="false" ExternalAccess="Read/Write" OpcUaAccess="None">
 <Data Format="L5K">
 <![CDATA[805306378]]>
@@ -4483,142 +4491,142 @@ Frequency_Hz = [0,1000]]]>
 <RLLContent>
 <Rung Number="0" Type="N">
 <Text>
-<![CDATA[XIC(ESTOP)NOP();]]>
+<![CDATA[[EQ(HBW_Puck_Index,1) MOVE(1880,X_Position) MOVE(30,Y_Position) ,EQ(HBW_Puck_Index,2) MOVE(1310,X_Position) MOVE(30,Y_Position) ,EQ(HBW_Puck_Index,3) MOVE(740,X_Position) MOVE(30,Y_Position) ,EQ(HBW_Puck_Index,4) MOVE(1880,X_Position) MOVE(380,Y_Position) ,EQ(HBW_Puck_Index,5) MOVE(1310,X_Position) MOVE(380,Y_Position) ,EQ(HBW_Puck_Index,6) MOVE(740,X_Position) MOVE(380,Y_Position) ,EQ(HBW_Puck_Index,7) MOVE(1880,X_Position) MOVE(730,Y_Position) ,EQ(HBW_Puck_Index,8) MOVE(1310,X_Position) MOVE(730,Y_Position) ,EQ(HBW_Puck_Index,9) MOVE(740,X_Position) MOVE(730,Y_Position) ]OTL(ESTOP);]]>
 </Text>
 </Rung>
 <Rung Number="1" Type="N">
 <Text>
-<![CDATA[XIC(Start.1)CPT(Step[19],10);]]>
+<![CDATA[XIC(ESTOP)MOVE(0,HBW_Puck_Index)OTU(ESTOP);]]>
 </Text>
 </Rung>
 <Rung Number="2" Type="N">
 <Text>
-<![CDATA[XIC(Local:2:I.Data.0)RES(Encoder_Counters_1X[0]);]]>
+<![CDATA[XIC(Start.1)CPT(Step[19],10);]]>
 </Text>
 </Rung>
 <Rung Number="3" Type="N">
 <Text>
-<![CDATA[XIC(Local:2:I.Data.3)RES(Encoder_Counters_1X[1]);]]>
+<![CDATA[XIC(Local:2:I.Data.0)RES(Encoder_Counters_1X[0]);]]>
 </Text>
 </Rung>
 <Rung Number="4" Type="N">
 <Text>
-<![CDATA[GE(Encoder_Counters_1X[0].ACC,57000)NOP();]]>
+<![CDATA[XIC(Local:2:I.Data.3)RES(Encoder_Counters_1X[1]);]]>
 </Text>
 </Rung>
 <Rung Number="5" Type="N">
 <Text>
-<![CDATA[GE(Encoder_Counters_1X[1].ACC,57000)NOP();]]>
+<![CDATA[GE(Encoder_Counters_1X[0].ACC,57000)NOP();]]>
 </Text>
 </Rung>
 <Rung Number="6" Type="N">
 <Text>
-<![CDATA[EQ(Step[19],10)JMP(Retract_Cantilever_10);]]>
+<![CDATA[GE(Encoder_Counters_1X[1].ACC,57000)NOP();]]>
 </Text>
 </Rung>
 <Rung Number="7" Type="N">
 <Text>
-<![CDATA[EQ(Step[19],20)JMP(Go_Up_and_Right_20);]]>
+<![CDATA[EQ(Step[19],10)JMP(Retract_Cantilever_10);]]>
 </Text>
 </Rung>
 <Rung Number="8" Type="N">
 <Text>
-<![CDATA[EQ(Step[19],30)JMP(Pick_Up_30);]]>
+<![CDATA[EQ(Step[19],20)JMP(Go_Up_and_Right_20);]]>
 </Text>
 </Rung>
 <Rung Number="9" Type="N">
 <Text>
-<![CDATA[EQ(Step[19],40)JMP(Extend_To_Pick_Up_40);]]>
+<![CDATA[EQ(Step[19],30)JMP(Pick_Up_30);]]>
 </Text>
 </Rung>
 <Rung Number="10" Type="N">
 <Text>
-<![CDATA[EQ(Step[19],50)JMP(Lift_50);]]>
+<![CDATA[EQ(Step[19],40)JMP(Extend_To_Pick_Up_40);]]>
 </Text>
 </Rung>
 <Rung Number="11" Type="N">
 <Text>
-<![CDATA[EQ(Step[19],60)JMP(Go_To_Conv_60);]]>
+<![CDATA[EQ(Step[19],50)JMP(Lift_50);]]>
 </Text>
 </Rung>
 <Rung Number="12" Type="N">
 <Text>
-<![CDATA[EQ(Step[19],70)JMP(Extend_To_DropOff_At_Conv_70);]]>
+<![CDATA[EQ(Step[19],60)JMP(Go_To_Conv_60);]]>
 </Text>
 </Rung>
 <Rung Number="13" Type="N">
 <Text>
-<![CDATA[EQ(Step[19],80)JMP(Move_Conv_Forward_80);]]>
+<![CDATA[EQ(Step[19],70)JMP(Extend_To_DropOff_At_Conv_70);]]>
 </Text>
 </Rung>
 <Rung Number="14" Type="N">
 <Text>
-<![CDATA[EQ(Step[19],90)JMP(Move_Conv_Backward_90);]]>
+<![CDATA[EQ(Step[19],80)JMP(Move_Conv_Forward_80);]]>
 </Text>
 </Rung>
 <Rung Number="15" Type="N">
 <Text>
-<![CDATA[EQ(Step[19],100)JMP(Return_To_Rack_100);]]>
+<![CDATA[EQ(Step[19],90)JMP(Move_Conv_Backward_90);]]>
 </Text>
 </Rung>
 <Rung Number="16" Type="N">
 <Text>
-<![CDATA[EQ(Step[19],101)JMP(Retract_Cantilever_101);]]>
+<![CDATA[EQ(Step[19],100)JMP(Return_To_Rack_100);]]>
 </Text>
 </Rung>
 <Rung Number="17" Type="N">
 <Text>
-<![CDATA[EQ(Step[19],102)JMP(Drop_Off_At_Rack_102);]]>
+<![CDATA[EQ(Step[19],101)JMP(Retract_Cantilever_101);]]>
 </Text>
 </Rung>
 <Rung Number="18" Type="N">
 <Text>
-<![CDATA[EQ(Step[19],110)JMP(Initial_State_100);]]>
+<![CDATA[EQ(Step[19],102)JMP(Drop_Off_At_Rack_102);]]>
 </Text>
 </Rung>
 <Rung Number="19" Type="N">
 <Text>
-<![CDATA[EQ(Step[19],111)JMP(Next_111);]]>
+<![CDATA[EQ(Step[19],110)JMP(Initial_State_100);]]>
 </Text>
 </Rung>
 <Rung Number="20" Type="N">
 <Text>
-<![CDATA[EQ(Step[19],112)JMP(Next_112);]]>
+<![CDATA[EQ(Step[19],111)JMP(Next_111);]]>
 </Text>
 </Rung>
 <Rung Number="21" Type="N">
 <Text>
-<![CDATA[EQ(Step[19],120)JMP(Idle);]]>
+<![CDATA[EQ(Step[19],112)JMP(Next_112);]]>
 </Text>
 </Rung>
 <Rung Number="22" Type="N">
 <Text>
-<![CDATA[LBL(Idle)RET();]]>
+<![CDATA[EQ(Step[19],120)JMP(Idle);]]>
 </Text>
 </Rung>
 <Rung Number="23" Type="N">
 <Text>
-<![CDATA[LBL(Retract_Cantilever_10)XIO(ESTOP)OTL(HBW_Start.3);]]>
+<![CDATA[LBL(Idle)RET();]]>
 </Text>
 </Rung>
 <Rung Number="24" Type="N">
 <Text>
-<![CDATA[XIC(Local:2:I.Data.11)OTU(HBW_Start.3)MOVE(20,Step[19]);]]>
+<![CDATA[LBL(Retract_Cantilever_10)XIO(ESTOP)OTL(HBW_Start.3);]]>
 </Text>
 </Rung>
 <Rung Number="25" Type="N">
 <Text>
-<![CDATA[JMP(Idle);]]>
+<![CDATA[XIC(Local:2:I.Data.11)OTU(HBW_Start.3)MOVE(20,Step[19]);]]>
 </Text>
 </Rung>
 <Rung Number="26" Type="N">
 <Text>
-<![CDATA[LBL(Go_Up_and_Right_20)XIO(ESTOP)XIO(HBW_Start.6)XIO(HBW_Start.0)OTL(HBW_Start.7)OTL(HBW_Start.1);]]>
+<![CDATA[JMP(Idle);]]>
 </Text>
 </Rung>
 <Rung Number="27" Type="N">
 <Text>
-<![CDATA[XIC(Local:2:I.Data.3)XIC(Local:2:I.Data.0)OTU(HBW_Start.7)OTU(HBW_Start.1)MOVE(30,Step[19]);]]>
+<![CDATA[LBL(Go_Up_and_Right_20)XIO(ESTOP)XIO(HBW_Start.6)XIO(HBW_Start.0)OTL(HBW_Start.7)OTL(HBW_Start.1);]]>
 </Text>
 </Rung>
 <Rung Number="28" Type="N">
@@ -4628,7 +4636,7 @@ Frequency_Hz = [0,1000]]]>
 </Rung>
 <Rung Number="29" Type="N">
 <Text>
-<![CDATA[JMP(Idle);]]>
+<![CDATA[XIC(Local:2:I.Data.3)XIC(Local:2:I.Data.0)OTU(HBW_Start.7)OTU(HBW_Start.1)MOVE(30,Step[19]);]]>
 </Text>
 </Rung>
 <Rung Number="30" Type="N">
@@ -4638,257 +4646,257 @@ Frequency_Hz = [0,1000]]]>
 </Rung>
 <Rung Number="31" Type="N">
 <Text>
-<![CDATA[LBL(Pick_Up_30)NOP();]]>
+<![CDATA[JMP(Idle);]]>
 </Text>
 </Rung>
 <Rung Number="32" Type="N">
 <Text>
-<![CDATA[GT(Y_Position,Encoder_Counters_1X[1].ACC)XIO(ESTOP)XIO(HBW_Start.1)OTE(HBW_Start.0);]]>
+<![CDATA[LBL(Pick_Up_30)NOP();]]>
 </Text>
 </Rung>
 <Rung Number="33" Type="N">
 <Text>
-<![CDATA[GT(X_Position,Encoder_Counters_1X[0].ACC)XIO(ESTOP)OTE(HBW_Start.6);]]>
+<![CDATA[[GT(Y_Position,Encoder_Counters_1X[1].ACC) XIO(ESTOP) XIO(HBW_Start.1) OTE(HBW_Start.0) ,LT(Y_Position,Encoder_Counters_1X[1].ACC) XIO(ESTOP) XIO(HBW_Start.0) OTE(HBW_Start.1) ]NOP();]]>
 </Text>
 </Rung>
 <Rung Number="34" Type="N">
 <Text>
-<![CDATA[LE(X_Position,Encoder_Counters_1X[0].ACC)LE(Y_Position,Encoder_Counters_1X[1].ACC)MOVE(40,Step[19]);]]>
+<![CDATA[[GT(X_Position,Encoder_Counters_1X[0].ACC) XIO(ESTOP) OTE(HBW_Start.6) ,LT(X_Position,Encoder_Counters_1X[0].ACC) XIO(ESTOP) OTE(HBW_Start.7) ]NOP();]]>
 </Text>
 </Rung>
 <Rung Number="35" Type="N">
 <Text>
-<![CDATA[JMP(Idle);]]>
+<![CDATA[EQ(X_Position,Encoder_Counters_1X[0].ACC)EQ(Y_Position,Encoder_Counters_1X[1].ACC)MOVE(40,Step[19]);]]>
 </Text>
 </Rung>
 <Rung Number="36" Type="N">
 <Text>
-<![CDATA[LBL(Extend_To_Pick_Up_40)XIO(ESTOP)XIO(HBW_Start.3)XIO(HBW_Start.7)XIO(HBW_Start.6)OTL(HBW_Start.2);]]>
+<![CDATA[JMP(Idle);]]>
 </Text>
 </Rung>
 <Rung Number="37" Type="N">
 <Text>
-<![CDATA[XIC(Local:2:I.Data.10)OTU(HBW_Start.2)MOVE(50,Step[19]);]]>
+<![CDATA[LBL(Extend_To_Pick_Up_40)XIO(ESTOP)XIO(HBW_Start.3)XIO(HBW_Start.7)XIO(HBW_Start.6)OTL(HBW_Start.2);]]>
 </Text>
 </Rung>
 <Rung Number="38" Type="N">
 <Text>
-<![CDATA[JMP(Idle);]]>
+<![CDATA[XIC(Local:2:I.Data.10)OTU(HBW_Start.2)MOVE(50,Step[19]);]]>
 </Text>
 </Rung>
 <Rung Number="39" Type="N">
 <Text>
-<![CDATA[LBL(Lift_50)NOP();]]>
+<![CDATA[JMP(Idle);]]>
 </Text>
 </Rung>
 <Rung Number="40" Type="N">
 <Text>
-<![CDATA[LE(Y_Position_Pick_Up,Encoder_Counters_1X[1].ACC)XIO(ESTOP)OTE(HBW_Start.1);]]>
+<![CDATA[LBL(Lift_50)NOP();]]>
 </Text>
 </Rung>
 <Rung Number="41" Type="N">
 <Text>
-<![CDATA[GT(Y_Position_Pick_Up,Encoder_Counters_1X[1].ACC)XIO(ESTOP)MOVE(60,Step[19]);]]>
+<![CDATA[LE(Y_Position_Pick_Up,Encoder_Counters_1X[1].ACC)XIO(ESTOP)OTE(HBW_Start.1);]]>
 </Text>
 </Rung>
 <Rung Number="42" Type="N">
 <Text>
-<![CDATA[JMP(Idle);]]>
+<![CDATA[GT(Y_Position_Pick_Up,Encoder_Counters_1X[1].ACC)XIO(ESTOP)MOVE(60,Step[19]);]]>
 </Text>
 </Rung>
 <Rung Number="43" Type="N">
 <Text>
-<![CDATA[LBL(Go_To_Conv_60)XIO(ESTOP)OTL(HBW_Start.3);]]>
+<![CDATA[JMP(Idle);]]>
 </Text>
 </Rung>
 <Rung Number="44" Type="N">
 <Text>
-<![CDATA[XIC(Local:2:I.Data.11)XIO(ESTOP)OTU(HBW_Start.3)XIO(HBW_Start.6)OTL(HBW_Start.7);]]>
+<![CDATA[LBL(Go_To_Conv_60)XIO(ESTOP)OTL(HBW_Start.3);]]>
 </Text>
 </Rung>
 <Rung Number="45" Type="N">
 <Text>
-<![CDATA[XIC(Local:2:I.Data.0)OTU(HBW_Start.7)MOVE(70,Step[19]);]]>
+<![CDATA[XIC(Local:2:I.Data.11)XIO(ESTOP)OTU(HBW_Start.3)XIO(HBW_Start.6)OTL(HBW_Start.7);]]>
 </Text>
 </Rung>
 <Rung Number="46" Type="N">
 <Text>
-<![CDATA[JMP(Idle);]]>
+<![CDATA[XIC(Local:2:I.Data.0)OTU(HBW_Start.7)MOVE(70,Step[19]);]]>
 </Text>
 </Rung>
 <Rung Number="47" Type="N">
 <Text>
-<![CDATA[LBL(Extend_To_DropOff_At_Conv_70)XIO(ESTOP)OTL(HBW_Start.0);]]>
+<![CDATA[JMP(Idle);]]>
 </Text>
 </Rung>
 <Rung Number="48" Type="N">
 <Text>
-<![CDATA[LE(Y_Position_Drop_off,Encoder_Counters_1X[1].ACC)OTU(HBW_Start.0)XIO(HBW_Start.3)XIO(HBW_Start.7)OTL(HBW_Start.2);]]>
+<![CDATA[LBL(Extend_To_DropOff_At_Conv_70)XIO(ESTOP)OTL(HBW_Start.0);]]>
 </Text>
 </Rung>
 <Rung Number="49" Type="N">
 <Text>
-<![CDATA[XIC(Local:2:I.Data.10)XIO(ESTOP)OTU(HBW_Start.2)MOVE(80,Step[19]);]]>
+<![CDATA[LE(Y_Position_Drop_off,Encoder_Counters_1X[1].ACC)OTU(HBW_Start.0)XIO(HBW_Start.3)XIO(HBW_Start.7)OTL(HBW_Start.2);]]>
 </Text>
 </Rung>
 <Rung Number="50" Type="N">
 <Text>
-<![CDATA[JMP(Idle);]]>
+<![CDATA[XIC(Local:2:I.Data.10)XIO(ESTOP)OTU(HBW_Start.2)MOVE(80,Step[19]);]]>
 </Text>
 </Rung>
 <Rung Number="51" Type="N">
 <Text>
-<![CDATA[LBL(Move_Conv_Forward_80)NOP();]]>
+<![CDATA[JMP(Idle);]]>
 </Text>
 </Rung>
 <Rung Number="52" Type="N">
 <Text>
-<![CDATA[XIC(Local:2:I.Data.2)XIO(ESTOP)OTE(HBW_Start.4);]]>
+<![CDATA[LBL(Move_Conv_Forward_80)NOP();]]>
 </Text>
 </Rung>
 <Rung Number="53" Type="N">
 <Text>
-<![CDATA[XIO(Local:2:I.Data.2)[EQ(VGR_Step,180) ,EQ(VGR_Step,0) ]MOVE(20,VGR_Step);]]>
+<![CDATA[XIC(Local:2:I.Data.2)XIO(ESTOP)OTE(HBW_Start.4);]]>
 </Text>
 </Rung>
 <Rung Number="54" Type="N">
 <Text>
-<![CDATA[JMP(Idle);]]>
+<![CDATA[XIO(Local:2:I.Data.2)[EQ(VGR_Step,180) ,EQ(VGR_Step,0) ]MOVE(20,VGR_Step);]]>
 </Text>
 </Rung>
 <Rung Number="55" Type="N">
 <Text>
-<![CDATA[LBL(Move_Conv_Backward_90)NOP();]]>
+<![CDATA[JMP(Idle);]]>
 </Text>
 </Rung>
 <Rung Number="56" Type="N">
 <Text>
-<![CDATA[XIC(Local:2:I.Data.1)XIO(ESTOP)OTE(HBW_Start.5);]]>
+<![CDATA[LBL(Move_Conv_Backward_90)NOP();]]>
 </Text>
 </Rung>
 <Rung Number="57" Type="N">
 <Text>
-<![CDATA[XIO(Local:2:I.Data.1)MOVE(110,Step[19]);]]>
+<![CDATA[XIC(Local:2:I.Data.1)XIO(ESTOP)OTE(HBW_Start.5);]]>
 </Text>
 </Rung>
 <Rung Number="58" Type="N">
 <Text>
-<![CDATA[JMP(Idle);]]>
+<![CDATA[XIO(Local:2:I.Data.1)MOVE(110,Step[19]);]]>
 </Text>
 </Rung>
 <Rung Number="59" Type="N">
 <Text>
-<![CDATA[LBL(Initial_State_100)XIO(ESTOP)OTL(HBW_Start.3)OTL(HBW_Start.1);]]>
+<![CDATA[JMP(Idle);]]>
 </Text>
 </Rung>
 <Rung Number="60" Type="N">
 <Text>
-<![CDATA[XIC(Local:2:I.Data.3)XIC(Local:2:I.Data.11)OTU(HBW_Start.3)OTU(HBW_Start.1)MOVE(100,Step[19]);]]>
+<![CDATA[LBL(Initial_State_100)XIO(ESTOP)OTL(HBW_Start.3)OTL(HBW_Start.1);]]>
 </Text>
 </Rung>
 <Rung Number="61" Type="N">
 <Text>
-<![CDATA[JMP(Idle);]]>
+<![CDATA[XIC(Local:2:I.Data.3)XIC(Local:2:I.Data.11)OTU(HBW_Start.3)OTU(HBW_Start.1)MOVE(100,Step[19]);]]>
 </Text>
 </Rung>
 <Rung Number="62" Type="N">
 <Text>
-<![CDATA[LBL(Return_To_Rack_100)CPT(X_Position_Return,X_Position)CPT(Y_Position_Return,Y_Position-60)NOP();]]>
+<![CDATA[JMP(Idle);]]>
 </Text>
 </Rung>
 <Rung Number="63" Type="N">
 <Text>
-<![CDATA[GT(X_Position_Return,Encoder_Counters_1X[0].ACC)XIO(ESTOP)OTE(HBW_Start.6);]]>
+<![CDATA[LBL(Return_To_Rack_100)CPT(X_Position_Return,X_Position)CPT(Y_Position_Return,Y_Position-60)NOP();]]>
 </Text>
 </Rung>
 <Rung Number="64" Type="N">
 <Text>
-<![CDATA[GT(Y_Position_Return,Encoder_Counters_1X[1].ACC)XIO(ESTOP)OTE(HBW_Start.0);]]>
+<![CDATA[GT(X_Position_Return,Encoder_Counters_1X[0].ACC)XIO(ESTOP)OTE(HBW_Start.6);]]>
 </Text>
 </Rung>
 <Rung Number="65" Type="N">
 <Text>
-<![CDATA[LE(X_Position_Return,Encoder_Counters_1X[0].ACC)LE(Y_Position_Return,Encoder_Counters_1X[1].ACC)XIO(HBW_Start.3)OTL(HBW_Start.2);]]>
+<![CDATA[GT(Y_Position_Return,Encoder_Counters_1X[1].ACC)XIO(ESTOP)OTE(HBW_Start.0);]]>
 </Text>
 </Rung>
 <Rung Number="66" Type="N">
 <Text>
-<![CDATA[XIC(Local:2:I.Data.10)OTU(HBW_Start.2)MOVE(102,Step[19]);]]>
+<![CDATA[LE(X_Position_Return,Encoder_Counters_1X[0].ACC)LE(Y_Position_Return,Encoder_Counters_1X[1].ACC)XIO(HBW_Start.3)OTL(HBW_Start.2);]]>
 </Text>
 </Rung>
 <Rung Number="67" Type="N">
 <Text>
-<![CDATA[JMP(Idle);]]>
+<![CDATA[XIC(Local:2:I.Data.10)OTU(HBW_Start.2)MOVE(102,Step[19]);]]>
 </Text>
 </Rung>
 <Rung Number="68" Type="N">
 <Text>
-<![CDATA[LBL(Drop_Off_At_Rack_102)CPT(Y_Position_DropOff_At_Rack,Y_Position-30);]]>
+<![CDATA[JMP(Idle);]]>
 </Text>
 </Rung>
 <Rung Number="69" Type="N">
 <Text>
-<![CDATA[GE(Y_Position_DropOff_At_Rack,Encoder_Counters_1X[1].ACC)XIO(ESTOP)OTE(HBW_Start.0);]]>
+<![CDATA[LBL(Drop_Off_At_Rack_102)CPT(Y_Position_DropOff_At_Rack,Y_Position-30);]]>
 </Text>
 </Rung>
 <Rung Number="70" Type="N">
 <Text>
-<![CDATA[LT(Y_Position_DropOff_At_Rack,Encoder_Counters_1X[1].ACC)XIO(ESTOP)MOVE(101,Step[19]);]]>
+<![CDATA[GE(Y_Position_DropOff_At_Rack,Encoder_Counters_1X[1].ACC)XIO(ESTOP)OTE(HBW_Start.0);]]>
 </Text>
 </Rung>
 <Rung Number="71" Type="N">
 <Text>
-<![CDATA[LBL(Retract_Cantilever_101)OTL(HBW_Start.3);]]>
+<![CDATA[LT(Y_Position_DropOff_At_Rack,Encoder_Counters_1X[1].ACC)XIO(ESTOP)MOVE(101,Step[19]);]]>
 </Text>
 </Rung>
 <Rung Number="72" Type="N">
 <Text>
-<![CDATA[XIC(Local:2:I.Data.11)OTU(HBW_Start.3)LT(X_Position,1940)CPT(X_Position,X_Position+570)MOVE(30,Step[19]);]]>
+<![CDATA[LBL(Retract_Cantilever_101)OTL(HBW_Start.3);]]>
 </Text>
 </Rung>
 <Rung Number="73" Type="N">
 <Text>
-<![CDATA[GE(X_Position,1940)LT(Y_Position,444)MOVE(111,Step[19]);]]>
+<![CDATA[XIC(Local:2:I.Data.11)OTU(HBW_Start.3)LT(X_Position,1940)CPT(X_Position,X_Position+570)MOVE(30,Step[19]);]]>
 </Text>
 </Rung>
 <Rung Number="74" Type="N">
 <Text>
-<![CDATA[GE(X_Position,1940)GE(Y_Position,440)MOVE(112,Step[19]);]]>
+<![CDATA[GE(X_Position,1940)LT(Y_Position,444)MOVE(111,Step[19]);]]>
 </Text>
 </Rung>
 <Rung Number="75" Type="N">
 <Text>
-<![CDATA[GE(X_Position,1940)GE(Y_Position,790)MOVE(120,Step[19]);]]>
+<![CDATA[GE(X_Position,1940)GE(Y_Position,440)MOVE(112,Step[19]);]]>
 </Text>
 </Rung>
 <Rung Number="76" Type="N">
 <Text>
-<![CDATA[JMP(Idle);]]>
+<![CDATA[GE(X_Position,1940)GE(Y_Position,790)MOVE(120,Step[19]);]]>
 </Text>
 </Rung>
 <Rung Number="77" Type="N">
 <Text>
-<![CDATA[LBL(Next_111)CPT(Y_Position_Pick_Up,380)CPT(Y_Position,440)CPT(X_Position,740);]]>
+<![CDATA[JMP(Idle);]]>
 </Text>
 </Rung>
 <Rung Number="78" Type="N">
 <Text>
-<![CDATA[AFI()GE(Y_Position,Encoder_Counters_1X[1].ACC)GE(Y_Position,100)OTE(HBW_Start.0);]]>
+<![CDATA[LBL(Next_111)CPT(Y_Position_Pick_Up,380)CPT(Y_Position,440)CPT(X_Position,740);]]>
 </Text>
 </Rung>
 <Rung Number="79" Type="N">
 <Text>
-<![CDATA[AFI()LE(X_Position,Encoder_Counters_1X[0].ACC)XIO(HBW_Start.6)OTE(HBW_Start.7);]]>
+<![CDATA[AFI()GE(Y_Position,Encoder_Counters_1X[1].ACC)GE(Y_Position,100)OTE(HBW_Start.0);]]>
 </Text>
 </Rung>
 <Rung Number="80" Type="N">
 <Text>
-<![CDATA[MOVE(10,Step[19]);]]>
+<![CDATA[AFI()LE(X_Position,Encoder_Counters_1X[0].ACC)XIO(HBW_Start.6)OTE(HBW_Start.7);]]>
 </Text>
 </Rung>
 <Rung Number="81" Type="N">
 <Text>
-<![CDATA[JMP(Idle);]]>
+<![CDATA[MOVE(10,Step[19]);]]>
 </Text>
 </Rung>
 <Rung Number="82" Type="N">
@@ -4898,30 +4906,35 @@ Frequency_Hz = [0,1000]]]>
 </Rung>
 <Rung Number="83" Type="N">
 <Text>
-<![CDATA[LBL(Next_112)CPT(Y_Position_Pick_Up,730)CPT(Y_Position,810)CPT(X_Position,740);]]>
+<![CDATA[JMP(Idle);]]>
 </Text>
 </Rung>
 <Rung Number="84" Type="N">
 <Text>
-<![CDATA[AFI()GE(Y_Position,Encoder_Counters_1X[1].ACC)GE(Y_Position,100)OTE(HBW_Start.0);]]>
+<![CDATA[LBL(Next_112)CPT(Y_Position_Pick_Up,730)CPT(Y_Position,810)CPT(X_Position,740);]]>
 </Text>
 </Rung>
 <Rung Number="85" Type="N">
 <Text>
-<![CDATA[AFI()LE(X_Position,Encoder_Counters_1X[0].ACC)XIO(HBW_Start.6)OTE(HBW_Start.7);]]>
+<![CDATA[AFI()GE(Y_Position,Encoder_Counters_1X[1].ACC)GE(Y_Position,100)OTE(HBW_Start.0);]]>
 </Text>
 </Rung>
 <Rung Number="86" Type="N">
 <Text>
-<![CDATA[LE(Y_Position,810)MOVE(10,Step[19]);]]>
+<![CDATA[AFI()LE(X_Position,Encoder_Counters_1X[0].ACC)XIO(HBW_Start.6)OTE(HBW_Start.7);]]>
 </Text>
 </Rung>
 <Rung Number="87" Type="N">
 <Text>
-<![CDATA[GT(Y_Position,790)MOVE(120,Step[19]);]]>
+<![CDATA[LE(Y_Position,810)MOVE(10,Step[19]);]]>
 </Text>
 </Rung>
 <Rung Number="88" Type="N">
+<Text>
+<![CDATA[GT(Y_Position,790)MOVE(120,Step[19]);]]>
+</Text>
+</Rung>
+<Rung Number="89" Type="N">
 <Text>
 <![CDATA[JMP(Idle);]]>
 </Text>
@@ -4939,6 +4952,11 @@ Frequency_Hz = [0,1000]]]>
 </Text>
 </Rung>
 <Rung Number="1" Type="N">
+<Text>
+<![CDATA[XIC(HomeAll)MOVE(10,VGR_Step)OTL(MPO_Homing)OTU(HomeAll);]]>
+</Text>
+</Rung>
+<Rung Number="2" Type="N">
 <Comment>
 <![CDATA[VGR Subroutines]]>
 </Comment>
@@ -4946,12 +4964,12 @@ Frequency_Hz = [0,1000]]]>
 <![CDATA[XIO(ESTOP)JSR(VGR_Sequencer,0);]]>
 </Text>
 </Rung>
-<Rung Number="2" Type="N">
+<Rung Number="3" Type="N">
 <Text>
 <![CDATA[XIO(ESTOP)JSR(VGR_Controller,0);]]>
 </Text>
 </Rung>
-<Rung Number="3" Type="N">
+<Rung Number="4" Type="N">
 <Comment>
 <![CDATA[SLD Subroutines]]>
 </Comment>
@@ -4959,17 +4977,17 @@ Frequency_Hz = [0,1000]]]>
 <![CDATA[JSR(Analog_Scaling,0);]]>
 </Text>
 </Rung>
-<Rung Number="4" Type="N">
+<Rung Number="5" Type="N">
 <Text>
 <![CDATA[XIO(ESTOP)JSR(SLD_Sequencer,0);]]>
 </Text>
 </Rung>
-<Rung Number="5" Type="N">
+<Rung Number="6" Type="N">
 <Text>
 <![CDATA[XIO(ESTOP)JSR(SLD_Controller,0);]]>
 </Text>
 </Rung>
-<Rung Number="6" Type="N">
+<Rung Number="7" Type="N">
 <Comment>
 <![CDATA[MPO Subroutines]]>
 </Comment>
@@ -4977,27 +4995,27 @@ Frequency_Hz = [0,1000]]]>
 <![CDATA[XIO(ESTOP)XIC(MPO_Homing)JSR(MPO_Homing,0);]]>
 </Text>
 </Rung>
-<Rung Number="7" Type="N">
+<Rung Number="8" Type="N">
 <Text>
 <![CDATA[JSR(MPO_Compressor,0);]]>
 </Text>
 </Rung>
-<Rung Number="8" Type="N">
+<Rung Number="9" Type="N">
 <Text>
 <![CDATA[XIO(ESTOP)JSR(MPO_Oven_Process,0);]]>
 </Text>
 </Rung>
-<Rung Number="9" Type="N">
+<Rung Number="10" Type="N">
 <Text>
 <![CDATA[XIO(ESTOP)JSR(MPO_Oven_To_Turntable,0);]]>
 </Text>
 </Rung>
-<Rung Number="10" Type="N">
+<Rung Number="11" Type="N">
 <Text>
 <![CDATA[XIO(ESTOP)JSR(MPO_Turntable_Process,0);]]>
 </Text>
 </Rung>
-<Rung Number="11" Type="N">
+<Rung Number="12" Type="N">
 <Comment>
 <![CDATA[HBW Routines
 ]]>
@@ -5006,52 +5024,52 @@ Frequency_Hz = [0,1000]]]>
 <![CDATA[XIO(ESTOP)JSR(HBW_Controller,0);]]>
 </Text>
 </Rung>
-<Rung Number="12" Type="N">
+<Rung Number="13" Type="N">
 <Text>
 <![CDATA[XIO(ESTOP)JSR(HBW_Sequencer,0);]]>
 </Text>
 </Rung>
-<Rung Number="13" Type="N">
+<Rung Number="14" Type="N">
 <Text>
 <![CDATA[GSV(Module,Slot_1_Input,FaultCode,Slot_1_Faulted)GSV(Module,Slot_2_Input,FaultCode,Slot_2_Faulted)GSV(Module,Slot_3_Input,FaultCode,Slot_3_Faulted)GSV(Module,Slot_4_Input,FaultCode,Slot_4_Faulted)GSV(Module,Slot_5_Input,FaultCode,Slot_5_Faulted)GSV(Module,Slot_6_Output,FaultCode,Slot_6_Faulted)GSV(Module,Slot_7_Output,FaultCode,Slot_7_Faulted);]]>
 </Text>
 </Rung>
-<Rung Number="14" Type="N">
+<Rung Number="15" Type="N">
 <Text>
 <![CDATA[NE(Slot_1_Faulted,0)CTU(I_O_Counter[0],?,?);]]>
 </Text>
 </Rung>
-<Rung Number="15" Type="N">
+<Rung Number="16" Type="N">
 <Text>
 <![CDATA[NE(Slot_2_Faulted,0)CTU(I_O_Counter[1],?,?);]]>
 </Text>
 </Rung>
-<Rung Number="16" Type="N">
+<Rung Number="17" Type="N">
 <Text>
 <![CDATA[NE(Slot_3_Faulted,0)CTU(I_O_Counter[2],?,?);]]>
 </Text>
 </Rung>
-<Rung Number="17" Type="N">
+<Rung Number="18" Type="N">
 <Text>
 <![CDATA[NE(Slot_4_Faulted,0)CTU(I_O_Counter[3],?,?);]]>
 </Text>
 </Rung>
-<Rung Number="18" Type="N">
+<Rung Number="19" Type="N">
 <Text>
 <![CDATA[NE(Slot_5_Faulted,0)CTU(I_O_Counter[4],?,?);]]>
 </Text>
 </Rung>
-<Rung Number="19" Type="N">
+<Rung Number="20" Type="N">
 <Text>
 <![CDATA[NE(Slot_6_Faulted,0)CTU(I_O_Counter[5],?,?);]]>
 </Text>
 </Rung>
-<Rung Number="20" Type="N">
+<Rung Number="21" Type="N">
 <Text>
 <![CDATA[NE(Slot_7_Faulted,0)CTU(I_O_Counter[6],?,?);]]>
 </Text>
 </Rung>
-<Rung Number="21" Type="N">
+<Rung Number="22" Type="N">
 <Text>
 <![CDATA[NE(Slot_9_Faulted,0)CTU(I_O_Counter[9],?,?);]]>
 </Text>
